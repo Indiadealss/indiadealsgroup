@@ -46,7 +46,7 @@ const Footer = () => {
                     </div>
                     <div className='px-4 w-[20vw]'>
                         <p><span className=' text-[#f1e6c8] text-xs px-2'><FontAwesomeIcon icon={faClock} /></span><span className=' text-[#f1e6c8]'>PROJECT NAME</span></p>
-                        <p><span className=' text-[#f1e6c8] text-xs px-2 w-[1vw]'>Astrathum is not merely a mixed-use development—it’s an evolved urban typology.</span></p>
+                        <p><span className=' text-[#f1e6c8] text-xs px-2 w-[1vw]'>INDIADEALS is not merely a mixed-use development—it’s an evolved urban typology.</span></p>
                     </div>
                 </div>
 

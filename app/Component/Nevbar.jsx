@@ -10,6 +10,10 @@ const Navbar = () => {
 
   const navItems = [
     {
+      label:'Home',
+      link:'/'
+    },
+    {
       label:'About',
       link:'/about'
     },
@@ -19,14 +23,14 @@ const Navbar = () => {
     },
     {
       label:'Media',
-      link: '/gallery'
+      link: '/media'
     },
     {
       label:'Investor',
-      link: '/gallery'
+      link: '/investor'
     },
     {
-      label:'Contact',
+      label:'Contact US',
       link:'/contact-us'
     },
     {
