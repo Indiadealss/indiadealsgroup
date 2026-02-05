@@ -1,7 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  reactStrictMode: true,
+
+  images: {
+    // keep optimizer ON when using PM2
+    domains: ["indiadealsgroup.com"],
+  },
 };
 
 export default nextConfig;
