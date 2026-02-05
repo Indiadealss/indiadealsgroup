@@ -1,65 +1,77 @@
+'use client'
 import Image from "next/image";
+import virndavan from "@/Images/Vrindavan-Banner.jpg";
+import aboutTemImage from "@/Images/shridivineabout.jpg";
+import AOS  from 'aos';
+import { useEffect } from "react";
+import Gallery from "./Gallery.tsx";
+import Ongoingprojectslider from "./Ongoingprojectslider.tsx";
 
 export default function Home() {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true,
+      easing: 'ease-in-out',
+    });
+  }, []);
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
+    <div className="min-h-screen ">
+      
+      {/* HERO SECTION */}
+      <div className="relative w-full h-[38vw] min-h-[60vh]">
         <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
+          src={virndavan}
+          alt="Vrindavan Banner"
+          fill
           priority
+          sizes="100vw"
+          className="object-cover"
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+
+        {/* Overlay (optional but recommended) */}
+        <div className="absolute inset-0 bg-black/30" />
+
+        {/* Text Content */}
+        <div className="relative z-10 flex justify-center items-start pt-10 lg:pt-24">
+          <div className="bg-[#f3f39b54] mx-[10%] p-4">
+            <h1 className="text-[#f1e6c8] text-lg lg:text-6xl text-center font-[CanelaDeck-Light] leading-tight">
+              In the Grace of Shri Radha,
+              <br />
+              Where Luxury Meets Devotion
+            </h1>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </div>
+      
+      {/* gallery */}
+      <section className="py-20 px-20">
+        <Gallery />
+      </section>
+
+       <section className="py-20 px-20">
+        <Ongoingprojectslider />
+      </section>
+
+      {/* ABOUT SECTION */}
+      <section className="py-20 px-20" data-aos="fade-up">
+        <div className=" lg:flex  mx-10">
+          <Image
+            src={aboutTemImage}
+            alt="About Shri Divine"
+            className=" w-[300vw] h-auto rounded"
+          />
+          <div className="px-0 lg:px-10 py-10">
+            <h1 className="text-[#313036] font-['CanelaDeck-Light'] text-6xl">TITLE</h1>
+            <p className="text-[#313036] my-10 font-['poppins'] text-gray-600">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          </div>
         </div>
-      </main>
+      </section>
+
+
+      
+
     </div>
   );
 }
