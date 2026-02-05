@@ -4,8 +4,8 @@ import virndavan from "@/Images/Vrindavan-Banner.jpg";
 import aboutTemImage from "@/Images/shridivineabout.jpg";
 import AOS  from 'aos';
 import { useEffect } from "react";
-import Gallery from "./Gallery.tsx";
-import Ongoingprojectslider from "./Ongoingprojectslider.tsx";
+import Gallery from "./Gallery";
+import Ongoingprojectslider from "./Ongoingprojectslider";
 
 export default function Home() {
 
