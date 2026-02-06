@@ -34,9 +34,9 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/30" />
 
         {/* Text Content */}
-        <div className="relative z-10 flex justify-center items-start pt-10 lg:pt-24">
+        <div className="relative z-10 flex justify-center items-start pt-[35vw] md:pt-25 lg:pt-10 lg:pt-24">
           <div className="bg-[#f3f39b54] mx-[10%] p-4">
-            <h1 className="text-[#f1e6c8] text-lg lg:text-6xl text-center font-[CanelaDeck-Light] leading-tight">
+            <h1 className="text-[#f1e6c8] text-2xl md:text-4xl lg:text-6xl text-center font-[CanelaDeck-Light] leading-tight">
               In the Grace of Shri Radha,
               <br />
               Where Luxury Meets Devotion

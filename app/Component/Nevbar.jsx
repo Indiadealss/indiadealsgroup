@@ -10,6 +10,10 @@ const Navbar = () => {
 
   const navItems = [
     {
+      label:'Home',
+      link:'/'
+    },
+    {
       label:'About',
       link:'/about'
     },
@@ -19,10 +23,6 @@ const Navbar = () => {
     },
     {
       label:'Media',
-      link: '/gallery'
-    },
-    {
-      label:'Investor',
       link: '/gallery'
     },
     {
@@ -38,7 +38,7 @@ const Navbar = () => {
   return (
     <header className="w-full  bg-[#313036] sticky top-0 z-100">
       {/* TOP BAR */}
-      <div className="container mx-auto flex items-center justify-around px-4 py-1">
+      <div className="container mx-auto flex items-center justify-between lg:justify-around px-4 py-1">
         
         {/* Logo */}
         <div className="flex items-center gap-2">
@@ -68,16 +68,16 @@ const Navbar = () => {
         </div>
 
         
-          <div className="flex items-center gap-2 bg-[#d2b02d] text-white px-4 py-2 rounded">
+          <div className="hidden lg:flex items-center gap-2 bg-[#d2b02d] text-white px-4 py-2 rounded">
             <Phone size={16} />
             <span className="font-semibold cursor-pointer">+91-9818763100</span>
           </div>
 
         {/* Mobile buttons */}
-        <div className="lg:hidden flex items-center gap-3">
+        <div className="lg:hidden flex justify-between  gap-3">
           <a
             href="tel:+918920000832"
-            className="bg-pink-700 text-white p-2 rounded"
+            className="bg-[#d2b02d] text-white p-2 rounded"
           >
             <Phone size={18} />
           </a>
