@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { Menu, X, Phone } from 'lucide-react';
-import logo from '../../Images/logo.png'
+import logo from '../../Images/indiadealsgroupsvg.svg'
 import Image from 'next/image';
 import Link from 'next/link';
 

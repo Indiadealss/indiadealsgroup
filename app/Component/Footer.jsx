@@ -1,5 +1,5 @@
 'use client';
-import logo from '../../Images/logo.png'
+import logo from '../../Images/indiadealsgroupsvg.svg'
 import Image from 'next/image';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -25,7 +25,7 @@ const Footer = () => {
             {/* LOGO */}
         <div className="flex justify-center lg:justify-start">
           <Link href="/">
-            <Image src={logo} alt="Shri Divine Group" width={250}  priority />
+            <Image src={logo} alt="Shri Divine Group" width={160}  priority />
           </Link>
         </div>
 
@@ -71,8 +71,8 @@ const Footer = () => {
         {/* CONTACT */}
         <div className="text-center lg:text-left w-auto lg:w-[20vw]">
           <h1 className="text-[#f1e6c8] py-2">CONTACT</h1>
-          <p className="text-[#f1e6c8] text-sm">
-            Unit No:- 320, 3rd Floor, Block C, Golden I, Techzone 4,
+          <p className="text-[#f1e6c8] text-sm uppercase tracking-wider">
+            Office address:- 320, 3rd Floor, Block C, Golden I, Techzone 4,
             Greater Noida West, 201304
           </p>
           <p className="text-[#f1e6c8] py-2">
@@ -81,7 +81,7 @@ const Footer = () => {
           </p>
           <p className='text-[#f1e6c8] py-1'>
             <FontAwesomeIcon icon={faEnvelope} className='mr-2' />
-            costumercare@indiadealsgroup.com
+            customercare@indiadealsgroup.com
           </p>
         </div>
       </div>
