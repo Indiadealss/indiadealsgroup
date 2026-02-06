@@ -19,6 +19,11 @@ const page = () => {
 
 
             </div>
+
+            {/* our team our streanth */}
+            <div className='relative w-full h-[30vw]'>
+                
+            </div>
     </div>
   )
 }
