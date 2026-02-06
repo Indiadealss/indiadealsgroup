@@ -55,7 +55,7 @@ export default function Home() {
       </section>
 
       {/* ABOUT SECTION */}
-      <section className="py-20 px-20" data-aos="fade-up">
+      <section className="pt-20 pb-10 px-2 lg:px-20" data-aos="fade-up">
         <div className=" lg:flex  mx-10">
           <Image
             src={aboutTemImage}
