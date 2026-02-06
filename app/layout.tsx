@@ -1,15 +1,10 @@
-
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Nevbar from './Component/Nevbar.jsx'
-import Fixedicons from './Component/Fixedicons.jsx'
-import Fixedupicons from './Component/Fixedupicons.jsx'
-import Fixedcalliocns from './Component/Fixedcallicons.jsx'
-import 'aos/dist/aos.css'
+import 'aos/dist/aos.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Footer from './Component/Footer.jsx'
+import ClientLayout from "./ClientLayout";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,21 +23,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <Nevbar />
-        
-        {children}
-        <Fixedicons />
-        <Fixedcalliocns />
-        <Fixedupicons />
-        <Footer />
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
   );

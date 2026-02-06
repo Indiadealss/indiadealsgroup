@@ -1,6 +1,4 @@
 'use client';
-import { useState } from 'react';
-import { Menu, X, Phone } from 'lucide-react';
 import logo from '../../Images/logo.png'
 import Image from 'next/image';
 import Link from 'next/link';
