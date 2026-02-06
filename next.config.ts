@@ -1,12 +1,5 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  reactStrictMode: true,
-
-  images: {
-    // keep optimizer ON when using PM2
-    domains: ["indiadealsgroup.com"],
-  },
+// next.config.ts
+const nextConfig = {
+  // disable PWA for now
 };
-
 export default nextConfig;

@@ -1,3 +1,5 @@
+'use client'
+
 import virndavan from '@/Images/Vrindavan-Banner.jpg';
 import Image from 'next/image';
 
