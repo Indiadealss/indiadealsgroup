@@ -14,8 +14,12 @@ const Navbar = () => {
       link:'/'
     },
     {
-      label:'About',
+      label:'About us',
       link:'/about'
+    },
+    {
+      label:'Our team',
+      link:'/our-team'
     },
     {
       label:'Our Projects',
@@ -23,10 +27,10 @@ const Navbar = () => {
     },
     {
       label:'Media',
-      link: '/gallery'
+      link: '/media'
     },
     {
-      label:'Contact',
+      label:'Contact us',
       link:'/contact-us'
     },
     {

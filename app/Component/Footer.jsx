@@ -30,7 +30,7 @@ const Footer = () => {
         </div>
 
         {/* IMPORTANT LINKS */}
-        <div className="mx-auto lg:text-left">
+        <div className="mx-auto hidden lg:block lg:text-left">
           <h1 className="text-[#f1e6c8] py-2">IMPORTANT LINKS</h1>
           <ul className="text-[#f1e6c8] list-disc list-inside space-y-2">
             <li>Blogs</li>

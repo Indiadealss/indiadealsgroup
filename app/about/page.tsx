@@ -24,7 +24,7 @@ export default function Home() {
 
 
       {/* ABOUT SECTION */}
-      <section className="my-20 px-20" data-aos="fade-up">
+      <section className="my-20 px-0 lg:px-20" data-aos="fade-up">
         <div className="lg:flex  mx-10">
           <Image
             src={aboutTemImage}
@@ -39,8 +39,8 @@ export default function Home() {
       </section>
 
       {/*  */}
-      <section className="my-20 px-20">
-      <div className="px-20">
+      <section className="my-20 px-2 lg:px-20">
+      <div className="px-4 lg:px-20">
         <h1><span className="font-black text-lg py-4 font-['CanelaDeck-Light']">We Provide Smart Solutions</span></h1>
         <p>
           <span className="py-4 text-gray-600 font-[poppins]">

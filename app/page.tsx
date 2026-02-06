@@ -56,7 +56,7 @@ export default function Home() {
 
       {/* ABOUT SECTION */}
       <section className="pt-20 pb-10 px-2 lg:px-20" data-aos="fade-up">
-        <div className=" lg:flex  mx-10">
+        <div className=" lg:flex  mx-5">
           <Image
             src={aboutTemImage}
             alt="About Shri Divine"

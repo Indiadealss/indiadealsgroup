@@ -55,7 +55,7 @@ export default function Home() {
             </div>
             
             {/* Get in touch with us */}
-            <div className="m-20 me-10">
+            <div className="m-0 lg:m-20 lg:me-10">
       <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-10">
 
         {/* LEFT SIDE – FORM */}
@@ -114,7 +114,7 @@ export default function Home() {
         <div className="space-y-6 mt-10">
           {contactdetails.map((item, i) => (
             <div key={i} className="flex gap-6 items-start my-10">
-              <div className="w-10 h-10 bg-gray-800 text-white rounded-full flex items-center justify-center">
+              <div className="w-16 h-10 bg-gray-800 text-white rounded-full flex items-center justify-center">
                 {item.icon}
               </div>
               <div>
