@@ -34,8 +34,8 @@ const settings = {
   infinite: true,
 
   autoplay: true,
-  autoplaySpeed: 1000, // ⏸ pause 5 seconds
-  speed: 5000,          // ▶ slide animation duration
+  autoplaySpeed: 1000,
+  speed: 5000,
 
   slidesToShow: 5,
   slidesToScroll: 3,
@@ -46,11 +46,18 @@ const settings = {
   responsive: [
     {
       breakpoint: 1024,
-      settings: { slidesToShow: 2 },
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
     },
     {
-      breakpoint: 768,
-      settings: { slidesToShow: 2 },
+      breakpoint: 768,   // mobile & small tablets
+      settings: {
+        slidesToShow: 1,  // ⭐ only one visible
+        slidesToScroll: 2,
+        arrows: false,    // optional (looks cleaner on mobile)
+      },
     },
   ],
 };
@@ -65,13 +72,13 @@ const settings = {
 
       <Slider {...settings}>
         {projects.map((item, index) => (
-          <div key={index} className="text-center px-4">
+          <div key={index} className="text-center px-2 md:px-4">
             <div className="flex justify-center mb-3">
               <Image
                 src={item.logo}
                 alt={item.name}
                 width={500}
-                height={180}
+                height={580}
                 className="object-contain"
               />
             </div>

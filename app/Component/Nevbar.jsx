@@ -97,15 +97,16 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {open && (
         <div className="lg:hidden  bg-white fixed top-0 left-0 right-0">
+          <p className='mx-5' onClick={() => setOpen(false)}><span className='text-2xl float-right text-red-600'>x</span></p>
           <ul className="flex flex-col px-4 py-3 gap-3 text-sm font-medium">
             {navItems.map((item) => (
-              <li
+              <Link href={item.link} key={item.label} onClick={() => setOpen(false)}><li
                 key={item.label}
-                className=" pb-2 cursor-pointer hover:text-pink-700"
+                className=" pb-2 cursor-pointer hover:text-[#f1e6c8] text-[#ebb51f] font-bold"
                 onClick={() => setOpen(false)}
               >
                 {item.label}
-              </li>
+              </li></Link>
             ))}
           </ul>
 
