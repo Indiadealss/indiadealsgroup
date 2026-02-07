@@ -46,11 +46,11 @@ export default function Home() {
       </div>
       
       {/* gallery */}
-      <section className="py-20 px-20">
+      <section className="py-5 px-20">
         <Gallery />
       </section>
 
-       <section className="py-20 px-20">
+       <section className="py-5 px-20">
         <Ongoingprojectslider />
       </section>
 

@@ -83,7 +83,7 @@ const settings = {
                 alt={item.name}
                 width={1580}
                 height={1080}
-                className="object-contain"
+                className="object-contain rounded"
               />
             </div>
           </div>
