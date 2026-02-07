@@ -1,6 +1,6 @@
 'use client'
 import Image from "next/image";
-import virndavan from "@/Images/Vrindavan-Banner.jpg";
+import virndavan from "@/Images/abhinandan-lodha-vrindavan-plots-v0-pu57jype7rfe1.webp";
 import aboutTemImage from "@/Images/shridivineabout.jpg";
 import AOS  from 'aos';
 import { useEffect } from "react";

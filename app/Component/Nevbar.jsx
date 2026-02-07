@@ -33,10 +33,10 @@ const Navbar = () => {
       label:'Contact us',
       link:'/contact-us'
     },
-    {
-      label:'Costumer interface',
-      link:'/review'
-    }
+    // {
+    //   label:'Costumer interface',
+    //   link:'/review'
+    // }
   ];
 
   return (
