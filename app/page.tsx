@@ -7,6 +7,9 @@ import AOS  from 'aos';
 import { useEffect } from "react";
 import Gallery from "./Gallery";
 import Ongoingprojectslider from "./Ongoingprojectslider";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 export default function Home() {
 
@@ -68,13 +71,15 @@ export default function Home() {
       <section className="pt-20 pb-10 px-2 lg:px-20" data-aos="fade-up">
         <div className=" lg:flex  mx-5">
           <Image
-            src={aboutTemImage}
+            src="https://cdn.brandsdoor.in/indiadealss/indiadealss/1770972766053-ChatGPT%20Image%20Feb%2012%2C%202026%2C%2004_12_53%20PM.png"
             alt="About Shri Divine"
-            className=" w-[300vw] h-auto rounded"
+            width={600}
+            height={300}
+            className="  h-auto rounded border-4 border-[#313036]"
           />
           <div className="px-0 lg:px-10 py-10">
-            <h1 className="text-[#313036] font-['CanelaDeck-Light'] text-6xl">TITLE</h1>
-            <p className="text-[#313036] my-10 font-['poppins'] text-gray-600">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <h1 className="text-[#313036] font-['CanelaDeck-Light'] text-6xl">Hanumant Vihar</h1>
+            <p className="text-[#313036] my-10 font-['poppins'] text-gray-600">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<Link href='/ourprojects' className="text-[#313036] mx-1">Read More <FontAwesomeIcon  icon={faArrowRight} /></Link></p>
           </div>
         </div>
       </section>

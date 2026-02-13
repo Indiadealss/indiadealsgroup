@@ -1,5 +1,12 @@
 // next.config.ts
 const nextConfig = {
-  // disable PWA for now
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "cdn.brandsdoor.in",
+      },
+    ],
+  },
 };
 export default nextConfig;
