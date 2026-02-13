@@ -37,7 +37,7 @@ export default function Home() {
     playsInline
     className="absolute inset-0 w-full h-full object-cover"
   >
-    <source src="/videos/demo.mp4" type="video/mp4" />
+    <source src="https://cdn.brandsdoor.in/indiadealss/indiadealss/1770969328936-indiadeals-group-home-banner.mp4" type="video/mp4" />
   </video>
 
         {/* Overlay (optional but recommended) */}
