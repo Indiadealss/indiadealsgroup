@@ -30,7 +30,7 @@ export default function Home() {
     playsInline
     className=" inset-0 w-full h-[30vw] object-cover"
   >
-    <source src="http://cdn.brandsdoor.in/indiadealss/indiadealss/1770968112525-Our_project.mp4" type="video/mp4" />
+    <source src="https://cdn.brandsdoor.in/indiadealss/indiadealss/1770968112525-Our_project.mp4" type="video/mp4" />
   </video>
      
       </div>
