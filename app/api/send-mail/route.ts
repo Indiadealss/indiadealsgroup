@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 
 export async function POST(req: Request) {
   try {
-    const { name, email, message, phone, city } = await req.json();
+    const { name, email, message, phone, city,project } = await req.json();
 
     const transporter = nodemailer.createTransport({
       service: "gmail",
@@ -14,7 +14,7 @@ export async function POST(req: Request) {
     });
 
     await transporter.sendMail({
-      from: `"Website Lead" <${process.env.MAIL_USER}>`,
+      from: `${project} " Lead" <${process.env.MAIL_USER}>`,
       to: 'indiadealsgroup@gmail.com',
       replyTo: 'indiadealsgroup@gmail.com',
       subject: `New Query from ${name}`,
@@ -24,6 +24,7 @@ export async function POST(req: Request) {
         <p><b>Email:</b> ${email}</p>
         <p><b>Phone:</b> ${phone}</p>
         <p><b>City:</b> ${city}</p>
+        <p><b>Project:</b> ${project}</p>
         <p><b>Message:</b> ${message}</p>
       `,
     });

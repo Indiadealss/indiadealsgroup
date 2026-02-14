@@ -16,9 +16,10 @@ export default function Home() {
   const [userMessage, setUserMessage] = useState('');
   const [city, setCity] = useState('');
   const [loading, setLoading] = useState(false);
+  const [project,setProject] = useState('');
 
   const submit = async () => {
-    if (!name || !email || !phone) {
+    if (!name || !email || !phone || !project) {
       message.warning("Please fill required fields");
       return;
     }
@@ -29,7 +30,7 @@ export default function Home() {
       const res = await fetch("/api/send-mail", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, email, phone, city, message: userMessage }),
+        body: JSON.stringify({ name, email, phone, city,project, message: userMessage }),
       });
 
       if (res.ok) {
@@ -54,7 +55,7 @@ export default function Home() {
     {
       icon: <FontAwesomeIcon icon={faHouseLaptop} className="text-white text-lg" />,
       title: "REGISTERED OFFICE",
-      desc: "Unit No:- 320, 3rd Floor, Block C, Golden I, Techzone 4, Greater Noida West, 201304",
+      desc: "Office No:- C-320, 3rd Floor, Block C, Golden I, Techzone 4, Greater Noida West, 201304",
     },
     {
       icon: <FontAwesomeIcon icon={faPhone} className="text-white text-lg" />,
@@ -136,6 +137,16 @@ export default function Home() {
                 onChange={(e) => setCity(e.currentTarget.value)}
                 className="border p-3 rounded w-full"
               />
+              <select
+                value={project}
+                onChange={(e) => setProject(e.target.value)}
+                className="border p-3 rounded w-full outline-none"
+              >
+                <option value="">Select Project</option>
+                <option value="Hanumat Vihar">Hanumat Vihar</option>
+              </select>
+
+
 
               <textarea
                 placeholder="Message"

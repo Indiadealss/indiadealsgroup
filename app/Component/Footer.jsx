@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCopyright, faClock } from '@fortawesome/free-regular-svg-icons';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import { faBuilding } from "@fortawesome/free-regular-svg-icons";
 
 const Footer = () => {
   return (
@@ -59,10 +60,7 @@ const Footer = () => {
             <div>
               <p className="text-[#f1e6c8] text-sm">
                 <FontAwesomeIcon icon={faClock} className="mr-2" />
-                Hanumant Vihar
-              </p>
-              <p className="text-[#f1e6c8] text-xs mt-1">
-                INDIADEALS is not merely a mixed-use development—it’s an evolved urban typology.
+                Hanumat Vihar
               </p>
             </div>
           </div>
@@ -72,7 +70,7 @@ const Footer = () => {
         <div className="text-center lg:text-left w-auto lg:w-[20vw]">
           <h1 className="text-[#f1e6c8] py-2">CONTACT</h1>
           <p className="text-[#f1e6c8] text-sm uppercase tracking-wider">
-            Office address:- 320, 3rd Floor, Block C, Golden I, Techzone 4,
+           <FontAwesomeIcon icon={faBuilding} className='mr-2' /> C-320, 3rd Floor, Block C, Golden I, Techzone 4,
             Greater Noida West, 201304
           </p>
           <p className="text-[#f1e6c8] py-2">

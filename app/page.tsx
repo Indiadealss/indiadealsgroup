@@ -78,7 +78,7 @@ export default function Home() {
             className="  h-auto rounded border-4 border-[#313036]"
           />
           <div className="px-0 lg:px-10 py-10">
-            <h1 className="text-[#313036] font-['CanelaDeck-Light'] text-6xl">Hanumant Vihar</h1>
+            <h1 className="text-[#313036] font-['CanelaDeck-Light'] text-6xl">Hanumat Vihar</h1>
             <p className="text-[#313036] my-10 font-['poppins'] text-gray-600">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<Link href='/ourprojects' className="text-[#313036] mx-1">Read More <FontAwesomeIcon  icon={faArrowRight} /></Link></p>
           </div>
         </div>
