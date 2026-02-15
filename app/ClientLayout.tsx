@@ -6,6 +6,11 @@ const Navbar = dynamic(() => import('./Component/Nevbar.jsx'), {
   ssr: false,
 });
 
+
+const IntroVideo = dynamic(() => import('./Component/IntroVideo.jsx'),{
+  ssr: false
+})
+
 const Footer = dynamic(() => import('./Component/Footer.jsx'), {
   ssr: false,
 });
@@ -29,6 +34,7 @@ export default function ClientLayout({
 }) {
   return (
     <>
+    <IntroVideo />
       <Navbar />
       {children}
       <Fixedicons />

@@ -1,7 +1,6 @@
 'use client'
 import Image from "next/image";
 import virndavan from "@/Images/abhinandan-lodha-vrindavan-plots-v0-pu57jype7rfe1.webp";
-
 import aboutTemImage from "@/Images/shridivineabout.jpg";
 import AOS  from 'aos';
 import { useEffect } from "react";
@@ -39,8 +38,10 @@ export default function Home() {
     loop
     playsInline
     className="absolute inset-0 w-full h-full object-cover"
+    preload="metaadd"
+    poster="https://cdn.brandsdoor.in/indiadealss/banner-thumb.jpg"
   >
-    <source src="https://cdn.brandsdoor.in/indiadealss/indiadealss/1770969328936-indiadeals-group-home-banner.mp4" type="video/mp4" />
+    <source src="https://cdn.brandsdoor.in/indiadealss/indiadealss/1771136869498-indiadeals-group-home-banners.mp4" type="video/mp4" />
   </video>
 
         {/* Overlay (optional but recommended) */}
