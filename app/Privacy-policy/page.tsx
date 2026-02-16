@@ -37,35 +37,14 @@ const Privacypolicy = () => {
                                 <span className='ps-2 mt-5'> We may collect various categories of information:</span>
                                 <br />
                                 <br />
-                                <span className='font-medium'>A. Personal Information</span>
-                                <br />
-                                <ul className="mt-2 ms-3 list-disc pl-5 text-sm leading-7">
-                                    <li>
-                                        Full name
-                                    </li>
-                                    <li>
-                                        Mobile number
-                                    </li>
-                                    <li>
-                                        Email address
-                                    </li>
-                                    <li>
-                                        Residential address
-                                    </li>
-                                    <li>
-                                        Identity details (PAN, Aadhaar, if required for verification or KYC)
-                                    </li>
-                                    <li>
-                                        Property preferences or buying requirements
-                                    </li>
-                                </ul>
+                                
 
                             </span>
                             <br />
                             <br />
                             <span>
 
-                                <span className='font-medium'>B. Transaction & Service Information</span>
+                                <span className='font-medium'>A. Transaction & Service Information</span>
                                 <br />
                                 <ul className="mt-2 ms-3 list-disc pl-5 text-sm leading-7">
                                     <li>
@@ -88,7 +67,7 @@ const Privacypolicy = () => {
                             <br />
                             <span>
 
-                                <span className='font-medium'>C. Technical/Automatic Data</span>
+                                <span className='font-medium'>B. Technical/Automatic Data</span>
                                 <br />
                                 <ul className="mt-2 ms-3 list-disc pl-5 text-sm leading-7">
                                     <li>
@@ -108,7 +87,7 @@ const Privacypolicy = () => {
                             <br />
                             <span>
 
-                                <span className='font-medium'>D. Voluntary Information</span>
+                                <span className='font-medium'>C. Voluntary Information</span>
                                 <br />
                                 <ul className="mt-2 ms-3 list-disc pl-5 text-sm leading-7">
                                     <li>
@@ -421,7 +400,7 @@ const Privacypolicy = () => {
                                 +91 9818763100
                             </li>
                             <li>
-                               UNIT No: 320, TOWER C, GOLDEN I, TECHZONE 4, Grater Noida, 201009 
+                               Registered Office: C-320, TOWER C, GOLDEN I, TECHZONE 4, Grater Noida, 201009 
                             </li>
                         </ul>
                        </div>

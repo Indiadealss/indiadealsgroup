@@ -26,10 +26,6 @@ const Navbar = () => {
       link:'/ourprojects'
     },
     {
-      label:'Media',
-      link: '/media'
-    },
-    {
       label:'Contact us',
       link:'/contact-us'
     },

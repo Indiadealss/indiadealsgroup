@@ -80,7 +80,9 @@ export default function Home() {
           />
           <div className="px-0 lg:px-10 py-10">
             <h1 className="text-[#313036] font-['CanelaDeck-Light'] text-6xl">Hanumat Vihar</h1>
-            <p className="text-[#313036] my-10 font-['poppins'] text-gray-600">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<Link href='/ourprojects' className="text-[#313036] mx-1">Read More <FontAwesomeIcon  icon={faArrowRight} /></Link></p>
+            <p className="text-[#313036] my-10 font-['poppins'] text-gray-600">
+              Hanumat Vihar is a benchmark in quality for investors searching for MVDA-approved plots in Vrindavan or investigating the MVDA new housing scheme in Vrindavan. Private townships such as Hanumat Vihar offer ready-to-move-in plots in Vrindavan for sale with immediate possession and registry, avoiding the lengthy waiting periods typically associated with government lotteries, while the authority opens windows for Vrindavan Awas Yojana application online.
+              <br /><Link href='/Hanumat-vihar' className="text-[#313036] hover:text-blue-500 mx-1">Read More <FontAwesomeIcon  icon={faArrowRight} /></Link></p>
           </div>
         </div>
       </section>

@@ -11,7 +11,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 
 
-export default function Home() {
+export default function page() {
 
   useEffect(() => {
     AOS.init({
@@ -57,7 +57,7 @@ export default function Home() {
               <p className="text-[#313036] my-10 font-['poppins'] text-gray-600 text-justify whitespace-pre-line">
                 Hanumant Vihar Vrindavan:<br />
                 Vrindavan has developed into a thriving residential area and is no longer merely a place for pilgrims to spend a weekend. Located in the quiet yet conveniently accessible Raal Road neighborhood, Hanumat Vihar Awas Yojna (also called Hanumant Vihar Mathura) is a carefully designed residential development. The low-density, gated community experience that this project offers is carefully planned to emphasize privacy, security, and spiritual well-being.
-                Connectivity & Strategic Location.<br/><Link href='/Hanumat-vihar' className="text-[#313036] font-bold hover:text-blue-600 mx-1"> Read More <FontAwesomeIcon  icon={faArrowRight} /></Link>
+                Connectivity & Strategic Location.<br/><Link href='/ourprojects' className="text-[#313036] font-bold hover:text-blue-600 mx-1"> Read More <FontAwesomeIcon  icon={faArrowRight} /></Link>
                 <br />
               </p>
             </div>
