@@ -49,13 +49,13 @@ export default function Home() {
 
         {/* Text Content */}
         <div className="relative z-10 flex justify-center items-start top-40 pt-[35vw] md:pt-25 lg:pt-5 lg:pt-4">
-          <div className="bg-[#f3f39b54] mx-[10%] p-4">
+          {/* <div className="bg-[#f3f39b54] mx-[10%] p-4">
             <h1 className="text-[#f1e6c8] text-2xl md:text-4xl lg:text-6xl text-center font-[CanelaDeck-Light] leading-tight">
               RESIDENTIAL PLOT TOWNSHIP,
               <br />
               Where Luxury Meets Devotion
             </h1>
-          </div>
+          </div> */}
         </div>
       </div>
       
