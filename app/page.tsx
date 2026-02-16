@@ -9,6 +9,7 @@ import Ongoingprojectslider from "./Ongoingprojectslider";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
+import Customcomponent from "./Customcomponent/Customcomponent";
 
 export default function Home() {
 
@@ -86,6 +87,11 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+
+      {/* contact */}
+
+      <Customcomponent />
 
 
       
