@@ -40,7 +40,7 @@ const Footer = () => {
         <div className="text- ">
           <h1 className="text-[#f1e6c8]  py-2">Registered office</h1>
           <p className="text-[#f1e6c8] text-sm uppercase tracking-wider">
-           <FontAwesomeIcon icon={faBuilding} className='mr-2' /> 320, 3rd Floor, Block C, Golden I, Techzone 4, Greater Noida West,Uttar Pradesh, 201306
+           <FontAwesomeIcon icon={faBuilding} className='mr-2' />C-320, 3rd Floor, Block C, Golden I, Techzone 4, Greater Noida West,Uttar Pradesh, 201306
           </p>
           <p className="text-[#f1e6c8] py-2">
             <FontAwesomeIcon icon={faPhone} className="mr-2" />
@@ -57,9 +57,7 @@ const Footer = () => {
       <div className="py-8 px-6 sm:px-10 lg:px-[22vw] ">
         <h1 className="text-[#f1e6c8] mb-2 text-center">DISCLAIMER</h1>
 
-        <p className="text-[#f1e6c8] text-xs mb-2">
-         I am giving IndiaDeals Group and Company representatives permission to get in touch with me. They can call me. Send me a message on my phone or by email or WhatsApp. I want to know more about the properties and the services they offer. I also want to know about any deals they have. What is going on with my transactions. I know that by saying this I am allowing them to contact me even if I am on a list that says I do not want to get these kinds of messages. This is okay, with me long as it is allowed by the law that applies to this situation.
-        </p>
+        
 
         <p className="text-[#f1e6c8] text-xs mb-2">
         </p>
