@@ -381,7 +381,7 @@ const Privacypolicy = () => {
                     {/* 11 point */}
                     <br />
                     <br />
-                    <div>
+                    {/* <div>
                         <br />
                         <span className='text-lg font-medium'>11. Contact Us</span>
                        <div className='ms-4'>
@@ -404,7 +404,7 @@ const Privacypolicy = () => {
                             </li>
                         </ul>
                        </div>
-                    </div>
+                    </div> */}
                 </div>
 
                 

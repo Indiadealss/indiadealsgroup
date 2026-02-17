@@ -31,47 +31,16 @@ const Footer = () => {
         </div>
 
         {/* IMPORTANT LINKS */}
-        <div className="mx-auto hidden lg:block lg:text-left">
-          <h1 className="text-[#f1e6c8] py-2">IMPORTANT LINKS</h1>
-          <ul className="text-[#f1e6c8] list-disc list-inside space-y-2">
-            <li>Blogs</li>
-            <li><Link href='/contact-us'>Contact us</Link></li>
-            <li><Link href='/Privacy-policy'>Privacy & Policy</Link></li>
-            <li><Link href='/Terms&Conditions'>Terms & conditions</Link></li>
-          </ul>
-        </div>
+        
 
         {/* LATEST PROJECT */}
-        <div className="text-center lg:text-left w-auto lg:w-[20vw]">
-          <h1 className="text-[#f1e6c8] py-2">Latest Projects</h1>
-
-          <div className="flex flex-col sm:flex-row items-center gap-4">
-            <div className="rounded-full bg-white p-2">
-              <Link href="/">
-                <Image
-                  src={logo}
-                  alt="Project"
-                  width={50}
-                  className="rounded-full"
-                />
-              </Link>
-            </div>
-
-            <div>
-              <p className="text-[#f1e6c8] text-sm">
-                <FontAwesomeIcon icon={faClock} className="mr-2" />
-                Hanumat Vihar
-              </p>
-            </div>
-          </div>
-        </div>
+       
 
         {/* CONTACT */}
-        <div className="text-center lg:text-left w-auto lg:w-[20vw]">
-          <h1 className="text-[#f1e6c8] py-2">CONTACT</h1>
+        <div className="text- w-auto">
+          <h1 className="text-[#f1e6c8]  py-2">Registered office</h1>
           <p className="text-[#f1e6c8] text-sm uppercase tracking-wider">
-           <FontAwesomeIcon icon={faBuilding} className='mr-2' /> C-320, 3rd Floor, Block C, Golden I, Techzone 4,
-            Greater Noida West, 201304
+           <FontAwesomeIcon icon={faBuilding} className='mr-2' /> 320, 3rd Floor, Block C, Golden I, Techzone 4, Greater Noida West,Uttar Pradesh, 201306
           </p>
           <p className="text-[#f1e6c8] py-2">
             <FontAwesomeIcon icon={faPhone} className="mr-2" />
@@ -89,17 +58,14 @@ const Footer = () => {
         <h1 className="text-[#f1e6c8] mb-2 text-center">DISCLAIMER</h1>
 
         <p className="text-[#f1e6c8] text-xs mb-2">
-          The Pictures and details are tentative depictions only. This is not a legal offer.
-          Mentioned features are indicative and subject to change without notice.
+         I am giving IndiaDeals Group and Company representatives permission to get in touch with me. They can call me. Send me a message on my phone or by email or WhatsApp. I want to know more about the properties and the services they offer. I also want to know about any deals they have. What is going on with my transactions. I know that by saying this I am allowing them to contact me even if I am on a list that says I do not want to get these kinds of messages. This is okay, with me long as it is allowed by the law that applies to this situation.
         </p>
 
         <p className="text-[#f1e6c8] text-xs mb-2">
-          Terms and Conditions Apply. 1 Sq Mtr = 10.764 Sq Ft & 1 Sq Yd = 0.83 Sq Mtr.
         </p>
 
         <p className="text-[#f1e6c8] text-xs">
-          <FontAwesomeIcon icon={faCopyright} /> Copyright INDIADEALS.
-          Design & Development by INDIADEALS GROUP
+          <FontAwesomeIcon icon={faCopyright} /> Copyright © IndiaDeals Group. All rights reserved. The content, design, layout, graphics, branding, and materials on this website are the intellectual property of IndiaDeals Group and may not be reproduced, distributed, or used without prior written permission. Website design, development, and maintenance by IndiaDeals Group.
         </p>
       </div>
     </div>
