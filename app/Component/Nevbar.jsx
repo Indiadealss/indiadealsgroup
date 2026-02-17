@@ -76,7 +76,7 @@ const Navbar = () => {
         {/* Mobile buttons */}
         <div className="lg:hidden flex justify-between  gap-3">
           <a
-            href="tel:+918920000832"
+            href="tel:+919818763100"
             className="bg-[#d2b02d] text-white p-2 rounded"
           >
             <Phone size={18} />
