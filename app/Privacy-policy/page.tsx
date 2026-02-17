@@ -17,11 +17,11 @@ const Privacypolicy = () => {
                     <h2><span>Privacy Policy</span></h2>
                     <p className='mt-5' style={{ lineHeight: '1.2', fontWeight: '400' }}>
                         <span className='text-sm' style={{ fontWeight: '400', lineHeight: '0' }}>
-                            INDIADEALSGROUP (“Company”, “we”, “our”, “us”) is committed to safeguarding your personal information and ensuring transparency in how your data is collected, used, and protected. This Privacy Policy explains our practices when you visit our website, engage with our real-estate services, submit enquiries, or interact with our sales team.
+                            At IndiaDeals Group we really care about keeping your information safe and private. This is our Privacy Policy, which explains how we collect, use and protect your information when you use our website or services.
                             <br />
                             <br />
                             <span>
-                                By accessing or using our services, you acknowledge and agree to the terms described in this Privacy Policy.
+                                When you visit our website or use our services you are agreeing to the terms of this Privacy Policy.   
                             </span>
                             <br />
                             <br />
@@ -31,10 +31,10 @@ const Privacypolicy = () => {
 
                     {/* 1 point */}
                     <div>
-                        <span className='text-lg font-medium'>1. Information We Collect</span>
+                        <span className="text-[#313036] font-['CanelaDeck-Light'] text-2xl font-medium">1. What Information We Collect</span>
                         <div className='ms-2'>
-                            <span className=''>
-                                <span className='ps-2 mt-5'> We may collect various categories of information:</span>
+                            <span className='mt-2'>
+                                <span className='ps-2 mt-5 pt-5'>We might collect a few types of information from you including:</span>
                                 <br />
                                 <br />
                                 

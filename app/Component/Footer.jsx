@@ -13,10 +13,10 @@ const Footer = () => {
     <div className="bg-[#313036]">
       {/* TOP SECTION */}
       <div className="
-  grid 
-  grid-cols-1 
-  sm:grid-cols-2 
-  lg:grid-cols-2 
+      flex
+      justify-between
+      flex-cols
+      md:flex-row
   gap-10 
   py-10 
   px-6 sm:px-10 lg:px-24 
@@ -37,7 +37,7 @@ const Footer = () => {
        
 
         {/* CONTACT */}
-        <div className="text- ">
+        <div className="w-[35%]">
           <h1 className="text-[#f1e6c8]  py-2">Registered office</h1>
           <p className="text-[#f1e6c8] text-sm uppercase tracking-wider">
            <FontAwesomeIcon icon={faBuilding} className='mr-2' />C-320, 3rd Floor, Block C, Golden I, Techzone 4, Greater Noida West,Uttar Pradesh, 201306

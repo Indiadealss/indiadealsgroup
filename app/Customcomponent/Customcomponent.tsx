@@ -76,7 +76,7 @@ const Customcomponent = () => {
 
       {/* CONTENT */}
       <div className="m-0 lg:m-20 lg:me-10">
-        <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-10">
+        <div className="max-w-3xl mx-auto px-4 grid md:grid-cols-1 gap-10">
 
           {/* FORM */}
           <div className="bg-white p-8 rounded-lg shadow">
@@ -151,7 +151,7 @@ const Customcomponent = () => {
           </div>
 
           {/* CONTACT INFO */}
-          <div className="space-y-6 mt-10">
+          {/* <div className="space-y-6 mt-10">
             {contactdetails.map((item, i) => (
               <div key={i} className="flex gap-6 items-start my-10">
                 <div className="w-16 h-10 bg-gray-800 rounded-full flex items-center justify-center">
@@ -165,7 +165,7 @@ const Customcomponent = () => {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
 
         </div>
       </div>
