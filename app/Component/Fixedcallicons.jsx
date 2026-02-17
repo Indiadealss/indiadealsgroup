@@ -12,7 +12,7 @@ const Fixedcallicons = () => {
         <div className="w-7 mx-auto pt-5 opacity-85">
             <a
             href="tel:+919818763100"
-            className="bg-[#d2b02d] text-white p-2 rounded"
+            className="p-2 rounded"
           ><FontAwesomeIcon icon={faPhone} className=' text-[#f3e6c6] opacity-85 text-2xl' /></a>
       </div>
     </div>

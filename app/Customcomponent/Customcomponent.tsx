@@ -62,12 +62,12 @@ const Customcomponent = () => {
     {
       icon: <FontAwesomeIcon icon={faPhone} className="text-white text-lg" />,
       title: "BEST – INDIADEALS Experience Satisfaction Team",
-      desc: "Customer Care: +91–9818763100\n7 Days | 8:00 AM – 8:00 PM",
+      desc: "customer Care: +91–9818763100\n7 Days | 8:00 AM – 8:00 PM",
     },
     {
       icon: <FontAwesomeIcon icon={faEnvelope} className="text-white text-lg" />,
       title: "EMAIL US",
-      desc: "costumercare@indiadealsgroup.com",
+      desc: "customercare@indiadealsgroup.com",
     },
   ];
   return (

@@ -25,6 +25,10 @@ const Navbar = () => {
       label:'Our Projects',
       link:'/ourprojects'
     },
+     {
+      label:'Privacy & Policy',
+      link:'/Privacy-policy'
+    },
     {
       label:'Contact us',
       link:'/contact-us'
