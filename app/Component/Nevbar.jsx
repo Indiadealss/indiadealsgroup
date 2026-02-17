@@ -108,7 +108,7 @@ const Navbar = () => {
 
           <div className="px-4 py-3 text-sm">
             <a
-              href="tel:+918920000832"
+              href="tel:+919818763100"
               className="block text-center bg-pink-700 text-white py-2 rounded"
             >
               Call +91-9818763100

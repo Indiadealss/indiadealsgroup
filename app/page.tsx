@@ -83,7 +83,7 @@ export default function Home() {
             <h1 className="text-[#313036] font-['CanelaDeck-Light'] text-6xl">Hanumat Vihar</h1>
             <p className="text-[#313036] my-10 font-['poppins'] text-gray-600">
               Hanumat Vihar is a benchmark in quality for investors searching for MVDA-approved plots in Vrindavan or investigating the MVDA new housing scheme in Vrindavan. Private townships such as Hanumat Vihar offer ready-to-move-in plots in Vrindavan for sale with immediate possession and registry, avoiding the lengthy waiting periods typically associated with government lotteries, while the authority opens windows for Vrindavan Awas Yojana application online.
-              <br /><Link href='/Hanumat-vihar' className="text-[#313036] hover:text-blue-500 mx-1">Read More <FontAwesomeIcon  icon={faArrowRight} /></Link></p>
+              <br /><Link href='/hanumat-vihar' className="text-[#313036] hover:text-blue-500 mx-1">Read More <FontAwesomeIcon  icon={faArrowRight} /></Link></p>
           </div>
         </div>
       </section>

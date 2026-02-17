@@ -8,6 +8,7 @@ import { useEffect } from "react";
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import banner from "@/Images/hanumat-vihar.jpeg"
 import Customcomponent from "../Customcomponent/Customcomponent";
 
 
@@ -24,15 +25,7 @@ export default function page() {
   return (
     <div className="min-h-screen">
       <div className="">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className=" inset-0 w-full h-[30vw] object-cover"
-        >
-          <source src="https://cdn.brandsdoor.in/indiadealss/indiadealss/1771137358731-ourproject.mp4" type="video/mp4" />
-        </video>
+        <Image src={banner} alt="..." />
 
       </div>
 
