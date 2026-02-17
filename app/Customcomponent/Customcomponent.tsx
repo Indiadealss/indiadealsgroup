@@ -80,10 +80,9 @@ const Customcomponent = () => {
 
           {/* FORM */}
           <div className="bg-white p-8 rounded-lg shadow">
-            <h2 className="text-xl font-semibold mb-2">GET IN TOUCH WITH US !</h2>
+            <h2 className="text-xl font-semibold mb-6">GET IN TOUCH WITH US !</h2>
             <p className="text-gray-500 text-sm mb-6">
-              We have multiple offices to serve you better. Please find the details
-              and addresses of our locations below.
+             Please take a moment to fill out the enquiry form. This will help us understand what you are looking for. We want to give you the help possible. The information you give us will help our team show you the property options and services that're best for you. We will make sure these options are what you need. Our team will use the information from the enquiry form to guide you with the suitable property options and services and also some special offers that are just, for you.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -136,8 +135,7 @@ const Customcomponent = () => {
               <div className="md:col-span-2 flex items-start gap-2 text-sm text-gray-600">
                 <input type="checkbox" className="mt-1" />
                 <p>
-                  I authorise INDIADEALS and associate companies & its
-                  representatives to contact me via Email/SMS/WhatsApp/Call.
+                  I am giving IndiaDeals Group and its people permission to get in touch with me. They can call me. Send me messages on my phone or by email or WhatsApp. I want them to tell me about properties and any special offers they have.I am fine, with IndiaDeals Group contacting me about IndiaDeals Group properties.
                 </p>
               </div>
 
