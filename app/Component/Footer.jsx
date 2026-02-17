@@ -37,7 +37,7 @@ const Footer = () => {
        
 
         {/* CONTACT */}
-        <div className="text- w-auto">
+        <div className="text- w-[30vw]">
           <h1 className="text-[#f1e6c8]  py-2">Registered office</h1>
           <p className="text-[#f1e6c8] text-sm uppercase tracking-wider">
            <FontAwesomeIcon icon={faBuilding} className='mr-2' /> 320, 3rd Floor, Block C, Golden I, Techzone 4, Greater Noida West,Uttar Pradesh, 201306
@@ -65,7 +65,7 @@ const Footer = () => {
         </p>
 
         <p className="text-[#f1e6c8] text-xs">
-          <FontAwesomeIcon icon={faCopyright} /> Copyright © IndiaDeals Group. All rights reserved. The content, design, layout, graphics, branding, and materials on this website are the intellectual property of IndiaDeals Group and may not be reproduced, distributed, or used without prior written permission. Website design, development, and maintenance by IndiaDeals Group.
+          <FontAwesomeIcon icon={faCopyright} /> Copyright © IndiaDeals Group. All rights reserved. All content, trademarks, logos, text, graphics, images, design elements, source code, and materials displayed on this website are the exclusive intellectual property of IndiaDeals Group and are protected under applicable copyright, trademark, and intellectual property laws. Unauthorized copying, reproduction, modification, distribution, republication, display, or transmission of any material from this website, in whole or in part, is strictly prohibited without prior written consent from IndiaDeals Group. Website design, development, and maintenance are owned and controlled by IndiaDeals Group. Any violation may result in legal action under applicable laws.
         </p>
       </div>
     </div>
