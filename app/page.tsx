@@ -61,13 +61,13 @@ export default function Home() {
       </div>
       
       {/* gallery */}
-      <section className="py-5 px-20">
+      {/* <section className="py-5 px-20">
         <Gallery />
       </section>
 
        <section className="py-5 px-20">
         <Ongoingprojectslider />
-      </section>
+      </section> */}
 
       {/* ABOUT SECTION */}
       <section className="pt-20 pb-10 px-2 lg:px-20" data-aos="fade-up">

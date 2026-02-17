@@ -16,7 +16,7 @@ const Footer = () => {
   grid 
   grid-cols-1 
   sm:grid-cols-2 
-  lg:grid-cols-4 
+  lg:grid-cols-2 
   gap-10 
   py-10 
   px-6 sm:px-10 lg:px-24 
@@ -37,7 +37,7 @@ const Footer = () => {
        
 
         {/* CONTACT */}
-        <div className="text- w-[30vw]">
+        <div className="text- ">
           <h1 className="text-[#f1e6c8]  py-2">Registered office</h1>
           <p className="text-[#f1e6c8] text-sm uppercase tracking-wider">
            <FontAwesomeIcon icon={faBuilding} className='mr-2' /> 320, 3rd Floor, Block C, Golden I, Techzone 4, Greater Noida West,Uttar Pradesh, 201306
