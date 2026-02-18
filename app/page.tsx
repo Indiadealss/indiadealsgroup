@@ -129,8 +129,8 @@ export default function Home() {
 
       {/* project content */}
          {/* gallery */}
-       <section className="py-5 px-20">
-        <Gallery cardWidth="450px" cardHeight="300px" />
+       <section className="py-5 px-5 md:px-20">
+        <Gallery cardWidth="450px" cardHeight="400px" />
       </section>
 
 

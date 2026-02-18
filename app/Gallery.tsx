@@ -2,8 +2,6 @@
 
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
-
-import vird from '@/Images/twelve12.png';
 import premTemple from '@/Images/one1.png';
 import temple from '@/Images/thirteen13.png';
 import temple2 from '@/Images/forteen14.png';
@@ -12,9 +10,6 @@ import temple6 from '@/Images/four4.png';
 import temple7 from '@/Images/five5.png';
 import temple8 from '@/Images/six6.png';
 import temple10 from '@/Images/eight8.png';
-import temple11 from '@/Images/nine9.png';
-import temple12 from '@/Images/ten10.png';
-import temple13 from '@/Images/elven11.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleLeft, faAngleRight, faGreaterThan } from '@fortawesome/free-solid-svg-icons';
 
@@ -32,21 +27,14 @@ export default function Gallery({
   const [pause, setPause] = useState(false);
 
   const projects = [
-    { name: 'Bhutani Astrathum', logo: vird },
     { name: 'Ace 153', logo: premTemple },
     { name: 'Golden I', logo: temple },
     { name: 'Experion Saatori', logo: temple2 },
     { name: 'Bhutani Cyberthum', logo: temple3 },
-    { name: 'Bhutani Alphathum', logo: temple },
-    { name: 'Bhutani Astrathum', logo: temple },
     { name: 'Ace 153', logo: temple6 },
     { name: 'Golden I', logo: temple7 },
     { name: 'Experion Saatori', logo: temple8 },
     { name: 'Bhutani Cyberthum', logo: temple10 },
-    { name: 'Bhutani Cyberthum', logo: temple11 },
-    { name: 'Bhutani Cyberthum', logo: temple12 },
-    { name: 'Bhutani Cyberthum', logo: temple13 },
-    { name: 'Bhutani Alphathum', logo: vird },
   ];
 
   const items = [...projects, ...projects];
