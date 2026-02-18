@@ -49,7 +49,6 @@ export default function Home() {
       });
 
       if (res.ok) {
-        message.success("Message sent successfully");
         setName("");
         setEmail("");
         setPhone("");
@@ -63,7 +62,7 @@ export default function Home() {
     document.body.removeChild(link);
 
     setOpen(false);
-    message.success("Thank You Our Team will connect you soon");
+    message.success("Thank you for contacting us. Indiadeals team connect with you as soon as possible");
       } else {
         message.error("Something went wrong");
       }

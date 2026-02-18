@@ -37,7 +37,7 @@ const Customcomponent = () => {
       });
 
       if (res.ok) {
-        message.success("Message sent successfully");
+        message.success("Thank you for contacting us. Indiadeals team connect with you as soon as possible");
         setName("");
         setEmail("");
         setPhone("");
