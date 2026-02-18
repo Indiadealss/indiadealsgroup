@@ -4,7 +4,12 @@ import "./globals.css";
 import 'aos/dist/aos.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import ClientLayout from "./ClientLayout";
+import ClientLayout from "./ClientLayout";import { Playwrite_NZ } from 'next/font/google'
+
+const playwrite = Playwrite_NZ({
+  subsets: ['latin'],
+  weight: ['400'],
+})
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -39,7 +44,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${playwrite.className} antialiased`}>
         <ClientLayout>{children}</ClientLayout>
       </body>
     </html>

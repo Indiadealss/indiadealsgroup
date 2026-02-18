@@ -30,10 +30,10 @@ export default function Home() {
         <div className="lg:flex  mx-10">
           
           <div className="px-0 lg:px-10 ps-0">
-            <h1 className="text-[#313036] font-['CanelaDeck-Light'] text-4xl lg:text-6xl">About IndiaDeals Group</h1>
-            <p className="text-[#313036] my-10 font-['poppins'] text-gray-600">
+            <h1 className="text-[#313036]   text-4xl lg:text-6xl">About IndiaDeals Group</h1>
+            <p className="text-[#313036] my-10   text-gray-600">
              
-              <p className="text-[#313036] font-['poppins'] text-gray-600 leading-6 text-justify">
+              <p className="text-[#313036]   text-gray-600 leading-6 text-justify">
               IndiaDeals Group is a name that people trust in the real estate business. We have been working in the Delhi NCR market since 2017. Our goal is to make sure that people can buy and sell properties in an honest way. We want to help people find properties to buy.  
                 We started IndiaDeals Group to make it easy for people to buy and sell properties. We wanted to make sure that people can trust us. Over time we have helped many people find properties. We are happy that our clients like us. Come back to us for help.
                 <br />
@@ -53,7 +53,7 @@ export default function Home() {
       {/*  */}
       <section className=" px-2 lg:px-20">
       <div className="px-4 lg:px-20">
-        <h1><span className="text-[#313036] font-['CanelaDeck-Light'] text-2xl font-medium']">Since 2017 we have been successful because of these things:</span></h1>
+        <h1><span className="text-[#313036]   text-2xl font-medium']">Since 2017 we have been successful because of these things:</span></h1>
         <ul className="list-disc space-y-3 text-gray-600 font-[poppins]  ms-10 my-5">
           <li>We are honest and fair in our business.</li>
           <li>We sell properties that will be worth more money</li>

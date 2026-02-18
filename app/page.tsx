@@ -102,7 +102,7 @@ export default function Home() {
 
       {/* Title */}
 
-        <h1 className="text-[#313036] font-['CanelaDeck-Light'] font-bold text-4xl text-center mt-10 uppercase">INDIADEALS GROUP<br /> Trusted Real Estate Developer</h1>
+        <h1 className="text-[#313036]   font-bold text-4xl text-center mt-10 uppercase">INDIADEALS GROUP<br /> Trusted Real Estate Developer</h1>
 
 
       {/* ABOUT SECTION */}
@@ -116,8 +116,8 @@ export default function Home() {
             className="  h-auto rounded border-4 border-[#313036]"
           />
           <div className="px-0 lg:px-10">
-            {/* <h1 className="text-[#313036] font-['CanelaDeck-Light'] font-bold text-4xl"><span className="text-2xl font-medium font-normal">Radha Kund – Ral Road, Vrindavan</span> <br /><span className="text-2xl font-medium font-normal">RERA Approved Residential Township</span></h1> */}
-            <p className="text-[#313036] my-10 font-['poppins'] text-gray-600 text-justify">
+            {/* <h1 className="text-[#313036]   font-bold text-4xl"><span className="text-2xl font-medium font-normal">Radha Kund – Ral Road, Vrindavan</span> <br /><span className="text-2xl font-medium font-normal">RERA Approved Residential Township</span></h1> */}
+            <p className="text-[#313036] my-10   text-gray-600 text-justify">
              IndiaDeals Group is a name that people trust in the real estate business. We have been working in the Delhi NCR market since 2017. Our goal is to make sure that people can buy and sell properties in an honest way. We want to help people find properties to buy. We started IndiaDeals Group to make it easy for people to buy and sell properties. We wanted to make sure that people can trust us. Over time we have helped many people find properties. We are happy that our clients like us. Come back to us for help.
              <br /><br />
              We know a lot about the Delhi NCR real estate market. We can help people find residential plots, housing projects and other properties that will be worth more money in the future. At IndiaDeals Group we think that buying and selling properties is not about land. It is about making a good life for people. We make sure that every property we sell is good and will be worth money in the future. We are honest. Tell people everything they need to know. We want our clients to feel happy and safe when they work with us.

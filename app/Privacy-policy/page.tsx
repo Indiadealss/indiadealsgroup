@@ -30,7 +30,7 @@ const Privacypolicy = () => {
 
                     {/* 1 point */}
                     <div>
-                        <span className="text-[#313036] font-['CanelaDeck-Light'] text-2xl text-left font-medium">1. What Information We Collect</span>
+                        <span className="text-[#313036]   text-2xl text-left font-medium">1. What Information We Collect</span>
                         <div className='ms-2 text-justify'>
                             <span className='mt-2'>
                                 <br />
@@ -42,7 +42,7 @@ const Privacypolicy = () => {
                             <br />
                             <span>
 
-                                <span className="text-[#313036] font-['CanelaDeck-Light'] text-2xl text-left font-medium">A. Personal Information</span>
+                                <span className="text-[#313036]   text-2xl text-left font-medium">A. Personal Information</span>
                                 <br />
                                <div className='ms-4 mt-2 text-justify'>
                                 This is stuff like your name, phone number and email address. We might also ask for your home or business address and some identification details if we need them to complete a transaction. We could also collect information about your payments or transactions. Sometimes we need to see KYC documents.
@@ -53,7 +53,7 @@ const Privacypolicy = () => {
                             <br />
                             <span>
 
-                                <span className="text-[#313036] font-['CanelaDeck-Light'] text-2xl text-left font-medium">B. Business Information (for our Channel Partners)</span>
+                                <span className="text-[#313036]   text-2xl text-left font-medium">B. Business Information (for our Channel Partners)</span>
                                 <br />
                                 <div className='ms-4 mt-2 text-justify'>
                                     If you are one of our channel partners we might collect some information about your company like your company details and registration information. We could also ask for your banking and commission details well as your professional credentials and any contractual documentation.
@@ -64,7 +64,7 @@ const Privacypolicy = () => {
                             <br />
                             <span>
 
-                                <span className="text-[#313036] font-['CanelaDeck-Light'] text-2xl text-left font-medium">C. Website Usage Information</span>
+                                <span className="text-[#313036]   text-2xl text-left font-medium">C. Website Usage Information</span>
                                 <br />
                                <br />
                                <div className='ms-4 text-justify'>
@@ -78,7 +78,7 @@ const Privacypolicy = () => {
                     {/* 2 point */}
                     <br />
                     <div className='mt-5'>
-                        <span className="text-[#313036] font-['CanelaDeck-Light'] text-2xl text-left font-medium">2. Why We Collect Your Information</span>
+                        <span className="text-[#313036]   text-2xl text-left font-medium">2. Why We Collect Your Information</span>
                        <div className='ms-4 mt-5 text-justify'>
                                 We collect your information for a different reasons. We want to be able to respond to your questions and provide you with service. We need your information to process bookings and transactions and to keep track of our relationships with our clients and partners. We also use your information to communicate with you about our projects and to let you know about any offers we might have. We are always trying to improve our website and make it easier for people to use so we use your information to help us do that. Sometimes we have to share your information with people like the government to meet our legal obligations. We also use your information to help prevent fraud and make sure everyone is following the rules.
                            
@@ -91,7 +91,7 @@ const Privacypolicy = () => {
                     {/* 3 point */}
                     <br />
                     <div className='mt-5'>
-                        <span className="text-[#313036] font-['CanelaDeck-Light'] text-2xl font-medium">3. Who We Share Your Information With</span>
+                        <span className="text-[#313036]   text-2xl font-medium">3. Who We Share Your Information With</span>
                         <div className='ms-2'>
                             <span className=''>
                                 <br />
@@ -108,7 +108,7 @@ const Privacypolicy = () => {
                     {/* 4 point */}
                     <br />
                     <div>
-                        <span className="text-[#313036] font-['CanelaDeck-Light'] text-2xl font-medium">4. Keeping Your Information Safe</span>
+                        <span className="text-[#313036]   text-2xl font-medium">4. Keeping Your Information Safe</span>
                        <div className='ms-4 text-justify'>
                         <br />
                                 IndiaDeals Group is committed to protecting your information. We use technical and organizational safeguards to protect your data against unauthorized access, misuse, loss or alteration. While we try our best to protect your data no digital system can be guaranteed 100% secure. When you share your information with us you do so at your discretion.
@@ -121,7 +121,7 @@ const Privacypolicy = () => {
                     <br />
                     <div>
                         <br />
-                        <span className="text-[#313036] font-['CanelaDeck-Light'] text-2xl font-medium">5.How Long We Keep Your Information</span>
+                        <span className="text-[#313036]   text-2xl font-medium">5.How Long We Keep Your Information</span>
                        <div className='ms-4'>
                         <br />
                             <span className='text-justify'>
@@ -135,7 +135,7 @@ const Privacypolicy = () => {
                     <br />
                     <div>
                         <br />
-                        <span className="text-[#313036] font-['CanelaDeck-Light'] text-2xl font-medium">6. Cookies and Tracking</span>
+                        <span className="text-[#313036]   text-2xl font-medium">6. Cookies and Tracking</span>
                        <div className='ms-4 text-justify'>
                         <br />
                             <span>
@@ -148,7 +148,7 @@ const Privacypolicy = () => {
                     <br />
                     <div>
                         <br />
-                        <span className="text-[#313036] font-['CanelaDeck-Light'] text-2xl font-medium">7. Your Rights</span>
+                        <span className="text-[#313036]   text-2xl font-medium">7. Your Rights</span>
                         <br />
                         <br />
                        <div className='ms-4 text-justify'>
@@ -162,7 +162,7 @@ const Privacypolicy = () => {
                     <br />
                     <div>
                         <br />
-                        <span className="text-[#313036] font-['CanelaDeck-Light'] text-2xl font-medium">8. Confidentiality of Clients and Channel Partners</span>
+                        <span className="text-[#313036]   text-2xl font-medium">8. Confidentiality of Clients and Channel Partners</span>
                        <br />
                        <br />
                         <div className='ms-2 text-justify'>
@@ -174,7 +174,7 @@ const Privacypolicy = () => {
                     <br />
                     <br />
                     <div>
-                        <span className="text-[#313036] font-['CanelaDeck-Light'] text-2xl font-medium">9. Links to Other Websites</span>
+                        <span className="text-[#313036]   text-2xl font-medium">9. Links to Other Websites</span>
                         <br />
                         <br />
                        <div className='ms-4 text-justify'>
@@ -186,7 +186,7 @@ const Privacypolicy = () => {
                     <br />
                     <div>
                         <br />
-                        <span className="text-[#313036] font-['CanelaDeck-Light'] text-2xl font-medium">10. Changes, to This Policy</span>
+                        <span className="text-[#313036]   text-2xl font-medium">10. Changes, to This Policy</span>
                        <div className='ms-4 text-justify'>
                         <br />
                                We can update this Privacy Policy at any time. We do not have to let you know before we do. If you keep using our services after we have updated the policy it means you agree to the terms.

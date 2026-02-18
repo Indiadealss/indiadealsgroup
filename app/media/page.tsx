@@ -60,7 +60,7 @@ const page = () => {
 
             
             <div className="w-[100%] flex justify-between my-10">
-                <h1 className="mx-3 lg:mx-auto text-lg lg:text-4xl font-black font-['CanelaDeck-Light'] text-[#313036] cursor-pointer">AWARD | EVENTS | NEWS</h1>
+                <h1 className="mx-3 lg:mx-auto text-lg lg:text-4xl font-black   text-[#313036] cursor-pointer">AWARD | EVENTS | NEWS</h1>
             </div>
 
         <div className="mx-5 lg:mx-20 h-full grid grid-cols-1 sm:grid-cols-4 gap-8">

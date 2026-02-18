@@ -25,7 +25,7 @@ export default function Home() {
 
       {/* TITLE */}
       <div className="w-full flex justify-between mt-10">
-        <h1 className="mx-auto text-4xl font-black font-['CanelaDeck-Light'] text-[#313036]">
+        <h1 className="mx-auto text-4xl font-black   text-[#313036]">
           CONTACT US
         </h1>
       </div>
