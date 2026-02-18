@@ -24,14 +24,14 @@ export default function Home() {
 
 
       {/* ABOUT SECTION */}
-      <section className="mt-20 px-0 lg:px-20 text-justify" data-aos="fade-up">
+      <section className="mt-20 px-0 lg:px-20 " data-aos="fade-up">
         <div className="lg:flex  mx-10">
           
-          <div className="px-0 lg:px-10 ps-10">
-            <h1 className="text-[#313036] font-['CanelaDeck-Light'] text-6xl">About IndiaDeals Group</h1>
+          <div className="px-0 lg:px-10 ps-0">
+            <h1 className="text-[#313036] font-['CanelaDeck-Light'] text-4xl lg:text-6xl">About IndiaDeals Group</h1>
             <p className="text-[#313036] my-10 font-['poppins'] text-gray-600">
              
-              <p className="text-[#313036] font-['poppins'] text-gray-600 leading-6">
+              <p className="text-[#313036] font-['poppins'] text-gray-600 leading-6 text-justify">
               IndiaDeals Group is a name that people trust in the real estate business. We have been working in the Delhi NCR market since 2017. Our goal is to make sure that people can buy and sell properties in an honest way. We want to help people find properties to buy.  
                 We started IndiaDeals Group to make it easy for people to buy and sell properties. We wanted to make sure that people can trust us. Over time we have helped many people find properties. We are happy that our clients like us. Come back to us for help.
                 <br />

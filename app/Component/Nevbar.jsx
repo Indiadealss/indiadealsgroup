@@ -18,12 +18,12 @@ const Navbar = () => {
       link:'/about'
     },
     {
-      label:'Our team',
-      link:'/our-team'
-    },
-    {
       label:'Our Projects',
       link:'/ourprojects'
+    },
+    {
+      label:'Our team',
+      link:'/our-team'
     },
      {
       label:'Privacy & Policy',

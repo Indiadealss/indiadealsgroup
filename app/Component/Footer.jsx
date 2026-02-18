@@ -15,7 +15,7 @@ const Footer = () => {
       <div className="
       flex
       justify-between
-      flex-cols
+      flex-col
       md:flex-row
   gap-10 
   py-10 
@@ -24,9 +24,9 @@ const Footer = () => {
   border-[#d2b02d4d]
 ">
             {/* LOGO */}
-        <div className="flex justify-center lg:justify-start">
+        <div className="flex flex-col lg:flex-row lg:justify-center lg:justify-start">
           <Link href="/">
-            <Image src={logo} alt="Shri Divine Group" width={160}  priority />
+            <Image src={logo} alt="Shri Divine Group" className='mx-auto' width={160}  priority />
           </Link>
         </div>
 
@@ -37,7 +37,7 @@ const Footer = () => {
        
 
         {/* CONTACT */}
-        <div className="w-[35%]">
+        <div className="w-auto md:w-[35%]">
           <h1 className="text-[#f1e6c8]  py-2">Registered office</h1>
           <p className="text-[#f1e6c8] text-sm uppercase tracking-wider">
            <FontAwesomeIcon icon={faBuilding} className='mr-2' />C-320, 3rd Floor, Block C, Golden I, Techzone 4, Greater Noida West,Uttar Pradesh, 201306
