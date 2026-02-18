@@ -14,12 +14,18 @@ const Customcomponent = () => {
   const [city, setCity] = useState('');
   const [loading, setLoading] = useState(false);
   const [project,setProject] = useState('');
+  const [consent, setConsent] = useState(false);
 
   const submit = async () => {
     if (!name || !email || !phone || !project) {
       message.warning("Please fill required fields");
       return;
     }
+
+    if (!consent) {
+    message.warning("Please accept the consent before submitting");
+    return;
+  }
 
     try {
       setLoading(true);
@@ -133,7 +139,12 @@ const Customcomponent = () => {
               />
 
               <div className="md:col-span-2 flex items-start gap-2 text-sm text-gray-600">
-                <input type="checkbox" className="mt-1" />
+                <input
+  type="checkbox"
+  checked={consent}
+  onChange={(e) => setConsent(e.target.checked)}
+  className="mt-1"
+/>
                 <p>
                   I am giving consert to IndiaDeals Group and its people permission to get in touch with me. They can call me. Send me messages on my phone or by email or WhatsApp. I want them to tell me about properties and any special offers they have.I am fine, with IndiaDeals Group contacting me about IndiaDeals Group properties.
                 </p>

@@ -10,6 +10,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import Customcomponent from "./Customcomponent/Customcomponent";
+import Transparency from "@/Images/investigation.png";
+import Expertise from "@/Images/quality.png";
+import Reliablitly from "@/Images/life-insurance.png";
+import HighQuality from '@/Images/high-quality.png';
+import  TailorMadeApproach from '@/Images/Tailor-Made-Approach.png';
+import Technology from '@/Images/technology.png';
 
 
 
@@ -28,27 +34,33 @@ export default function Home() {
   const ourValues = [
     {
       label:'100% Transparency',
-      photo:''
+      photo:Transparency,
+      witdth:100
     },
     {
       label:'Expertise',
-      photo:''
+      photo:Expertise,
+      witdth:100
     },
     {
       label:'Reliablitly',
-      photo:''
+      photo:Reliablitly,
+      witdth:100
     },
     {
       label:'High Quality',
-      photo:''
+      photo:HighQuality,
+      witdth:100
     },
     {
       label:'Tailor-Made Approach',
-      photo:''
+      photo:TailorMadeApproach,
+      witdth:150
     },
     {
       label:'Technology Oriented',
-      photo:''
+      photo:Technology,
+      witdth:100
     }
   ]
   return (
@@ -143,6 +155,7 @@ export default function Home() {
           {ourValues.map((item,index) => (
             <div key={index} className="my-4">
               <h4 className="font-bold text-xl text-[#313036b0] text-center">{item.label}</h4>
+              <Image src={item.photo} alt="Aboutusbanner" width={item.witdth} height={100} className=" z-0 mx-auto mt-5" />
             </div>
           ))}
         </div>
