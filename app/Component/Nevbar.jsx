@@ -62,7 +62,7 @@ const Navbar = () => {
           {navItems.map((item) => (
             <Link href={item.link}  key={item.label}> <li
              
-              className="cursor-pointer hover:text-[#f1e6c8]  transition font-['sans-serif'] uppercase tracking-widest"
+              className="cursor-pointer hover:text-[#f1e6c8]  transition font-bold uppercase tracking-widest"
             >
               {item.label}
             </li></Link>

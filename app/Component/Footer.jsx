@@ -7,8 +7,35 @@ import { faCopyright, faClock } from '@fortawesome/free-regular-svg-icons';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faBuilding } from "@fortawesome/free-regular-svg-icons";
+import { faFacebookF, faInstagram, faLinkedinIn, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
+
+  const socialmedia = [
+    {
+      label:'Facebook',
+      icon:<FontAwesomeIcon icon={faFacebookF} className='text-blue-600' width={300} />,
+      link:'https://www.facebook.com/people/Indiadeals/61587222626520/',
+      name:'Indiadeals'
+    },
+    {
+      label:'Instagram',
+      icon:<FontAwesomeIcon icon={faInstagram}  className='text-pink-600' />,
+      link:'https://www.instagram.com/indiadeals_official?igsh=eGEwc2x0enJtaWk0',
+      name:'Indiadeals_official'
+    },{
+      label:'YouTube',
+      icon:<FontAwesomeIcon icon={faYoutube}  className='text-red-600' />,
+      link: 'https://www.youtube.com/@indiadealss',
+      name:'@indiadealss'
+    },
+    {
+      label:'Linkdin',
+      icon:<FontAwesomeIcon icon={faLinkedinIn} className='text-blue-700' />,
+      link:'https://www.linkedin.com/company/indiadeals-official/',
+      name:'Indiadeals-official'
+    }
+  ]
   return (
     <div className="bg-[#313036]">
       {/* TOP SECTION */}
@@ -33,12 +60,30 @@ const Footer = () => {
         {/* IMPORTANT LINKS */}
         
 
-        {/* LATEST PROJECT */}
+        {/* Follow US*/}
+
+        <div className='w-auro'>
+          <h1 className="text-[#f1e6c8] text-center mb-5 py-2 font-bold">Follow US</h1>
+          {/* <div className='flex justify-between'>
+            {socialmedia.map((item,index) => (
+              <div key={item.index} className='text-[#f1e6c8] text-sm mx-3 uppercase tracking-wider'>
+                <a href={item.link} target='_blank' className="text-xl  my-3 bg-text-[#f1e6c8] rounded-full p-2 cursor-pointer transition">{item.icon}</a>
+              </div>
+            ))}
+          </div> */}
+          <ul className=' space-y-1'>
+            {socialmedia.map((item,index) => (
+              <li key={item.index} className='text-[#f1e6c8] text-sm  tracking-wider'>
+                <a href={item.link} target='_blank' className="text-xl me-3 cursor-pointer transition">{item.icon}</a><a href={item.link} className="transition  cursor-pointer">{item.name}</a>
+              </li>
+            ))}
+          </ul>
+        </div>
        
 
         {/* CONTACT */}
         <div className="w-auto md:w-[35%]">
-          <h1 className="text-[#f1e6c8]  py-2">Registered office</h1>
+          <h1 className="text-[#f1e6c8]  py-2 font-bold">Registered office</h1>
           <p className="text-[#f1e6c8] text-sm uppercase tracking-wider">
            <FontAwesomeIcon icon={faBuilding} className='mr-2' />C-320, 3rd Floor, Block C, Golden I, Techzone 4, Greater Noida West,Uttar Pradesh, 201306
           </p>
