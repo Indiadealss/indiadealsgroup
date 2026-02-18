@@ -1,7 +1,7 @@
 import AboutClient from "./AboutClient";
 
 export const metadata = {
-  title: "About Us",
+  title: "About Us: INDIADEALS GROUP",
   description: "Learn more about Varnya Group real estate projects.",
 };
 

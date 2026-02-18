@@ -1,10 +1,11 @@
-import ContactClient from "./ContactClient";
+
+import Ourprojectsclent from "./OurprojectsClient";
 
 export const metadata = {
-  title: "Contact Us: INDIADEALS GROUP",
+  title: "Our Team: INDIADEALS GROUP",
   description: "Learn more about Varnya Group real estate projects.",
 };
 
 export default function AboutPage() {
-  return <ContactClient />;
+  return <Ourprojectsclent />;
 }
