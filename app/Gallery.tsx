@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 import vird from '@/Images/twelve12.png';
 import premTemple from '@/Images/one1.png';
-import temple from '@/Images/two2.png';
+import temple from '@/Images/thirteen13.png';
 import temple2 from '@/Images/forteen14.png';
 import temple3 from '@/Images/three3.png';
 import temple6 from '@/Images/four4.png';
