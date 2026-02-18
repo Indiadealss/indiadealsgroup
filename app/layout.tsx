@@ -7,8 +7,8 @@ import "slick-carousel/slick/slick-theme.css";
 import ClientLayout from "./ClientLayout";import { Playwrite_NZ } from 'next/font/google'
 
 const playwrite = Playwrite_NZ({
-  subsets: ['latin'],
   weight: ['400'],
+  // subsets: ['latin'],
 })
 
 const geistSans = Geist({
