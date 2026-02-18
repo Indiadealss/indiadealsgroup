@@ -39,6 +39,30 @@ export default function Gallery({
 
   const items = [...projects, ...projects];
 
+
+  useEffect(() => {
+    const container = scrollRef.current;
+    if (!container) return;
+
+    let animationFrame: number;
+
+    const autoScroll = () => {
+      if (!pause) {
+        container.scrollLeft += 0.5;
+
+        if (container.scrollLeft >= container.scrollWidth / 2) {
+          container.scrollLeft = 0;
+        }
+      }
+
+      animationFrame = requestAnimationFrame(autoScroll);
+    };
+
+    animationFrame = requestAnimationFrame(autoScroll);
+
+    return () => cancelAnimationFrame(animationFrame);
+  }, [pause]);
+
  
 
   // 🔥 Manual Scroll Functions
@@ -59,6 +83,8 @@ export default function Gallery({
 
       {/* 🔥 LEFT BUTTON */}
       <button
+      onMouseEnter={() => setPause(true)}
+        onMouseLeave={() => setPause(false)}
         onClick={scrollLeft}
         className="hover:cursor-pointer absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-white shadow-md rounded-full w-10 h-10 flex items-center justify-center hover:bg-gray-100 transition"
       >
@@ -67,6 +93,8 @@ export default function Gallery({
 
       {/* 🔥 RIGHT BUTTON */}
       <button
+      onMouseEnter={() => setPause(true)}
+        onMouseLeave={() => setPause(false)}
         onClick={scrollRight}
         className="hover:cursor-pointer absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-white shadow-md rounded-full w-10 h-10 flex items-center justify-center hover:bg-gray-100 transition"
       >
@@ -76,6 +104,7 @@ export default function Gallery({
       <div
         ref={scrollRef}
         onMouseEnter={() => setPause(true)}
+        onMouseLeave={() => setPause(false)}
         className="flex gap-4 px-12 overflow-x-auto scrollbar-hide"
       >
         {items.map((item, index) => (
