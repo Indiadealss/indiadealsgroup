@@ -11,7 +11,11 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import Customcomponent from "./Customcomponent/Customcomponent";
 
+
+
 export default function Home() {
+
+
 
   useEffect(() => {
     AOS.init({
@@ -20,6 +24,33 @@ export default function Home() {
       easing: 'ease-in-out',
     });
   }, []);
+
+  const ourValues = [
+    {
+      label:'100% Transparency',
+      photo:''
+    },
+    {
+      label:'Expertise',
+      photo:''
+    },
+    {
+      label:'Reliablitly',
+      photo:''
+    },
+    {
+      label:'High Quality',
+      photo:''
+    },
+    {
+      label:'Tailor-Made Approach',
+      photo:''
+    },
+    {
+      label:'Technology Oriented',
+      photo:''
+    }
+  ]
   return (
     <div className="min-h-screen ">
       
@@ -99,9 +130,22 @@ export default function Home() {
       {/* project content */}
          {/* gallery */}
        <section className="py-5 px-20">
-        <Gallery />
+        <Gallery cardWidth="450px" cardHeight="300px" />
       </section>
-    
+
+
+      {/* our values */}
+
+      <h1 className="text-2xl font-bold text-center text-[#313036]">OUR VALUES</h1>
+
+      <p className="border-b-2 w-20 mt-3 mx-auto"></p>
+        <div className="flex flex-col lg:flex-row justify-between mt-10 mx-10">
+          {ourValues.map((item,index) => (
+            <div key={index} className="my-4">
+              <h4 className="font-bold text-xl text-[#313036b0] text-center">{item.label}</h4>
+            </div>
+          ))}
+        </div>
 
 
       {/* contact */}

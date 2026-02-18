@@ -3,85 +3,104 @@
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 
-import vird from '@/Images/1.jpg';
-import premTemple from '@/Images/2.jpg';
-import temple from '@/Images/3.jpg';
-import temple2 from '@/Images/4.jpg';
-import temple3 from '@/Images/5.jpg';
-import temple6 from '@/Images/6.jpg';
-import temple7 from '@/Images/7.jpg';
-import temple8 from '@/Images/8.jpg';
-import temple9 from '@/Images/9.jpg';
+import vird from '@/Images/twelve12.png';
+import premTemple from '@/Images/one1.png';
+import temple from '@/Images/two2.png';
+import temple2 from '@/Images/forteen14.png';
+import temple3 from '@/Images/three3.png';
+import temple6 from '@/Images/four4.png';
+import temple7 from '@/Images/five5.png';
+import temple8 from '@/Images/six6.png';
+import temple10 from '@/Images/eight8.png';
+import temple11 from '@/Images/nine9.png';
+import temple12 from '@/Images/ten10.png';
+import temple13 from '@/Images/elven11.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleLeft, faAngleRight, faGreaterThan } from '@fortawesome/free-solid-svg-icons';
 
-const projects = [
-  { name: 'Bhutani Astrathum', logo: vird },
-  { name: 'Ace 153', logo: premTemple },
-  { name: 'Golden I', logo: temple },
-  { name: 'Experion Saatori', logo: temple2 },
-  { name: 'Bhutani Cyberthum', logo: temple3 },
-  { name: 'Bhutani Alphathum', logo: temple },
-  { name: 'Bhutani Astrathum', logo: temple },
-  { name: 'Ace 153', logo: temple6 },
-  { name: 'Golden I', logo: temple7 },
-  { name: 'Experion Saatori', logo: temple8 },
-  { name: 'Bhutani Cyberthum', logo: temple9 },
-  { name: 'Bhutani Alphathum', logo: vird },
-];
+interface GalleryProps {
+  cardWidth?: string;
+  cardHeight?: string;
+}
 
-export default function Gallery() {
+export default function Gallery({
+  cardWidth = "300px",
+  cardHeight = "250px"
+}: GalleryProps) {
+
   const scrollRef = useRef<HTMLDivElement | null>(null);
   const [pause, setPause] = useState(false);
 
-  // duplicate for seamless loop
+  const projects = [
+    { name: 'Bhutani Astrathum', logo: vird },
+    { name: 'Ace 153', logo: premTemple },
+    { name: 'Golden I', logo: temple },
+    { name: 'Experion Saatori', logo: temple2 },
+    { name: 'Bhutani Cyberthum', logo: temple3 },
+    { name: 'Bhutani Alphathum', logo: temple },
+    { name: 'Bhutani Astrathum', logo: temple },
+    { name: 'Ace 153', logo: temple6 },
+    { name: 'Golden I', logo: temple7 },
+    { name: 'Experion Saatori', logo: temple8 },
+    { name: 'Bhutani Cyberthum', logo: temple10 },
+    { name: 'Bhutani Cyberthum', logo: temple11 },
+    { name: 'Bhutani Cyberthum', logo: temple12 },
+    { name: 'Bhutani Cyberthum', logo: temple13 },
+    { name: 'Bhutani Alphathum', logo: vird },
+  ];
+
   const items = [...projects, ...projects];
 
-  useEffect(() => {
+ 
+
+  // 🔥 Manual Scroll Functions
+  const scrollLeft = () => {
     const container = scrollRef.current;
     if (!container) return;
+    container.scrollBy({ left: -300, behavior: 'smooth' });
+  };
 
-    let animationFrame: number;
-
-    const autoScroll = () => {
-      if (!pause) {
-        container.scrollLeft += 0.5; // ⭐ speed control (lower = smoother)
-
-        // reset without user noticing
-        if (container.scrollLeft >= container.scrollWidth / 2) {
-          container.scrollLeft = 0;
-        }
-      }
-
-      animationFrame = requestAnimationFrame(autoScroll);
-    };
-
-    animationFrame = requestAnimationFrame(autoScroll);
-
-    return () => cancelAnimationFrame(animationFrame);
-  }, [pause]);
+  const scrollRight = () => {
+    const container = scrollRef.current;
+    if (!container) return;
+    container.scrollBy({ left: 300, behavior: 'smooth' });
+  };
 
   return (
-    <div className="py-12 overflow-hidden">
+    <div className="relative py-12 overflow-hidden">
+
+      {/* 🔥 LEFT BUTTON */}
+      <button
+        onClick={scrollLeft}
+        className="hover:cursor-pointer absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-white shadow-md rounded-full w-10 h-10 flex items-center justify-center hover:bg-gray-100 transition"
+      >
+        <FontAwesomeIcon icon={faAngleLeft} />
+      </button>
+
+      {/* 🔥 RIGHT BUTTON */}
+      <button
+        onClick={scrollRight}
+        className="hover:cursor-pointer absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-white shadow-md rounded-full w-10 h-10 flex items-center justify-center hover:bg-gray-100 transition"
+      >
+        <FontAwesomeIcon icon={faAngleRight} />
+      </button>
+
       <div
         ref={scrollRef}
         onMouseEnter={() => setPause(true)}
-        onMouseLeave={() => setPause(false)}
-        className="flex gap-4 px-4 overflow-x-auto scrollbar-hide"
+        className="flex gap-4 px-12 overflow-x-auto scrollbar-hide"
       >
         {items.map((item, index) => (
           <div
             key={index}
-            className="
-              flex-shrink-0
-              w-[80%]
-              sm:w-[45%]
-              md:w-[30%]
-              lg:w-[20%]
-              xl:w-[18%]
-              cursor-pointer
-            "
+            className="flex-shrink-0 cursor-pointer"
+            style={{ width: cardWidth }}
           >
             <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition duration-300 p-2">
-              <div className="relative w-full h-[220px] md:h-[260px]">
+              <div
+                className="relative w-full"
+                style={{ height: cardHeight }}
+              >
                 <Image
                   src={item.logo}
                   alt={item.name}
@@ -93,6 +112,7 @@ export default function Gallery() {
           </div>
         ))}
       </div>
+
     </div>
   );
 }
