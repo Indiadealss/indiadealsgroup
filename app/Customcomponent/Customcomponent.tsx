@@ -79,7 +79,7 @@ const Customcomponent = () => {
         <div className="max-w-3xl mx-auto px-4 grid md:grid-cols-1 gap-10">
 
           {/* FORM */}
-          <div className="bg-white p-8 rounded-lg shadow">
+          <div className="bg-white p-8 rounded-lg shadow-lg border border-gray-400">
             <h2 className="text-xl font-semibold mb-6">GET IN TOUCH WITH US !</h2>
             <p className="text-gray-500 text-sm mb-6">
              Please take a moment to fill out the enquiry form. This will help us understand what you are looking for. We want to give you the help possible. The information you give us will help our team show you the property options and services that're best for you. We will make sure these options are what you need. Our team will use the information from the enquiry form to guide you with the suitable property options and services and also some special offers that are just, for you.

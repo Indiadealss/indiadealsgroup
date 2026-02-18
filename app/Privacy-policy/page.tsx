@@ -5,16 +5,15 @@ import Image from 'next/image'
 const Privacypolicy = () => {
   return (
     <>
-      <div className='px-[22%] my-10'>
+      <div className='px-[22%] my-10 text-justify'>
                 <div className='bg-blue-50  py-5 rounded-lg mt-3'>
                     <Image src={privacy} alt='...' className='w-[4%] mx-auto' />
-                    <h2 className='text-center mt-3'><span className='text-center'>INDIADEALS Policy</span></h2>
+                    <h1 className='text-center mt-3 text-4xl font-bold'><span className='text-center'>Privacy Policy</span></h1>
                 </div>
 
                 {/* privacy polocy */}
 
                 <div className='mt-5'>
-                    <h2><span>Privacy Policy</span></h2>
                     <p className='mt-5' style={{ lineHeight: '1.2', fontWeight: '400' }}>
                         <span className='text-sm' style={{ fontWeight: '400', lineHeight: '0' }}>
                             At IndiaDeals Group we really care about keeping your information safe and private. This is our Privacy Policy, which explains how we collect, use and protect your information when you use our website or services.
@@ -34,170 +33,74 @@ const Privacypolicy = () => {
                         <span className="text-[#313036] font-['CanelaDeck-Light'] text-2xl font-medium">1. What Information We Collect</span>
                         <div className='ms-2'>
                             <span className='mt-2'>
-                                <span className='ps-2 mt-5 pt-5'>We might collect a few types of information from you including:</span>
                                 <br />
+                                <span className='ps-2 mt-5 pt-5'>We might collect a few types of information from you including:</span>
                                 <br />
                                 
 
                             </span>
                             <br />
-                            <br />
                             <span>
 
-                                <span className='font-medium'>A. Transaction & Service Information</span>
+                                <span className="text-[#313036] font-['CanelaDeck-Light'] text-2xl font-medium">A. Personal Information</span>
                                 <br />
-                                <ul className="mt-2 ms-3 list-disc pl-5 text-sm leading-7">
-                                    <li>
-                                        Property enquiries
-                                    </li>
-                                    <li>
-                                        Site visit details
-                                    </li>
-                                    <li>
-                                        Booking information
-                                    </li>
-                                    <li>
-                                        Payment or transaction records (processed through secure channels)
-                                    </li>
-                                </ul>
+                               <div className='ms-4 mt-2'>
+                                This is stuff like your name, phone number and email address. We might also ask for your home or business address and some identification details if we need them to complete a transaction. We could also collect information about your payments or transactions. Sometimes we need to see KYC documents.
+                               </div>
 
                             </span>
 
                             <br />
-                            <br />
                             <span>
 
-                                <span className='font-medium'>B. Technical/Automatic Data</span>
+                                <span className="text-[#313036] font-['CanelaDeck-Light'] text-2xl font-medium">B. Business Information (for our Channel Partners)</span>
                                 <br />
-                                <ul className="mt-2 ms-3 list-disc pl-5 text-sm leading-7">
-                                    <li>
-                                        Device information (IP address, browser type, device ID)
-                                    </li>
-                                    <li>
-                                        Cookies and tracking data
-                                    </li>
-                                    <li>
-                                        Usage details (pages viewed, clicks, time spent)
-                                    </li>
-                                </ul>
+                                <div className='ms-4 mt-2'>
+                                    If you are one of our channel partners we might collect some information about your company like your company details and registration information. We could also ask for your banking and commission details well as your professional credentials and any contractual documentation.
+                                </div>
 
                             </span>
 
                             <br />
-                            <br />
                             <span>
 
-                                <span className='font-medium'>C. Voluntary Information</span>
+                                <span className="text-[#313036] font-['CanelaDeck-Light'] text-2xl font-medium">C. Website Usage Information</span>
                                 <br />
-                                <ul className="mt-2 ms-3 list-disc pl-5 text-sm leading-7">
-                                    <li>
-                                        Feedback, complaints, or support queries
-                                    </li>
-                                    <li>
-                                        Participation in surveys, offers, or promotional campaigns
-                                    </li>
-                                </ul>
-
+                               <br />
+                               <div className='ms-4'>
+                                When you visit our website we can see your IP address and some information about the device you are using. We can also see what kind of browser you are using and how you are using our website. We use cookies and analytics tools to help us understand how people are using our website. We can see what pages you visit and how you interact with our site.
+                               </div>
                             </span>
 
                         </div>
                     </div>
 
                     {/* 2 point */}
-                    <div>
-                        <br />
-                        <span className='text-lg font-medium'>2. How We Use Your Information</span>
-                       <div className='ms-4'>
-                            <span>
-                                We use your information for legitimate business purposes, including:
-                            </span>
-                             <ul className="mt-2  list-disc pl-5 text-sm leading-8">
-                            <li>
-                                Scheduling site visits and providing project details
-                            </li>
-                            <li>
-                                Processing bookings, documentation, and transactions
-                            </li>
-                            <li>
-                                Sending updates, offers, and promotional communications
-                            </li>
-                            <li>
-                                Improving our customer experience and service quality
-                            </li>
-                            <li>
-                                Verifying identity and preventing fraud
-                            </li>
-                            <li>
-                                Meeting legal or regulatory compliance requirements
-                            </li>
-                        </ul>
+                    <br />
+                    <div className='mt-5'>
+                        <span className="text-[#313036] font-['CanelaDeck-Light'] text-2xl font-medium">2. Why We Collect Your Information</span>
+                       <div className='ms-4 mt-5'>
+                                We collect your information for a different reasons. We want to be able to respond to your questions and provide you with service. We need your information to process bookings and transactions and to keep track of our relationships with our clients and partners. We also use your information to communicate with you about our projects and to let you know about any offers we might have. We are always trying to improve our website and make it easier for people to use so we use your information to help us do that. Sometimes we have to share your information with people like the government to meet our legal obligations. We also use your information to help prevent fraud and make sure everyone is following the rules.
+                           
+                             <br />
+                             <br />
                        </div>
-                        <span className='ms-1'>We only use your data in ways that support our services and communication with you.</span>
+                       <span className='ms-1'>We only use your data in ways that support our services and communication with you.</span>
                     </div>
 
                     {/* 3 point */}
                     <br />
-                    <div>
-                        <span className='text-lg font-medium'>3. Sharing of Information</span>
+                    <div className='mt-5'>
+                        <span className="text-[#313036] font-['CanelaDeck-Light'] text-2xl font-medium">3. Who We Share Your Information With</span>
                         <div className='ms-2'>
                             <span className=''>
-                                <span className='ps-2 mt-5'> We do not sell, rent, or trade your personal data to third parties.
                                 <br />
-                                <span className='ps-2'>However, your information may be shared with:</span>
+                                <div className='ms-4'>We do not sell your information to anyone. We might share it with an other people, like the developers and project authorities we work with or our lawyers and financial advisors. We might also share it with the banks and payment service providers we use or with the government if we are required to do. We work with some technology vendors who help us with our website and CRM systems. We might share your information with them too. We expect all of these people to keep your information safe and private.
+                                <br />
+                                </div>
+                                <br />
+
                                 </span>
-                                <br />
-                                <br />
-                                <span className='font-medium'>A. Service Providers</span>
-                                <br />
-                                <ul className="mt-2 ms-3 list-disc pl-5 text-sm leading-7">
-                                    <li>
-                                        Payment gateways
-                                    </li>
-                                    <li>
-                                        Marketing or customer support agencies
-                                    </li>
-                                    <li>
-                                        IT and data hosting partners
-                                    </li>
-                                    <li>
-                                        Verification/KYC agencies
-                                    </li>
-                                    <li>
-                                        Channel partners or authorised real-estate agents
-                                    </li>
-                                </ul>
-
-                            </span>
-                            <br />
-                            <br />
-                            <span>
-
-                                <span className='font-medium'>B. Legal & Regulatory Authorities</span>
-                                <br />
-                                <ul className="mt-2 ms-3 list-disc pl-5 text-sm leading-7">
-                                    <li>
-                                        If mandated under law, court orders, or government directives.
-                                    </li>
-                                    </ul>
-
-                            </span>
-
-                            <br />
-                            <br />
-                            <span>
-
-                                <span className='font-medium'>C. Business Partners</span>
-                                <br />
-                                <ul className="mt-2 ms-3 list-disc pl-5 text-sm leading-7">
-                                    <li>
-                                        Only when required for relevant real-estate services, promotions, or customer support.
-                                    </li>
-                                    <li>
-                                        Every third party is bound by confidentiality and is required to protect your data.
-                                    </li>
-                                </ul>
-
-                            </span>
 
                         </div>
                     </div>
@@ -205,206 +108,93 @@ const Privacypolicy = () => {
                     {/* 4 point */}
                     <br />
                     <div>
-                        <br />
-                        <span className='text-lg font-medium'>4. Data Security</span>
+                        <span className="text-[#313036] font-['CanelaDeck-Light'] text-2xl font-medium">4. Keeping Your Information Safe</span>
                        <div className='ms-4'>
-                            <span>
-                                We use industry-standard technical and organisational safeguards such as:
-                            </span>
-                             <ul className="mt-2  list-disc pl-5 text-sm leading-8">
-                            <li>
-                                Encrypted servers
-                            </li>
-                            <li>
-                                Secure data storage
-                            </li>
-                            <li>
-                                Access controls and authentication
-                            </li>
-                            <li>
-                                Regular security audits
-                            </li>
-                            <li>
-                                Monitoring for unauthorized access
-                            </li>
-                        </ul>
+                        <br />
+                                IndiaDeals Group is committed to protecting your information. We use technical and organizational safeguards to protect your data against unauthorized access, misuse, loss or alteration. While we try our best to protect your data no digital system can be guaranteed 100% secure. When you share your information with us you do so at your discretion.
+                           
+                            
                        </div>
-                        <span className='ms-1'>Despite strong measures, no digital system can guarantee 100% security.</span>
                     </div>
 
                     {/* 5 point */}
                     <br />
                     <div>
                         <br />
-                        <span className='text-lg font-medium'>5. Cookies & Tracking Technologies</span>
+                        <span className="text-[#313036] font-['CanelaDeck-Light'] text-2xl font-medium">5.How Long We Keep Your Information</span>
                        <div className='ms-4'>
+                        <br />
                             <span>
-                                Our website may use cookies to:
+                                We keep your business information for as long as we need it to complete transactions meet our legal obligations and keep track of our business relationships. We might keep some information for tax and accounting purposes. To help resolve any disputes that might arise. Once we do not need your information anymore we will delete it securely.
                             </span>
-                             <ul className="mt-2  list-disc pl-5 text-sm leading-8">
-                            <li>
-                                Improve performance
-                            </li>
-                            <li>
-                                Personalize your browsing experience
-                            </li>
-                            <li>
-                                Show relevant real-estate offers
-                            </li>
-                            <li>
-                                Analyse website traffic patterns
-                            </li>
-                        </ul>
+                             
                        </div>
-                        <span className='ms-1'>You may disable cookies through browser settings, though some website features may be affected.</span>
-                    </div>
+                       </div>
 
                     {/* 6 point */}
                     <br />
                     <div>
                         <br />
-                        <span className='text-lg font-medium'>6. Your Rights</span>
+                        <span className="text-[#313036] font-['CanelaDeck-Light'] text-2xl font-medium">6. Cookies and Tracking</span>
                        <div className='ms-4'>
+                        <br />
                             <span>
-                                Depending on applicable law, you may have the right to:
+                                Our website uses cookies and analytics tools to help us understand how people are using our site and to make it better. You can turn off cookies in your browser settings. Some features of our website might not work properly if you do.
                             </span>
-                             <ul className="mt-2  list-disc pl-5 text-sm leading-8">
-                            <li>
-                                Access your personal information
-                            </li>
-                            <li>
-                                Request correction of inaccurate data
-                            </li>
-                            <li>
-                                Request deletion of your data
-                            </li>
-                            <li>
-                                Withdraw consent for marketing communication
-                            </li>
-                            <li>
-                                Opt-out of promotional SMS or email updates
-                            </li>
-                        </ul>
                        </div>
-                        <span className='ms-1'>To exercise these rights, contact us at the details provided below.</span>
-                    </div>
+                       </div>
 
                     {/* 7 point */}
                     <br />
                     <div>
                         <br />
-                        <span className='text-lg font-medium'>7. Data Retention</span>
+                        <span className="text-[#313036] font-['CanelaDeck-Light'] text-2xl font-medium">7. Your Rights</span>
+                        <br />
+                        <br />
                        <div className='ms-4'>
                             <span>
-                                We retain your information only as long as necessary for:
+                                You have some rights when it comes to your information. You can ask to see the information we have about you. You can ask us to correct any mistakes. You can also ask us to delete your information if it is no longer needed. If you do not want to receive marketing emails from us you can let us know. We will stop sending them. You can use the contact information below to make any of these requests.
                             </span>
-                             <ul className="mt-2  list-disc pl-5 text-sm leading-8">
-                            <li>
-                                Providing services
-                            </li>
-                            <li>
-                                Legal or taxation requirements
-                            </li>
-                            <li>
-                                Resolving disputes
-                            </li>
-                            <li>
-                                Maintaining business records
-                            </li>
-                        </ul>
                        </div>
-                        <span className='ms-1'>Once data is no longer required, it is securely deleted or anonymised.</span>
                     </div>
 
                     {/* 8 point */}
                     <br />
                     <div>
                         <br />
-                        <span className='text-lg font-medium'>8. Third-Party Links</span>
-                       <div className='ms-4'>
-                             <ul className="mt-2  list-disc pl-5 text-sm leading-8">
-                            <li>
-                                Our website or promotional materials may include links to third-party websites.
-                            </li>
-                            <li>
-                                INDIADEALSGROUP is not responsible for the privacy practices, accuracy, or content of these external platforms.
-                            </li>
-                        </ul>
-                       </div>
-                        <span className='ms-1'>Please review their privacy policies before interacting with them.</span>
+                        <span className="text-[#313036] font-['CanelaDeck-Light'] text-2xl font-medium">8. Confidentiality of Clients and Channel Partners</span>
+                       <br />
+                       <br />
+                        <div className='ms-2'>
+                            At IndiaDeals Group we respect the confidentiality of all our client transactions and channel partner agreements. We keep business information, commissions and contractual details private unless we are required by law to disclose them.
+                        </div>
                     </div>
 
                     {/* 9 point */}
                     <br />
                     <br />
                     <div>
+                        <span className="text-[#313036] font-['CanelaDeck-Light'] text-2xl font-medium">9. Links to Other Websites</span>
                         <br />
-                        <span className='text-lg font-medium'>9. Children’s Privacy</span>
+                        <br />
                        <div className='ms-4'>
-                             <ul className="mt-2  list-disc pl-5 text-sm leading-8">
-                            <li>
-                                Our services are not intended for individuals under 18 years of age.
-                            </li>
-                            <li>
-                                We do not knowingly collect data from minors.
-                            </li>
-                        </ul>
+                             Our website might have links to websites but we are not responsible for the privacy practices or content of those sites.
                        </div>
-                        <span className='ms-1'>If such information is identified, we will delete it promptly.</span>
                     </div>
 
                     {/* 10 point */}
                     <br />
-                    <br />
                     <div>
                         <br />
-                        <span className='text-lg font-medium'>10. Updates to this Privacy Policy</span>
+                        <span className="text-[#313036] font-['CanelaDeck-Light'] text-2xl font-medium">10. Changes, to This Policy</span>
                        <div className='ms-4'>
-                        <span>
-                                We may revise this policy from time to time to reflect:
-                            </span>
-                             <ul className="mt-2  list-disc pl-5 text-sm leading-8">
-                            <li>
-                               Changes in law
-                            </li>
-                            <li>
-                                Business needs
-                            </li>
-                            <li>
-                                Service updates
-                            </li>
-                        </ul>
+                        <br />
+                               We can update this Privacy Policy at any time. We do not have to let you know before we do. If you keep using our services after we have updated the policy it means you agree to the terms.
+                          
+                             
                        </div>
-                        <span className='ms-1'>The updated policy will always include a revised “Last Updated” date.</span>
                     </div>
 
-                    {/* 11 point */}
-                    <br />
-                    <br />
-                    {/* <div>
-                        <br />
-                        <span className='text-lg font-medium'>11. Contact Us</span>
-                       <div className='ms-4'>
-                        <span>
-                                For any questions, requests, or concerns regarding this Privacy Policy, please contact:
-                            </span>
-                            <br />
-                        <span>
-                                INDIADEALSGROUP
-                            </span>
-                             <ul className="mt-2  list-disc pl-5 text-sm leading-8">
-                            <li>
-                               info@indiadealsgroup.com
-                            </li>
-                            <li>
-                                +91 9818763100
-                            </li>
-                            <li>
-                               Registered Office: C-320, TOWER C, GOLDEN I, TECHZONE 4, Grater Noida, 201009 
-                            </li>
-                        </ul>
-                       </div>
-                    </div> */}
                 </div>
 
                 

@@ -24,22 +24,20 @@ export default function Home() {
 
 
       {/* ABOUT SECTION */}
-      <section className="mt-20 px-0 lg:px-20" data-aos="fade-up">
+      <section className="mt-20 px-0 lg:px-20 text-justify" data-aos="fade-up">
         <div className="lg:flex  mx-10">
           
           <div className="px-0 lg:px-10 ps-10">
             <h1 className="text-[#313036] font-['CanelaDeck-Light'] text-6xl">About IndiaDeals Group</h1>
             <p className="text-[#313036] my-10 font-['poppins'] text-gray-600">
-              IndiaDeals Group is a name that people trust in the real estate business. We have been working in the Delhi NCR market since 2017. Our goal is to make sure that people can buy and sell properties in an honest way. We want to help people find properties to buy.  
-             <br/>
-              <br/>
+             
               <p className="text-[#313036] font-['poppins'] text-gray-600 leading-6">
+              IndiaDeals Group is a name that people trust in the real estate business. We have been working in the Delhi NCR market since 2017. Our goal is to make sure that people can buy and sell properties in an honest way. We want to help people find properties to buy.  
                 We started IndiaDeals Group to make it easy for people to buy and sell properties. We wanted to make sure that people can trust us. Over time we have helped many people find properties. We are happy that our clients like us. Come back to us for help.
                 <br />
                 <br />
                 We know a lot about the Delhi NCR real estate market. We can help people find residential plots, housing projects and other properties that will be worth more money in the future. At IndiaDeals Group we think that buying and selling properties is not about land. It is about making a good life for people.
-                <br />
-                <br />
+                
                 We make sure that every property we sell is good and will be worth money in the future. We are honest. Tell people everything they need to know. We want our clients to feel happy and safe when they work with us.
                 <br />
                 <br />
@@ -54,7 +52,7 @@ export default function Home() {
       <section className=" px-2 lg:px-20">
       <div className="px-4 lg:px-20">
         <h1><span className="text-[#313036] font-['CanelaDeck-Light'] text-2xl font-medium']">Since 2017 we have been successful because of these things:</span></h1>
-        <ul className="list-disc space-y-5 text-gray-600 font-[poppins]  ms-10 my-5">
+        <ul className="list-disc space-y-3 text-gray-600 font-[poppins]  ms-10 my-5">
           <li>We are honest and fair in our business.</li>
           <li>We sell properties that will be worth more money</li>
           <li>We know the market very well</li>
