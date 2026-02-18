@@ -74,7 +74,7 @@ const Footer = () => {
           <ul className=' space-y-1'>
             {socialmedia.map((item,index) => (
               <li key={item.index} className='text-[#f1e6c8] text-sm  tracking-wider'>
-                <a href={item.link} target='_blank' className="text-xl me-3 cursor-pointer transition">{item.icon}</a><a href={item.link} className="transition  cursor-pointer">{item.name}</a>
+                <a href={item.link} target='_blank' className="text-xl me-3 cursor-pointer transition">{item.icon}</a><a href={item.link} target='_blank' className="transition  cursor-pointer">{item.name}</a>
               </li>
             ))}
           </ul>
