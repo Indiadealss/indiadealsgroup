@@ -9,10 +9,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   const navItems = [
-    {
-      label:'Home',
-      link:'/'
-    },
+   
     {
       label:'About us',
       link:'/about'
