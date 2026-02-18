@@ -4,11 +4,35 @@ import "./globals.css";
 import 'aos/dist/aos.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import ClientLayout from "./ClientLayout";import { Playwrite_NZ } from 'next/font/google'
+import ClientLayout from "./ClientLayout";
+import { Playwrite_NZ } from 'next/font/google';
+import { Dancing_Script } from 'next/font/google'
+import { Cormorant } from 'next/font/google'
+import { Montserrat } from 'next/font/google'
+
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'],
+  display: 'swap',
+})
 
 const playwrite = Playwrite_NZ({
   weight: ['400'],
   // subsets: ['latin'],
+})
+
+
+
+const cormorant = Cormorant({
+  subsets: ['latin'],
+  weight: [ '700'],
+  display: 'swap',
+})
+
+
+const dancing = Dancing_Script({
+  subsets: ['latin'],
+  weight: ['400', '700'],
 })
 
 const geistSans = Geist({
@@ -44,7 +68,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${playwrite.className} antialiased`}>
+      <body className={`${montserrat.className} antialiased`}>
         <ClientLayout>{children}</ClientLayout>
       </body>
     </html>

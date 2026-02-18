@@ -8,10 +8,72 @@ import { useEffect } from "react";
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import reracertificate from "@/Images/rera.png"
+import { useState } from "react";
+import { message } from "antd";
+import downloadPdf from "@/Images/pdbDownload.png"
 
 
 
 export default function Home() {
+
+  const [open, setOpen] = useState(false);
+
+   const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+  const [userMessage, setUserMessage] = useState('');
+  const [city, setCity] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [project,setProject] = useState('');
+  const [consent, setConsent] = useState(false);
+
+  const submit = async () => {
+    if (!name || !email || !phone || !project) {
+      message.warning("Please fill required fields");
+      return;
+    }
+
+    if (!consent) {
+    message.warning("Please accept the consent before submitting");
+    return;
+  }
+
+    try {
+      setLoading(true);
+
+      const res = await fetch("/api/send-mail", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, phone, city,project, message: userMessage }),
+      });
+
+      if (res.ok) {
+        message.success("Message sent successfully");
+        setName("");
+        setEmail("");
+        setPhone("");
+        setCity("");
+        setUserMessage("");
+        const link = document.createElement("a");
+    link.href = "/Hanumat-Vihar-Brochure.pdf";
+    link.download = "Hanumat-Vihar-Brochure.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    setOpen(false);
+    message.success("Thank You Our Team will connect you soon");
+      } else {
+        message.error("Something went wrong");
+      }
+    } catch (err) {
+      console.log(err);
+      message.error("Server error");
+    } finally {
+      setLoading(false);
+    }
+  };
 
   useEffect(() => {
     AOS.init({
@@ -190,8 +252,125 @@ export default function Home() {
           </div>
         </section>
 
+        {/* rera,logo */}
+        <section className="">
+          <div className="flex flex-col md:flex-row justify-around">
+            <Image src={downloadPdf} alt="..." className="text-white cursor-pointer mx-auto my-10 md:my-0 lg:mx-0 rounded w-[60vw] md:w-[15vw] font-bold " onClick={() => setOpen(true)} />
+                
+           
+            <div className="">
+            <Image src={reracertificate} alt="..." className="mx-auto" />
+            </div>
+          </div>
+        </section>
+
         {/* Content */}
       </div>
+
+     {open && (
+  <div className="fixed inset-0 z-50 flex items-end md:items-center justify-center">
+
+    {/* Overlay */}
+    <div
+      className="absolute inset-0 bg-black/60"
+      onClick={() => setOpen(false)}
+    />
+
+    {/* Modal Box */}
+    <div className="
+      relative bg-white 
+      w-full md:w-[100%] 
+      md:max-w-2xl 
+      rounded-t-2xl md:rounded-lg 
+      p-5 md:p-8
+      mt-30
+      max-h-[90vh] 
+      overflow-y-auto
+      animate-[slideUp_0.3s_ease-out]
+    ">
+
+      <h2 className="text-lg md:text-xl font-semibold mb-4 mt-10 md:mt-0">
+        Download Brochure
+      </h2>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+        <input
+          type="text"
+          placeholder="Name"
+          value={name}
+          onChange={(e) => setName(e.currentTarget.value)}
+          className="border p-3 rounded w-full"
+        />
+
+        <input
+          type="email"
+          placeholder="Email"
+          value={email}
+          onChange={(e) => setEmail(e.currentTarget.value)}
+          className="border p-3 rounded w-full"
+        />
+
+        <input
+          type="tel"
+          placeholder="Phone"
+          maxLength={10}
+          value={phone}
+          onChange={(e) => setPhone(e.currentTarget.value)}
+          className="border p-3 rounded w-full"
+        />
+
+        <input
+          type="text"
+          placeholder="City"
+          value={city}
+          onChange={(e) => setCity(e.currentTarget.value)}
+          className="border p-3 rounded w-full"
+        />
+
+        <select
+          value={project}
+          onChange={(e) => setProject(e.target.value)}
+          className="border p-3 rounded w-full md:col-span-2"
+        >
+          <option value="">Select Project</option>
+          <option value="Hanumat Vihar">Hanumat Vihar</option>
+        </select>
+
+        <textarea
+          placeholder="Message"
+          value={userMessage}
+          onChange={(e) => setUserMessage(e.currentTarget.value)}
+          className="border p-3 rounded w-full md:col-span-2 h-28"
+        />
+
+        <div className="md:col-span-2 flex items-start gap-2 text-sm text-gray-600">
+          <input
+            type="checkbox"
+            checked={consent}
+            onChange={(e) => setConsent(e.target.checked)}
+            className="mt-1"
+          />
+          <p>
+            I am giving consert to IndiaDeals Group and its people permission to get in touch with me. They can call me. Send me messages on my phone or by email or WhatsApp. I want them to tell me about properties and any special offers they have.I am fine, with IndiaDeals Group contacting me about IndiaDeals Group properties.
+                
+          </p>
+        </div>
+
+        <button
+          type="button"
+          disabled={loading}
+          onClick={submit}
+          className="bg-gray-900 text-white px-6 py-3 rounded md:col-span-2 w-full md:w-fit disabled:opacity-50"
+        >
+          {loading ? "Sending..." : "Submit & Download"}
+        </button>
+
+      </div>
+
+    </div>
+  </div>
+)}
     </div>
   );
 }

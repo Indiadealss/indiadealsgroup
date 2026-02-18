@@ -22,6 +22,10 @@ const Navbar = () => {
       label:'Our team',
       link:'/our-team'
     },
+    {
+      label:'Blogs',
+      link:'/blogs'
+    },
      {
       label:'Privacy & Policy',
       link:'/Privacy-policy'
@@ -55,7 +59,7 @@ const Navbar = () => {
         <div className="hidden lg:flex items-center gap-4">
           {/* Desktop Menu */}
       <nav className="hidden lg:block ">
-        <ul className="container mx-auto flex justify-center gap-6 pb-1 text-sm font-medium text-[#f1e6c8]">
+        <ul className="container mx-auto flex justify-center gap-6 pb-1 text-sm font-bold text-[#f1e6c8]">
           {navItems.map((item) => (
             <Link href={item.link}  key={item.label}> <li
              
