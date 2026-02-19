@@ -28,7 +28,7 @@ const Navbar = () => {
     },
      {
       label:'Privacy & Policy',
-      link:'/Privacy-policy'
+      link:'/privacy-policy'
     },
     {
       label:'Contact us',

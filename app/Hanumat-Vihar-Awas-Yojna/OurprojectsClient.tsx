@@ -139,7 +139,7 @@ export default function Home() {
           <p className="text-gray-600   my-5">
             One of the aspects of Hanumat Vihar Awas Yojna is the safety of investment. The project is approved by MVDA and RERA which means that it is legally documented and compliant with all regulations. This gives buyers peace of mind. Protects their interests.
             
-            Hanumat Vihar Awas Yojna has all the approvals, including MVDA approval and RERA registration. The project is also legally documented, which means that buyers can be sure that their investment is safe.
+            <span className="font-bold"> <Link rel="stylesheet" href="https://www.indiadealsgroup.com/hanumat-vihar-awas-yojna" >Hanumat Vihar Awas Yojna</Link></span> has all the approvals, including MVDA approval and RERA registration. The project is also legally documented, which means that buyers can be sure that their investment is safe.
           </p>
       </div>
 
@@ -198,7 +198,7 @@ export default function Home() {
 
       {/* Investment Potential */}
          <div className="pt-3 px-2 lg:px-5">
-          <h1 className="text-[#313036]   text-2xl font-medium">Investment Potential</h1>
+          <h1 className="text-[#313036]   text-2xl font-medium">Hanumat Vihar Vrindavan: Investment Potential</h1>
           <p className="text-gray-600   my-5 text-justify">
             The real estate market in Vrindavan is experiencing growth due to increasing demand from spiritual tourists, retirees, holiday home investors and long-term land investors. Hanumat Vihar Awas Yojna offers a range of benefits including early-stage pricing advantage, high appreciation potential and tangible plotted asset.
            
