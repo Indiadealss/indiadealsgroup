@@ -116,10 +116,10 @@ export default function Home() {
             />
             <div className="px-0 lg:ps-10 ">
               <div className="px-0 lg:px-10">
-            <h1 className="text-[#313036]   font-bold text-4xl"><span className="text-2xl font-medium font-normal">Radha Kund – Raal Road, Vrindavan</span> <br /><span className="text-2xl font-medium font-normal">RERA Approved Residential Township</span></h1>
+            <h1 className="text-[#313036]   font-bold text-4xl"><span className="text-2xl font-medium font-normal">Radha Kund – Ral Road, Vrindavan</span> <br /><span className="text-2xl font-medium font-normal">RERA Approved Residential Township</span></h1>
             <p className="text-[#313036] my-10   text-gray-600 text-justify">
              Hanumat Vihar Awas Yojna is an approved residential plotted township that offers people a chance to own land safely in Vrindavan. This is a place for families, investors, retirees and people who want a second home. The project is designed to bring the spiritual surroundings of Vrindavan and the modern infrastructure that people need.
-             <br /><br />The township is located on Radha Kund – Raal Road, which's a rapidly developing area. This means that Hanumat Vihar Awas Yojna is an opportunity for people to own property in a place where the value of land is increasing. The area is perfect for people who want to invest in land build a house or just own a piece of land in Vrindavan.
+             <br /><br />The township is located on Radha Kund – Ral Road, which's a rapidly developing area. This means that Hanumat Vihar Awas Yojna is an opportunity for people to own property in a place where the value of land is increasing. The area is perfect for people who want to invest in land build a house or just own a piece of land in Vrindavan.
 </p>
           </div>
             </div>
@@ -147,7 +147,7 @@ export default function Home() {
       <div className="pt-3 px-2 lg:px-5 ">
           <h1 className="text-[#313036]   text-2xl font-medium">Strategic Location Advantage:</h1>
           <p className="text-gray-600   my-5 text-justify">
-              The location of Hanumat Vihar Awas Yojna is one of its strengths. Radha Kund – Raal Road is becoming a residential area in Vrindavan driven by spiritual tourism, retirement and infrastructure development. The project is close to Radha Kund zone and it has easy access to central Vrindavan and Mathura routes.
+              The location of Hanumat Vihar Awas Yojna is one of its strengths. Radha Kund – Ral Road is becoming a residential area in Vrindavan driven by spiritual tourism, retirement and infrastructure development. The project is close to Radha Kund zone and it has easy access to central Vrindavan and Mathura routes.
             </p>
       </div>
 
@@ -243,7 +243,7 @@ export default function Home() {
             The focus of the project is not just on selling plots. On building trust and confidence with buyers. The project team is committed to providing an hassle-free buying experience.
             <br />
             <br />
-            Hanumat Vihar Awas Yojna is a approved and future-ready plotted township that offers a rare blend of legality location strength, affordability and growth potential. With RERA approvals, strategic positioning on Radha Kund – Raal Road and Vrindavan’s expanding real estate market the project stands as an ideal choice for both living and investment.
+            Hanumat Vihar Awas Yojna is a approved and future-ready plotted township that offers a rare blend of legality location strength, affordability and growth potential. With RERA approvals, strategic positioning on Radha Kund – Ral Road and Vrindavan’s expanding real estate market the project stands as an ideal choice for both living and investment.
             
             It is more, than a property purchase – it is an opportunity to secure land in one of India’s most spiritually and economically evolving destinations. Hanumat Vihar Awas Yojna is a chance to own a piece of Vrindavan and create a long-term asset that will appreciate in value over time.
             </p>
