@@ -15,8 +15,8 @@ export async function POST(req: Request) {
 
     await transporter.sendMail({
       from: `${project} " Lead" <${process.env.MAIL_USER}>`,
-      to: 'indiadealsgroup@gmail.com',
-      replyTo: 'indiadealsgroup@gmail.com',
+      to: '1998keshavyadav@gmail.com',
+      replyTo: '1998keshavyadav@gmail.com',
       subject: `New Query from ${name}`,
       html: `
         <h2>New Lead Received</h2>

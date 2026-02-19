@@ -7,25 +7,48 @@ import { message } from "antd";
 
 const Customcomponent = () => {
 
-   const [name, setName] = useState('');
+  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [userMessage, setUserMessage] = useState('');
   const [city, setCity] = useState('');
   const [loading, setLoading] = useState(false);
-  const [project,setProject] = useState('');
+  const [project, setProject] = useState('');
   const [consent, setConsent] = useState(false);
+  const [errormessage, setErrormessage] = useState('')
+
 
   const submit = async () => {
-    if (!name || !email || !phone || !project) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!name || !email || !phone || !project || phone.length < 10 || phone.length > 10 || !emailRegex.test(email)) {
       message.warning("Please fill required fields");
+      if (name.length < 3) {
+        setErrormessage('Enter a Valid name');
+      }
+      
+      if (!emailRegex.test(email)) {
+        setErrormessage('Enter a Valid Email')
+      }
+
+      if (phone.length < 10 || phone.length > 10) {
+        setErrormessage('Enter a Valid 10 digit Phone Number')
+      }
+
+      if (!project) {
+        console.log('hello');
+        
+        setErrormessage('Choose a Project')
+      }
       return;
     }
 
     if (!consent) {
-    message.warning("Please accept the consent before submitting");
-    return;
-  }
+      message.warning("Please accept the consent before submitting");
+      setErrormessage('Please accept the consent before submitting')
+      return;
+    }
+
+    setErrormessage('');
 
     try {
       setLoading(true);
@@ -33,7 +56,7 @@ const Customcomponent = () => {
       const res = await fetch("/api/send-mail", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, email, phone, city,project, message: userMessage }),
+        body: JSON.stringify({ name, email, phone, city, project, message: userMessage }),
       });
 
       if (res.ok) {
@@ -43,6 +66,7 @@ const Customcomponent = () => {
         setPhone("");
         setCity("");
         setUserMessage("");
+        
       } else {
         message.error("Something went wrong");
       }
@@ -78,7 +102,7 @@ const Customcomponent = () => {
   ];
   return (
     <div>
-      
+
 
       {/* CONTENT */}
       <div className="m-0 lg:m-20 lg:me-10">
@@ -88,8 +112,10 @@ const Customcomponent = () => {
           <div className="bg-white p-8 rounded-lg shadow-lg border border-gray-400">
             <h2 className="text-xl font-semibold mb-6">GET IN TOUCH WITH US !</h2>
             <p className="text-gray-500 text-sm mb-6">
-             Please take a moment to fill out the enquiry form. This will help us understand what you are looking for. We want to give you the help possible. The information you give us will help our team show you the property options and services that're best for you. We will make sure these options are what you need. Our team will use the information from the enquiry form to guide you with the suitable property options and services and also some special offers that are just, for you.
+              Please take a moment to fill out the enquiry form. This will help us understand what you are looking for. We want to give you the help possible. The information you give us will help our team show you the property options and services that're best for you. We will make sure these options are what you need. Our team will use the information from the enquiry form to guide you with the suitable property options and services and also some special offers that are just, for you.
             </p>
+
+            <p className="text-red-500 font-semibold text-center">{errormessage}</p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <input
@@ -97,7 +123,7 @@ const Customcomponent = () => {
                 placeholder="Name"
                 value={name}
                 onChange={(e) => setName(e.currentTarget.value)}
-                className="border p-3 rounded w-full"
+                className="border p-3 rounded w-full text-gray-800"
               />
               <input
                 type="email"
@@ -108,9 +134,16 @@ const Customcomponent = () => {
               />
               <input
                 type="tel"
+                inputMode='numeric'
+                maxLength={10}
                 placeholder="Phone"
+                onChange={(e) => {
+                  const value = e.target.value.replace(/[^0-9]/g, ""); // remove everything except numbers
+                  if (value.length <= 10) {
+                    setPhone(value)
+                  }
+                }}
                 value={phone}
-                onChange={(e) => setPhone(e.currentTarget.value)}
                 className="border p-3 rounded w-full"
               />
               <input
@@ -123,7 +156,7 @@ const Customcomponent = () => {
               <select
                 value={project}
                 onChange={(e) => setProject(e.target.value)}
-                className="border p-3 rounded w-full outline-none text-gray-500"
+                className="border p-3 rounded w-full outline-none text-gray-800"
               >
                 <option value="">Select Project</option>
                 <option value="Hanumat Vihar">Hanumat Vihar</option>
@@ -140,11 +173,11 @@ const Customcomponent = () => {
 
               <div className="md:col-span-2 flex items-start gap-2 text-sm text-gray-600">
                 <input
-  type="checkbox"
-  checked={consent}
-  onChange={(e) => setConsent(e.target.checked)}
-  className="mt-1"
-/>
+                  type="checkbox"
+                  checked={consent}
+                  onChange={(e) => setConsent(e.target.checked)}
+                  className="mt-1"
+                />
                 <p>
                   I am giving consert to IndiaDeals Group and its people permission to get in touch with me. They can call me. Send me messages on my phone or by email or WhatsApp. I want them to tell me about properties and any special offers they have.I am fine, with IndiaDeals Group contacting me about IndiaDeals Group properties.
                 </p>
