@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     apple:'/favicon.png'
   },
   title: "Top Real Estate Developer in Vrindavan, Mathura, Indiadeals Group",
-  description: " Indiadeals Group is a trusted and leading real estate developer launch new residential project Hanumat Vihar Awas Yojna offers premium plots, Which is located at Raal Road, Vrindavan, Mathura.",
+  description: " Indiadeals Group is a trusted and leading real estate developer launch new residential project Hanumat Vihar Awasiya Yojna offers premium plots, Which is located at Raal Road, Vrindavan, Mathura.",
 
   alternates: {
     canonical: "https://www.indiadealsgroup.com/",   // 👈 homepage canonical
