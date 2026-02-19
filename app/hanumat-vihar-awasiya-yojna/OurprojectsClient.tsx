@@ -167,7 +167,7 @@ export default function Home() {
               <p className="text-gray-600   my-5">
                 One of the aspects of Hanumat Vihar Awasiya Yojna is the safety of investment. The project is approved by MVDA and RERA which means that it is legally documented and compliant with all regulations. This gives buyers peace of mind. Protects their interests.
 
-                <span className="font-bold"> <Link rel="stylesheet" href="https://www.indiadealsgroup.com/hanumat-vihar-awas-yojana" >Hanumat Vihar Awasiya Yojna</Link></span> has all the approvals, including MVDA approval and RERA registration. The project is also legally documented, which means that buyers can be sure that their investment is safe.
+                <span className="font-bold"> <Link rel="stylesheet" href="https://indiadealsgroup.com/hanumat-vihar-awasiya-yojna" >Hanumat Vihar Awasiya Yojna</Link></span> has all the approvals, including MVDA approval and RERA registration. The project is also legally documented, which means that buyers can be sure that their investment is safe.
               </p>
             </div>
 
