@@ -116,7 +116,7 @@ export default function Home() {
             />
             <div className="px-0 lg:ps-10 ">
               <div className="px-0 lg:px-10">
-            <h1 className="text-[#313036]   font-bold text-4xl"><span className="text-2xl font-medium font-normal">Radha Kund – Ral Road, Vrindavan</span> <br /><span className="text-2xl font-medium font-normal">RERA Approved Residential Township</span></h1>
+            <h1 className="text-[#313036]   font-bold text-4xl"><span className="text-2xl font-medium font-normal">Radha Kund – Raal Road, Vrindavan</span> <br /><span className="text-2xl font-medium font-normal">RERA Approved Residential Township</span></h1>
             <p className="text-[#313036] my-10   text-gray-600 text-justify">
              Hanumat Vihar Awas Yojna is an approved residential plotted township that offers people a chance to own land safely in Vrindavan. This is a place for families, investors, retirees and people who want a second home. The project is designed to bring the spiritual surroundings of Vrindavan and the modern infrastructure that people need.
              <br /><br />The township is located on Radha Kund – Ral Road, which's a rapidly developing area. This means that Hanumat Vihar Awas Yojna is an opportunity for people to own property in a place where the value of land is increasing. The area is perfect for people who want to invest in land build a house or just own a piece of land in Vrindavan.

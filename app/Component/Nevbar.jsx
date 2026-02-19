@@ -16,7 +16,7 @@ const Navbar = () => {
     },
     {
       label:'Our Projects',
-      link:'/Hanumat-Vihar-Awas-Yojna'
+      link:'/hanumat-vihar-awas-yojna'
     },
     {
       label:'Our team',
