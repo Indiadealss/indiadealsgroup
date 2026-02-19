@@ -31,10 +31,14 @@ export default function Home() {
 
   const submit = async () => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!name || !email || !phone || !project || phone.length < 10 || phone.length > 10 || !emailRegex.test(email)) {
+    if (!name || !email || !phone || !project || phone.length < 10 || phone.length > 10 || !emailRegex.test(email) || !city) {
       message.warning("Please fill required fields");
       if (name.length < 3) {
         setErrormessage('Enter a Valid name');
+      }
+
+       if(!city){
+        setErrormessage('Enter the City');
       }
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (!emailRegex.test(email)) {
