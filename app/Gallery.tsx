@@ -2,14 +2,30 @@
 
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
-import premTemple from '@/Images/one1.png';
-import temple from '@/Images/thirteen13.png';
-import temple2 from '@/Images/forteen14.png';
-import temple3 from '@/Images/three3.png';
-import temple6 from '@/Images/four4.png';
-import temple7 from '@/Images/five5.png';
-import temple8 from '@/Images/six6.png';
-import temple10 from '@/Images/eight8.png';
+import premTemple from '@/Images/Hanumat-Vihar-Brochure_page-0001.jpg';
+import temple16 from '@/Images/Hanumat-Vihar-Brochure_page-0002.jpg';
+import temple3 from '@/Images/Hanumat-Vihar-Brochure_page-0001.jpg';
+import temple6 from '@/Images/Hanumat-Vihar-Brochure_page-0003.jpg';
+import temple7 from '@/Images/Hanumat-Vihar-Brochure_page-0004.jpg';
+import temple8 from '@/Images/Hanumat-Vihar-Brochure_page-0005.jpg';
+import temple15 from '@/Images/Hanumat-Vihar-Brochure_page-0006.jpg';
+import temple10 from '@/Images/Hanumat-Vihar-Brochure_page-0007.jpg';
+import temple11 from '@/Images/Hanumat-Vihar-Brochure_page-0010.jpg';
+import temple12 from '@/Images/Hanumat-Vihar-Brochure_page-0011.jpg';
+import temple13 from '@/Images/Hanumat-Vihar-Brochure_page-0012.jpg';
+import temple14 from '@/Images/Hanumat-Vihar-Brochure_page-0013.jpg';
+import temple from '@/Images/Hanumat-Vihar-Brochure_page-0014.jpg';
+import gallery15 from '@/Images/Hanumat-Vihar-Brochure_page-0016.jpg';
+import gallery16 from '@/Images/Hanumat-Vihar-Brochure_page-0017.jpg';
+import gallery17 from '@/Images/Hanumat-Vihar-Brochure_page-0018.jpg';
+import gallery18 from '@/Images/Hanumat-Vihar-Brochure_page-0019.jpg';
+import gallery19 from '@/Images/Hanumat-Vihar-Brochure_page-0020.jpg';
+import gallery20 from '@/Images/Hanumat-Vihar-Brochure_page-0021.jpg';
+import gallery21 from '@/Images/Hanumat-Vihar-Brochure_page-0024.jpg';
+
+
+
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleLeft, faAngleRight, faGreaterThan } from '@fortawesome/free-solid-svg-icons';
 
@@ -27,14 +43,21 @@ export default function Gallery({
   const [pause, setPause] = useState(false);
 
   const projects = [
-    { name: 'Ace 153', logo: premTemple },
-    { name: 'Golden I', logo: temple },
-    { name: 'Experion Saatori', logo: temple2 },
-    { name: 'Bhutani Cyberthum', logo: temple3 },
-    { name: 'Ace 153', logo: temple6 },
-    { name: 'Golden I', logo: temple7 },
-    { name: 'Experion Saatori', logo: temple8 },
-    { name: 'Bhutani Cyberthum', logo: temple10 },
+    { name: 'gallery4', logo: temple3 },
+    { name: 'gallery5', logo: temple6 },
+    { name: 'gallery6', logo: temple7 },
+    { name: 'gallery7', logo: temple8 },
+    { name: 'gallery8', logo: temple10 },
+    { name: 'gallery11', logo: temple13 },
+    { name: 'gallery12', logo: temple14 },
+    { name: 'gallery13', logo: temple15 },
+    { name: 'gallery15', logo: gallery15 },
+    { name: 'gallery16', logo: gallery16 },
+    { name: 'gallery17', logo: gallery17 },
+    { name: 'gallery18', logo: gallery18 },
+    { name: 'gallery19', logo: gallery19 },
+    { name: 'gallery20', logo: gallery20 },
+    { name: 'gallery21', logo: gallery21 },
   ];
 
   const items = [...projects, ...projects];
