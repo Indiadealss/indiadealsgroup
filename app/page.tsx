@@ -160,6 +160,22 @@ export default function Home() {
       <Customcomponent />
 
 
+      {/* certifications */}
+      {/* <div className="py-10">
+      <h1 className="text-2xl font-bold text-center text-[#313036]">Certifications</h1>
+
+      <p className="border-b-2 w-20 mt-3 mx-auto"></p>
+        <div className="flex flex-col lg:flex-row justify-between mt-10 mx-10">
+          {ourValues.map((item,index) => (
+            <div key={index} className="my-4">
+              <h4 className="font-bold text-xl text-[#313036b0] text-center">{item.label}</h4>
+              <Image src={item.photo} alt="Aboutusbanner" width={item.witdth} height={100} className=" z-0 mx-auto mt-5" />
+            </div>
+          ))}
+        </div>
+        </div> */}
+
+
       
 
     </div>

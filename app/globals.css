@@ -15,6 +15,11 @@
   scrollbar-width: none;
 }
 
+.footer{
+  background-image: url('/Asset_23x.png') !important;
+  /* background-color: #313036 */
+}
+
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }

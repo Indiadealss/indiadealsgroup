@@ -94,7 +94,7 @@ useEffect(() => {
 
   return (
     <header
-  className={`w-full  left-0 z-50 transition-all duration-500 ease-in-out
+  className={`w-full  left-0 z-50 transition-all duration-50 
   ${
     scrolled
       ? "fixed text-[#f1e6c8] bg-[#313036ab]  shadow-lg"
@@ -104,7 +104,11 @@ useEffect(() => {
   `}
 >
       {/* TOP BAR */}
-      <div className=" mx-auto flex items-center justify-between px-6 py-3">
+      <div
+  className={`mx-auto flex items-center justify-between px-6 py-3 transition-all duration-1000 ${
+    scrolled ? "py-2" : "py-5"
+  }`}
+>
         
         {/* Logo */}
         <div className="flex items-center gap-2">
