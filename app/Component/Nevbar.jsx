@@ -1,12 +1,64 @@
 'use client';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Menu, X, Phone } from 'lucide-react';
-import logo from '../../Images/indiadealsgroupsvg.svg'
+import logo from '../../Images/india_deals_logo10x.png'
 import Image from 'next/image';
 import Link from 'next/link';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+
+
+  const [opens, setOpens] = useState(false);
+const [scrolled, setScrolled] = useState(false);
+const [visible, setVisible] = useState(true);
+
+  //   const scrollToTop = () => {
+  //   window.scrollTo({
+  //     top: 0,
+  //     behavior: 'smooth'
+  //   });
+  // };
+
+  useEffect(() => {
+  const handleScroll = () => {
+    if (window.scrollY > 80) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll);
+
+  return () => {
+    window.removeEventListener("scroll", handleScroll);
+  };
+}, []);
+
+useEffect(() => {
+  let lastScroll = 0;
+
+  const handleScroll = () => {
+    const currentScroll = window.scrollY;
+
+    setScrolled(currentScroll > 80);
+
+    if (currentScroll > lastScroll && currentScroll > 100) {
+      setVisible(false); // scrolling down
+    } else {
+      setVisible(true); // scrolling up
+    }
+
+    lastScroll = currentScroll;
+  };
+
+  window.addEventListener("scroll", handleScroll);
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
+
+  
+  
 
   const navItems = [
    
@@ -41,16 +93,25 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="w-full  bg-[#313036] sticky top-0 z-100">
+    <header
+  className={`w-full  left-0 z-50 transition-all duration-500 ease-in-out
+  ${
+    scrolled
+      ? "fixed text-[#f1e6c8] bg-[#313036ab]  shadow-lg"
+      : "absolute text-[#f1e6c8] bg-transparent"
+  }
+  ${visible ? "top-0" : "top"}
+  `}
+>
       {/* TOP BAR */}
-      <div className="container mx-auto flex items-center justify-between lg:justify-around px-4 py-1">
+      <div className=" mx-auto flex items-center justify-between px-6 py-3">
         
         {/* Logo */}
         <div className="flex items-center gap-2">
           <Link href='/'><Image
             src={logo}
             alt="Shri Divine Group"
-            width={100}
+            width={scrolled ? 100 : 110}
             priority
           /></Link>
         </div>
@@ -59,11 +120,11 @@ const Navbar = () => {
         <div className="hidden lg:flex items-center gap-4">
           {/* Desktop Menu */}
       <nav className="hidden lg:block ">
-        <ul className="container mx-auto flex justify-center gap-6 pb-1 text-sm font-bold text-[#f1e6c8]">
+        <ul className="container mx-auto flex justify-between gap-10 font-semibold pb-1 text-sm ">
           {navItems.map((item) => (
             <Link href={item.link}  key={item.label}> <li
              
-              className="cursor-pointer hover:text-[#f1e6c8]  transition font-bold uppercase tracking-widest"
+              className="cursor-pointer hover:text-[#f1e6c8]  transition  uppercase tracking-widest"
             >
               {item.label}
             </li></Link>

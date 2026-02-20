@@ -10,12 +10,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import Customcomponent from "./Customcomponent/Customcomponent";
-import Transparency from "@/Images/investigation.png";
-import Expertise from "@/Images/quality.png";
-import Reliablitly from "@/Images/life-insurance.png";
-import HighQuality from '@/Images/high-quality.png';
-import  TailorMadeApproach from '@/Images/Tailor-Made-Approach.png';
-import Technology from '@/Images/technology.png';
+import Transparency from "@/Images/Transparency.svg";
+import Expertise from "@/Images/Experties.svg";
+import Reliablitly from "@/Images/Reliability.svg";
+import HighQuality from '@/Images/High Quality.svg';
+import  TailorMadeApproach from '@/Images/Approach.svg';
+import Technology from '@/Images/Technology.svg';
 
 
 
@@ -43,7 +43,7 @@ export default function Home() {
       witdth:100
     },
     {
-      label:'Reliablitly',
+      label:'Reliability',
       photo:Reliablitly,
       witdth:100
     },
@@ -55,7 +55,7 @@ export default function Home() {
     {
       label:'Tailor-Made Approach',
       photo:TailorMadeApproach,
-      witdth:150
+      witdth:100
     },
     {
       label:'Technology Oriented',
@@ -93,13 +93,7 @@ export default function Home() {
 
         {/* Text Content */}
         <div className="relative z-10 flex justify-center items-start top-40 pt-[35vw] md:pt-25 lg:pt-3 lg:pt-4">
-          {/* <div className="bg-[#f3f39b54] mx-[10%] p-4">
-            <h1 className="text-[#f1e6c8] text-2xl font-medium md:text-4xl lg:text-6xl text-center font-[CanelaDeck-Light] leading-tight">
-              RESIDENTIAL PLOT TOWNSHIP,
-              <br />
-              Where Luxury Meets Devotion
-            </h1>
-          </div> */}
+          
         </div>
       </div>
       
