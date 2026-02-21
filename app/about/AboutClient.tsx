@@ -30,7 +30,7 @@ export default function Home() {
         <div className="lg:flex  mx-10">
           
           <div className="px-0 lg:px-10 ps-0">
-            <h1 className="text-[#313036]   text-4xl lg:text-6xl">About IndiaDeals Group</h1>
+            <h1 className="text-[#313036]   text-4xl lg:text-6xl">IndiaDeals Group</h1>
             <p className="text-[#313036] my-10   text-gray-600">
              
               <p className="text-[#313036]   text-gray-600 leading-6 text-justify">
