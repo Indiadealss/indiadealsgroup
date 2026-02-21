@@ -134,7 +134,7 @@ const Customcomponent = () => {
                 placeholder="Email"
                 value={email}
                 onChange={(e) => setEmail(e.currentTarget.value)}
-                className="border p-3 rounded w-full"
+                className="border p-3 rounded w-full text-gray-800"
               />
               <input
                 type="tel"
@@ -148,19 +148,19 @@ const Customcomponent = () => {
                   }
                 }}
                 value={phone}
-                className="border p-3 rounded w-full"
+                className="border p-3 rounded w-full text-gray-800"
               />
               <input
                 type="text"
                 placeholder="City"
                 value={city}
                 onChange={(e) => setCity(e.currentTarget.value)}
-                className="border p-3 rounded w-full"
+                className="border p-3 rounded w-full text-gray-800"
               />
               <select
                 value={project}
                 onChange={(e) => setProject(e.target.value)}
-                className="border p-3 rounded w-full outline-none text-gray-800"
+                className="border p-3 rounded w-full outline-none text-gray-800 text-gray-800"
               >
                 <option value="">Select Project</option>
                 <option value="Hanumat Vihar">Hanumat Vihar</option>
@@ -172,7 +172,7 @@ const Customcomponent = () => {
                 placeholder="Message"
                 value={userMessage}
                 onChange={(e) => setUserMessage(e.currentTarget.value)}
-                className="border p-3 rounded w-full md:col-span-2 h-28"
+                className="border p-3 rounded w-full md:col-span-2 h-28 text-gray-800"
               />
 
               <div className="md:col-span-2 flex items-start gap-2 text-sm text-gray-600">
@@ -180,9 +180,9 @@ const Customcomponent = () => {
                   type="checkbox"
                   checked={consent}
                   onChange={(e) => setConsent(e.target.checked)}
-                  className="mt-1"
+                  className="mt-1 text-gray-800"
                 />
-                <p>
+                <p className='text-gray-500'>
                   I am giving consert to IndiaDeals Group and its people permission to get in touch with me. They can call me. Send me messages on my phone or by email or WhatsApp. I want them to tell me about properties and any special offers they have.I am fine, with IndiaDeals Group contacting me about IndiaDeals Group properties.
                 </p>
               </div>

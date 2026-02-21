@@ -8,7 +8,7 @@ const Privacypolicy = () => {
       <div className='px-5 lg:px-[22%] mt-[15vw] md:mt-[11vw] '>
                 <div className='bg-blue-50  py-5 rounded-lg mt-3'>
                     <Image src={privacy} alt='...' className='w-[4%] mx-auto' />
-                    <h1 className='text-center mt-3 text-4xl font-bold'><span className='text-center'>Privacy Policy</span></h1>
+                    <h1 className='text-center mt-3 text-4xl font-bold text-[#313036]'><span className='text-center text-[#313036]'>Privacy Policy</span></h1>
                 </div>
 
                 {/* privacy polocy */}
@@ -79,7 +79,7 @@ const Privacypolicy = () => {
                     <br />
                     <div className='mt-5'>
                         <span className="text-[#313036]   text-2xl text-left font-medium text-gray-500">2. Why We Collect Your Information</span>
-                       <div className='ms-4 mt-5 text-justify'>
+                       <div className='ms-4 mt-5 text-justify text-gray-500'>
                                 We collect your information for a different reasons. We want to be able to respond to your questions and provide you with service. We need your information to process bookings and transactions and to keep track of our relationships with our clients and partners. We also use your information to communicate with you about our projects and to let you know about any offers we might have. We are always trying to improve our website and make it easier for people to use so we use your information to help us do that. Sometimes we have to share your information with people like the government to meet our legal obligations. We also use your information to help prevent fraud and make sure everyone is following the rules.
                            
                              <br />
