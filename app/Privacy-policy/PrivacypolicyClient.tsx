@@ -5,9 +5,9 @@ import Image from 'next/image'
 const Privacypolicy = () => {
   return (
     <>
-      <div className='px-5 lg:px-[22%] mt-[15vw] md:mt-[11vw] '>
-                <div className='bg-blue-50  py-5 rounded-lg mt-3'>
-                    <Image src={privacy} alt='...' className='w-[4%] mx-auto' />
+      <div className='px-5 lg:px-[22%]  '>
+                <div className='bg-blue-50  py-5 rounded-lg '>
+                    <Image src={privacy} alt='...' className='w-[4%] mx-auto ' />
                     <h1 className='text-center mt-3 text-4xl font-bold text-[#313036]'><span className='text-center text-[#313036]'>Privacy Policy</span></h1>
                 </div>
 
