@@ -1,5 +1,7 @@
 'use client';
-import { useEffect, useState } from 'react';
+"use client";
+import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import { Menu, X, Phone } from 'lucide-react';
 import logo from '../../Images/india_deals_logo10x.png'
 import Image from 'next/image';
@@ -8,6 +10,8 @@ import Link from 'next/link';
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
+  const pathname = usePathname();
+const isPrivacyPage = pathname === "/privacy-policy";
 
   const [opens, setOpens] = useState(false);
 const [scrolled, setScrolled] = useState(false);
@@ -20,9 +24,13 @@ const [visible, setVisible] = useState(true);
   //   });
   // };
 
+
+  console.log(window.location.pathname);
+  
+
   useEffect(() => {
   const handleScroll = () => {
-    if (window.scrollY > 80) {
+    if (window.scrollY > 80 ) {
       setScrolled(true);
     } else {
       setScrolled(false);
@@ -96,11 +104,11 @@ useEffect(() => {
     <header
   className={`w-full  left-0 z-50 transition-all duration-50 
   ${
-    scrolled
-      ? "fixed text-[#f1e6c8] bg-[#313036ab]  shadow-lg"
+    scrolled || isPrivacyPage
+      ? `${isPrivacyPage ? 'sticky' : 'fixed'} text-[#f1e6c8] bg-[#313036ab]  shadow-lg`
       : "absolute text-[#f1e6c8] bg-transparent"
   }
-  ${visible ? "top-0" : "top"}
+  ${visible || isPrivacyPage ? "top-0" : "top"}
   `}
 >
       {/* TOP BAR */}
