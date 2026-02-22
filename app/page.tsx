@@ -16,6 +16,10 @@ import Reliablitly from "@/Images/Reliability.svg";
 import HighQuality from '@/Images/High Quality.svg';
 import  TailorMadeApproach from '@/Images/Approach.svg';
 import Technology from '@/Images/Technology.svg';
+import safety from '@/Images/Safety2x.png';
+import COMMUNITY from '@/Images/Community2x.png';
+import SUSTANABILITY from '@/Images/SUSTANABILITY2x.png';
+import INTEGRITY from '@/Images/Interigity2x.png';
 
 
 
@@ -30,6 +34,34 @@ export default function Home() {
       easing: 'ease-in-out',
     });
   }, []);
+
+
+   const certifications = [
+    {
+      label:'SAFETY',
+      photo:safety,
+      disc:'There is nothing more important than safety. Safety always comes first. It is our first priority.',
+      witdth:100
+    },
+    {
+      label:'COMMUNITY',
+      photo:COMMUNITY,
+      disc:'Being actively involved in our community defines us and our purpose.',
+      witdth:90
+    },
+    {
+      label:'SUSTANABILITY',
+      photo:SUSTANABILITY,
+      disc:"Our passion for green building and sustainability is imbedded in our roots.",
+      witdth:100
+    },
+    {
+      label:'INTEGRITY',
+      photo:INTEGRITY,
+      disc:'With unswerving honesty and integrity, we bring trust to all that we do.',
+      witdth:80
+    },
+  ]
 
   const ourValues = [
     {
@@ -133,9 +165,27 @@ export default function Home() {
           
       </section>
 
+        {/* our values */}
+             <div className=" py-10 mx-10" data-aos="fade-right">
+      
+            <h1 className="text-2xl font-bold text-center text-[#313036] uppercase">certifications</h1>
+      
+            <p className="border-b-2 w-20 mt-3 mx-auto"></p>
+              <div className="flex flex-col lg:flex-row justify-around mt-10 ">
+                {certifications.map((item,index) => (
+                  <div key={index} className="my-4 mx-4 mx-10">
+                    <h4 className="font-black text-lg text-[#313036] text-">{item.label}</h4>
+                    <Image src={item.photo} alt="Aboutusbanner" width={item.witdth} height={100} className=" z-0  mt-5 " />
+                    <p><span className="text-lg font-normal text-justify">{item.disc}</span></p>
+                  </div>
+                ))}
+              </div>
+              </div>
+       
+
       {/* project content */}
          {/* gallery */}
-       <section className="py-5 px-5 md:px-20">
+       <section className=" px-5 md:px-20">
         <Gallery cardWidth="450px" cardHeight="400px" />
       </section>
 
@@ -154,6 +204,7 @@ export default function Home() {
           ))}
         </div>
 
+ 
 
       {/* contact */}
 
