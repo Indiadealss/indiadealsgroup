@@ -78,7 +78,7 @@ const Privacypolicy = () => {
                     {/* 2 point */}
                     <br />
                     <div className='mt-5'>
-                        <span className="text-[#313036]   text-2xl text-left font-medium text-gray-500">2. Why We Collect Your Information</span>
+                        <span className="text-[#313036]   text-2xl text-left font-medium">2. Why We Collect Your Information</span>
                        <div className='ms-4 mt-5 text-justify text-gray-500'>
                                 We collect your information for a different reasons. We want to be able to respond to your questions and provide you with service. We need your information to process bookings and transactions and to keep track of our relationships with our clients and partners. We also use your information to communicate with you about our projects and to let you know about any offers we might have. We are always trying to improve our website and make it easier for people to use so we use your information to help us do that. Sometimes we have to share your information with people like the government to meet our legal obligations. We also use your information to help prevent fraud and make sure everyone is following the rules.
                            
