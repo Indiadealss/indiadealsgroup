@@ -12,13 +12,6 @@ import reracertificate from "@/Images/rera.png"
 import { useState } from "react";
 import { message } from "antd";
 import downloadPdf from "@/Images/pdbDownload.png"
-import Customcomponent from "./Customcomponent/Customcomponent";
-import Transparency from "@/Images/Transparency.svg";
-import Expertise from "@/Images/Experties.svg";
-import Reliablitly from "@/Images/Reliability.svg";
-import HighQuality from '@/Images/High Quality.svg';
-import  TailorMadeApproach from '@/Images/Approach.svg';
-import Technology from '@/Images/Technology.svg';
 
 
 export default function Home() {
@@ -108,38 +101,6 @@ export default function Home() {
     }
   };
 
-   const ourValues = [
-    {
-      label:'100% Transparency',
-      photo:Transparency,
-      witdth:100
-    },
-    {
-      label:'Expertise',
-      photo:Expertise,
-      witdth:100
-    },
-    {
-      label:'Reliability',
-      photo:Reliablitly,
-      witdth:100
-    },
-    {
-      label:'High Quality',
-      photo:HighQuality,
-      witdth:100
-    },
-    {
-      label:'Tailor-Made Approach',
-      photo:TailorMadeApproach,
-      witdth:100
-    },
-    {
-      label:'Technology Oriented',
-      photo:Technology,
-      witdth:100
-    }
-  ]
 
   useEffect(() => {
     AOS.init({
@@ -445,21 +406,7 @@ export default function Home() {
         </div>
       )}
 
-      {/* our values */}
-             <div className=" py-10">
-      
-            <h1 className="text-2xl font-bold text-center text-[#313036]">OUR VALUES</h1>
-      
-            <p className="border-b-2 w-20 mt-3 mx-auto"></p>
-              <div className="flex flex-col lg:flex-row justify-between mt-10 mx-10">
-                {ourValues.map((item,index) => (
-                  <div key={index} className="my-4">
-                    <h4 className="font-bold text-xl text-[#313036b0] text-center">{item.label}</h4>
-                    <Image src={item.photo} alt="Aboutusbanner" width={item.witdth} height={100} className=" z-0 mx-auto mt-5" />
-                  </div>
-                ))}
-              </div>
-              </div>
+     
     </div>
   );
 }
