@@ -91,7 +91,7 @@ const Privacypolicy = () => {
                     {/* 3 point */}
                     <br />
                     <div className='mt-5'>
-                        <span className="text-[#313036]   text-2xl font-medium text-gray-500">3. Who We Share Your Information With</span>
+                        <span className="text-[#313036]   text-2xl font-medium ">3. Who We Share Your Information With</span>
                         <div className='ms-2'>
                             <span className=''>
                                 <br />
