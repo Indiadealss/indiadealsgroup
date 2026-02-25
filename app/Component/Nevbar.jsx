@@ -122,7 +122,7 @@ useEffect(() => {
         <div className="flex items-center gap-2">
           <Link href='/'><Image
             src={logo}
-            alt="Shri Divine Group"
+            alt="INDIA DEALS GROUP"
             width={scrolled ? 100 : 110}
             priority
           /></Link>

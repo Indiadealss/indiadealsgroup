@@ -53,7 +53,7 @@ const Footer = () => {
             {/* LOGO */}
         <div className="flex flex-col lg:flex-row lg:justify-center lg:justify-start">
           <Link href="/">
-            <Image src={logo} alt="Shri Divine Group" className='mx-auto' width={160}  priority />
+            <Image src={logo} alt="INDIA DEALS GROUP" className='mx-auto' width={160}  priority />
           </Link>
         </div>
 
