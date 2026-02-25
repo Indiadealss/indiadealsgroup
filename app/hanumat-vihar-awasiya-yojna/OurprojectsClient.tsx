@@ -137,7 +137,7 @@ export default function Home() {
           <div className="lg:flex lg:justify-between flex-cols mx-10 lg:mx-1">
             <Image
               src="https://cdn.brandsdoor.in/indiadealss/indiadealss/1770974282692-Hanumant-Vihar-inner-projects.png"
-              alt="About Shri Divine"
+              alt="About INDIA DEALS"
               width={600}
               height={600}
               className=" rounded-lg border-4 border-[#313036]"
