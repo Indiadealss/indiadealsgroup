@@ -1,5 +1,6 @@
 import nodemailer from "nodemailer";
 import { NextResponse } from "next/server";
+import { sendOtpSms } from "./otphalper";
 
 export async function POST(req: Request) {
   try {
@@ -12,6 +13,8 @@ export async function POST(req: Request) {
         pass: process.env.MAIL_PASS,
       },
     });
+
+    
 
     await transporter.sendMail({
       from: `${project} " Lead" <${process.env.MAIL_USER}>`,
