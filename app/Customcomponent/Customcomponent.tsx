@@ -141,7 +141,7 @@ const Customcomponent = () => {
 
   return (
     <div className="m-0 lg:m-20">
-      <div className="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-lg border border-gray-300">
+      <div className="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-lg border border-gray-800 outline-none border border-gray-800 outline-none-gray-300">
         <h2 className="text-xl font-semibold mb-6">GET IN TOUCH WITH US!</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -149,14 +149,14 @@ const Customcomponent = () => {
             placeholder="Name"
             value={form.name}
             onChange={(e) => handleChange("name", e.target.value)}
-            className="border p-3 rounded"
+            className="border border-gray-800 outline-none p-3 rounded text-gray-800"
           />
 
           <input
             placeholder="Email"
             value={form.email}
             onChange={(e) => handleChange("email", e.target.value)}
-            className="border p-3 rounded"
+            className="border border-gray-800 outline-none p-3 rounded text-gray-800"
           />
 
           <input
@@ -169,20 +169,20 @@ const Customcomponent = () => {
                 e.target.value.replace(/[^0-9]/g, "")
               )
             }
-            className="border p-3 rounded"
+            className="border border-gray-800 outline-none p-3 rounded text-gray-800"
           />
 
           <input
             placeholder="City"
             value={form.city}
             onChange={(e) => handleChange("city", e.target.value)}
-            className="border p-3 rounded"
+            className="border border-gray-800 outline-none p-3 rounded text-gray-800"
           />
 
           <select
             value={form.project}
             onChange={(e) => handleChange("project", e.target.value)}
-            className="border p-3 rounded"
+            className="border border-gray-800 outline-none p-3 rounded text-gray-800"
           >
             <option value="">Select Project</option>
             <option value="Hanumat Vihar">Hanumat Vihar</option>
@@ -192,7 +192,7 @@ const Customcomponent = () => {
             placeholder="Message"
             value={form.message}
             onChange={(e) => handleChange("message", e.target.value)}
-            className="border p-3 rounded md:col-span-2 h-28"
+            className="border border-gray-800 outline-none p-3 rounded md:col-span-2 h-28 text-gray-800"
           />
 
           <div className="md:col-span-2 flex items-start gap-2 text-sm">
@@ -200,6 +200,7 @@ const Customcomponent = () => {
               type="checkbox"
               checked={consent}
               onChange={(e) => setConsent(e.target.checked)}
+              className="text-gray-800"
             />
             <p>
               I agree to be contacted regarding property offers and updates.
@@ -228,7 +229,7 @@ const Customcomponent = () => {
           maxLength={6}
           value={otp}
           onChange={(e) => setOtp(e.target.value)}
-          className="border p-3 rounded w-full mb-4"
+          className="border border-gray-800 outline-none p-3 rounded w-full mb-4"
         />
 
         <button
