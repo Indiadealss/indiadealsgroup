@@ -101,16 +101,18 @@ const Footer = () => {
       {/* DISCLAIMER */}
       <div className="py-8 px-6 sm:px-10 lg:px-[22vw] ">
         <h1 className="text-[#f1e6c8] mb-2 text-center">DISCLAIMER</h1>
-
-        
-
         <p className="text-[#f1e6c8] text-xs mb-2">
         </p>
 
         <p className="text-[#f1e6c8] text-xs">
           <FontAwesomeIcon icon={faCopyright} /> Copyright © IndiaDeals Group. All rights reserved. All content, trademarks, logos, text, graphics, images, design elements, source code, and materials displayed on this website are the exclusive intellectual property of IndiaDeals Group and are protected under applicable copyright, trademark, and intellectual property laws. Unauthorized copying, reproduction, modification, distribution, republication, display, or transmission of any material from this website, in whole or in part, is strictly prohibited without prior written consent from IndiaDeals Group. Website design, development, and maintenance are owned and controlled by IndiaDeals Group. Any violation may result in legal action under applicable laws.
         </p>
+
+        
       </div>
+<p className="text-[#f1e6c8] pb-4 mx-auto text-xs text-center">
+          Powered By DSI INDIADEALSS REAL ESTATE PRIVATE LIMITED
+        </p>
     </div>
   );
 };
