@@ -142,7 +142,7 @@ const Customcomponent = () => {
   return (
     <div className="m-0 lg:m-20">
       <div className="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-lg border border-gray-800 outline-none border border-gray-800 outline-none-gray-300">
-        <h2 className="text-xl font-semibold mb-6">GET IN TOUCH WITH US!</h2>
+        <h2 className="text-xl font-semibold mb-6 text-gray-900">GET IN TOUCH WITH US!</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <input

@@ -375,7 +375,7 @@ const [form, setForm] = useState({
       animate-[slideUp_0.3s_ease-out]
     ">
 
-            <h2 className="text-lg md:text-xl font-semibold mb-4 mt-10 md:mt-0">
+            <h2 className="text-lg md:text-xl font-semibold mb-4 mt-10 md:mt-0 text-gray-900">
               Download Brochure
             </h2>
 
