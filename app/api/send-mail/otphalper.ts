@@ -24,7 +24,9 @@ export const sendOtpSms = async (mobile: string): Promise<number> => {
   };
 
   try {
-    const message = `OTP for login into INDIADEALSS is ${otp}. Do not share it with anyone.`;
+    const message = `Your verification OTP is ${otp}. Please do not share it with anyone.
+
+- Team IndiaDeals Group`;
 
     const url = "http://nimbusit.biz/api/SmsApi/SendSingleApi";
 
