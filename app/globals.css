@@ -15,6 +15,10 @@
   scrollbar-width: none;
 }
 
+.ourMangement{
+  background-image: url('@/Images/background.jpeg') !important;
+}
+
 .footer{
   background-image: url('/Asset_23x.png') !important;
   /* background-color: #313036 */
