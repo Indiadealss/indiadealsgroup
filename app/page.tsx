@@ -176,7 +176,7 @@ export default function Home() {
                   <div key={index} className="my-4 mx-4 mx-10">
                     <h4 className="font-black text-lg text-[#313036] text-">{item.label}</h4>
                     <Image src={item.photo} alt="Aboutusbanner" width={item.witdth} height={100} className=" z-0  mt-5 " />
-                    <p><span className="text-lg font-normal text-justify">{item.disc}</span></p>
+                    <p><span className="text-lg font-normal text-justify text-[#171717]">{item.disc}</span></p>
                   </div>
                 ))}
               </div>
