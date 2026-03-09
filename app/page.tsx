@@ -10,12 +10,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import Customcomponent from "./Customcomponent/Customcomponent";
-import Transparency from "@/Images/Transparency.svg";
-import Expertise from "@/Images/Experties.svg";
-import Reliablitly from "@/Images/Reliability.svg";
-import HighQuality from '@/Images/High Quality.svg';
-import  TailorMadeApproach from '@/Images/Approach.svg';
-import Technology from '@/Images/Technology.svg';
+import Transparency from "@/Images/Transparency@2x.png";
+import Expertise from "@/Images/Expertise@2x.png";
+import Reliablitly from "@/Images/Reliability.png";
+import HighQuality from '@/Images/High Quality@2x.png';
+import  TailorMadeApproach from '@/Images/Tailored made approach@2x.png';
+import Technology from '@/Images/Tailored made approach copy@2x.png';
 import safety from '@/Images/Safety2x.png';
 import COMMUNITY from '@/Images/Community2x.png';
 import SUSTANABILITY from '@/Images/SUSTANABILITY2x.png';
@@ -79,21 +79,6 @@ export default function Home() {
       photo:Reliablitly,
       witdth:100
     },
-    {
-      label:'High Quality',
-      photo:HighQuality,
-      witdth:100
-    },
-    {
-      label:'Tailor-Made Approach',
-      photo:TailorMadeApproach,
-      witdth:100
-    },
-    {
-      label:'Technology Oriented',
-      photo:Technology,
-      witdth:100
-    }
   ]
   return (
     <div className="min-h-screen ">
@@ -195,7 +180,7 @@ export default function Home() {
       <h1 className="text-2xl font-bold text-center text-[#313036]">OUR VALUES</h1>
 
       <p className="border-b-2 w-20 mt-3 mx-auto"></p>
-        <div className="flex flex-col lg:flex-row justify-between mt-10 mx-10">
+        <div className="flex flex-col lg:flex-row justify-around mt-10 mx-10">
           {ourValues.map((item,index) => (
             <div key={index} className="my-4">
               <h4 className="font-bold text-xl text-[#313036b0] text-center">{item.label}</h4>
