@@ -11,14 +11,14 @@ const page = () => {
                 fill
                 priority
                 sizes="100vw"
-                className="object-cover absolute mt-[119px]"
+                className="object-cover absolute"
               />
             </div>
             {/* ABOUT SECTION */}
       <section className="mt-20 px-0 lg:px-20 " >
         <div className="lg:flex  mx-10">
           
-          <div className="px-0 lg:px-10 ps-0 mt-[141px]">
+          <div className="px-0 lg:px-10 ps-0 ">
             <h1 className="text-[#313036]   text-4xl lg:text-6xl">Careers</h1>
             <p className=" my-10   text-gray-600">
              <p className="  text-gray-600 leading-6 text-justify">Build Your Future With Us</p><br />

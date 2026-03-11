@@ -109,21 +109,10 @@ useEffect(() => {
   ];
 
   return (
-    <header
-  className={`w-full  left-0 z-50 transition-all duration-50 
-  ${
-    scrolled || isPrivacyPage || ischannelpatnerpolicy || career
-      ? `${isPrivacyPage || ischannelpatnerpolicy ? 'sticky' : 'fixed'} text-[#f1e6c8] bg-[#313036ab]  shadow-lg`
-      : "absolute text-[#f1e6c8] bg-transparent"
-  }
-  ${visible || isPrivacyPage || ischannelpatnerpolicy || career ? "top-0" : "top"}
-  `}
->
+    <header className="w-full sticky top-0 z-50 bg-[#313036ab] text-[#f1e6c8] shadow-lg">
       {/* TOP BAR */}
       <div
-  className={`mx-auto flex items-center justify-between px-6 py-3 transition-all duration-1000 ${
-    scrolled ? "py-2" : "py-5"
-  }`}
+  className="mx-auto flex items-center justify-between px-6 py-4"
 >
         
         {/* Logo */}
