@@ -83,7 +83,7 @@ const Footer = () => {
 
         {/* CONTACT */}
         <div className="w-auto md:w-[35%]">
-          <h1 className="text-[#f1e6c8]  py-2 font-bold">Registered office</h1>
+          <h1 className="text-[#f1e6c8]  py-2 font-bold">Corporate office</h1>
           <p className="text-[#f1e6c8] text-sm uppercase tracking-wider">
            <FontAwesomeIcon icon={faBuilding} className='mr-2' />C-320, 3rd Floor, Block C, Golden I, Techzone 4, Greater Noida West,Uttar Pradesh, 201306
           </p>

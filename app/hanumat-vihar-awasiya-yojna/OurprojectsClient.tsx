@@ -185,7 +185,7 @@ const [form, setForm] = useState({
 
       <div className="my-5 mx-5 lg:mx-20">
         {/* projects */}
-        <h1 className="text-[#313036]   font-bold text-4xl text-center mt-10">Hanumat Vihar Awasiya Yojna (MVDA) <br /></h1>
+        <h1 className="text-[#313036]   font-bold text-lg lg:text-4xl text-center mt-10">Hanumat Vihar Awasiya Yojna (MVDA) <br /></h1>
 
 
         {/*  */}

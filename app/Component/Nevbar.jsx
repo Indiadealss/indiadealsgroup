@@ -74,6 +74,8 @@ useEffect(() => {
       label:'Our Projects',
       submenu: [
         {label:'Hanumat Vihar Awasiya Yojna (MVDA)',link:'/hanumat-vihar-awasiya-yojna'},
+        {label:'Upcoming Project(Barsana)',link:'/barsana'},
+        {label:'Upcoming Project(Ayodhya)',link:'/ayodhya'},
       ]
     },
     {

@@ -125,7 +125,7 @@ export default function Home() {
 
       {/* Title */}
 
-        <h1 className="text-[#313036]   font-bold text-4xl text-center mt-10 uppercase">INDIADEALS GROUP<br /> Trusted Real Estate Developer</h1>
+        <h1 className="text-[#313036]   font-bold text-lg md:text-4xl text-center mt-10 uppercase">INDIADEALS GROUP<br /> Trusted Real Estate Developer</h1>
 
 
       {/* ABOUT SECTION */}
