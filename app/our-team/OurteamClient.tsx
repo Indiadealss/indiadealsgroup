@@ -27,7 +27,7 @@ const page = () => {
             <div className=''>
                 
 
-                <div className=' p-10 bg-opacity-0'>
+                <div className='p-0 md:p-10 bg-opacity-0'>
                   <div className='mx-auto'>
                 <h1 className='text-center mt-10 font-bold text-[#313036] text-xl text-4xl uppercase'>Our Management</h1>
                 <div className='mx-auto w-10 border mt-3'></div>
@@ -41,8 +41,20 @@ const page = () => {
                       <h1 className='text-center text-[#313036] uppercase font-black text-xl'>Mrs. Soni Yadav</h1>
                     </div>
 
-                    <div className='mt-10 ms-10'>
-                      <h1 className='font-bold text-[#313036] text-xl'>Managing Director (MD) - INDIADEALSGROUP</h1>
+                    <div className='mt-10 ms-4'>
+                      <h1 className='font-bold text-[#313036] text-xl uppercase'>Managing Director (MD) - INDIADEALSGROUP</h1><br />
+                       <div className='w-[85vw] md:w-[60vw] ms-4 pe-10'>
+                        <p className='text-justify text-gray-600'>
+                          <span className='text-justify text-gray-600 leading-6'>
+                            Soni Yadav is a highly experienced real estate professional with 14 years of extensive experience in the real estate industry. She has built a strong reputation for delivering reliable property consultation and helping clients make confident investment decisions.
+She holds a Bachelor’s Degree in Computer Science (BCA), which gives her strong analytical and technological skills that support modern real estate marketing and client management.
+Soni has also completed professional training certifications in the real estate sector, enhancing her knowledge of property laws, sales strategies, and client advisory.
+She is a RERA Registered Real Estate Professional, ensuring transparency, legal compliance, and trustworthy services for every client.
+With deep market knowledge, strong negotiation skills, and a client-focused approach,
+ She helps buyers and investors find the right property with maximum value and long-term growth potential.
+                          </span>
+                        </p>
+                       </div>
                     </div>
                     </div>
 
@@ -56,7 +68,18 @@ const page = () => {
                     </div>
 
                     <div className='mt-10 ms-4'>
-                      <h1 className='font-bold text-xl text-[#313036] uppercase'>Managing Director (MD) - INDIADEALSGROUP</h1>
+                      <h1 className='font-bold text-xl text-[#313036] uppercase'>Managing Director (MD) - INDIADEALSGROUP</h1><br />
+                      <div className='w-[85vw] lg:w-[60vw] ms-4 pe-10'>
+                        <p className='text-justify text-gray-600'>
+                          <span className='text-justify text-gray-600 leading-6'>
+                           Deepu Jaiswal is a dedicated real estate professional with over 15 years of experience in the real estate industry. He has successfully guided numerous clients in making profitable property investments and building long-term real estate portfolios.
+He holds a Master’s Degree in Commerce (M.Com), which provides him with strong knowledge in finance, business management, and investment planning—skills that are essential for strategic property advisory.
+Deepu has also completed professional training certifications in real estate, strengthening his expertise in property marketing, legal compliance, and customer relationship management.
+He is a RERA Registered Real Estate Professional, ensuring transparency, ethical practices, and secure property transactions for clients.
+With deep market insight, strong leadership, and a vision for growth, Deepu Jaiswal is committed to helping clients find high-value real estate opportunities and secure long-term investment returns.
+                          </span>
+                        </p>
+                       </div>
                     </div>
                     </div>
 

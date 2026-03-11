@@ -70,9 +70,11 @@ useEffect(() => {
       label:'About us',
       link:'/about'
     },
-    {
+     {
       label:'Our Projects',
-      link:'/hanumat-vihar-awasiya-yojna'
+      submenu: [
+        {label:'Hanumat Vihar Awasiya Yojna (MVDA)',link:'/hanumat-vihar-awasiya-yojna'},
+      ]
     },
     {
       label:'Our team',
@@ -93,10 +95,10 @@ useEffect(() => {
       label:'Contact us',
       link:'/contact-us'
     },
-    // {
-    //   label:'Costumer interface',
-    //   link:'/review'
-    // }
+    {
+      label:'Career',
+      link:'/career'
+    }
   ];
 
   return (
@@ -195,14 +197,32 @@ useEffect(() => {
           <p className='mx-5' onClick={() => setOpen(false)}><span className='text-2xl float-right text-red-600'>x</span></p>
           <ul className="flex flex-col px-4 py-3 gap-3 text-sm font-medium">
             {navItems.map((item) => (
-              <Link href={item.link} key={item.label} onClick={() => setOpen(false)}><li
-                key={item.label}
-                className=" pb-2 cursor-pointer  hover:text-[#f1e6c8] font-bold"
-                onClick={() => setOpen(false)}
-              >
-                {item.label}
-              </li></Link>
-            ))}
+  <div key={item.label}>
+    {item.link ? (
+      <Link href={item.link} onClick={() => setOpen(false)}>
+        <li className="pb-2 cursor-pointer font-bold text-[#f1e6c8] hover:text-[#f1e6c8]">
+          {item.label}
+        </li>
+      </Link>
+    ) : (
+      <>
+        <li className="pb-2 font-bold">{item.label}</li>
+
+        {item.submenu?.map((sub) => (
+          <Link
+            key={sub.label}
+            href={sub.link}
+            onClick={() => setOpen(false)}
+          >
+            <li className="pl-4 pb-2 text-sm  text-[#f1e6c8] hover:text-[#f1e6c8]">
+              {sub.label}
+            </li>
+          </Link>
+        ))}
+      </>
+    )}
+  </div>
+))}
           </ul>
 
           <div className="px-4 py-3 text-sm">
