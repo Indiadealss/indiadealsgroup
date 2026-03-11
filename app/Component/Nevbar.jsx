@@ -206,7 +206,7 @@ useEffect(() => {
       </Link>
     ) : (
       <>
-        <li className="pb-2 font-bold">{item.label}</li>
+        <li className="pb-2 text-[#e3ba43] font-bold">{item.label}</li>
 
         {item.submenu?.map((sub) => (
           <Link

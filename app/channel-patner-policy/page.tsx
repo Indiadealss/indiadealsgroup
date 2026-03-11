@@ -5,7 +5,7 @@ import Image from 'next/image'
 const page = () => {
   return (
     <>
-            <div className='  px-[22%] my-10'>
+            <div className='px-5  lg:px-[22%] my-10'>
                 <div className='  bg-blue-50  py-5 rounded-lg mt-3'>
                     <Image src={privacy} alt='...' className=' w-[4%] mx-auto' />
                     <h2 className='text-[#313036]  text-center mt-3 text-4xl font-bold '><span className='text-[#313036] text-center'>Channel Partner Policy</span></h2>
