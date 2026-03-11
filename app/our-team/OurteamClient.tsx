@@ -42,7 +42,7 @@ const page = () => {
                     </div>
 
                     <div className='mt-10 ms-10'>
-                      <h1 className='font-bold text-[#313036] text-xl'>Director - INDIADEALSGROUP</h1>
+                      <h1 className='font-bold text-[#313036] text-xl'>Managing Director (MD) - INDIADEALSGROUP</h1>
                     </div>
                     </div>
 
