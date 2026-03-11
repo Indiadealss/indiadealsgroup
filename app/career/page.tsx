@@ -21,9 +21,9 @@ const page = () => {
           <div className="px-0 lg:px-10 ps-0 ">
             <h1 className="text-[#313036]   text-4xl lg:text-6xl">Careers</h1>
             <p className=" my-10   text-gray-600">
-             <p className="  text-gray-600 leading-6 text-justify">Build Your Future With Us</p><br />
+             {/* <p className="  text-gray-600 leading-6 text-justify"></p> */}
               <p className="  text-gray-600 leading-6 text-justify">
-              At <span className='font-bold text-[#313036]'>DSI Indiadealss Real Estate Pvt. Ltd.,</span>  we believe that our people are the foundation of our success. We are always looking for passionate, driven, and talented individuals who want to grow in the dynamic world of real estate.
+             Build Your Future With Us. At <span className='font-bold text-[#313036]'>INDIADEALS GROUP</span>  we believe that our people are the foundation of our success. We are always looking for passionate, driven, and talented individuals who want to grow in the dynamic world of real estate.
               <br />
                 <br />
                 If you are ambitious, customer-focused, and ready to build a rewarding career, we invite you to join our team.
