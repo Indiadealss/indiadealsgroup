@@ -1,9 +1,21 @@
+import Image from 'next/image'
 import React from 'react'
+import ayodhya from '@/Images/comming_soon.jpg';
 
 const page = () => {
   return (
     <div>
-      <p>...</p>
+      {/* HERO */}
+      <div className="relative w-full h-[30vw] min-h-[60vh]">
+        <Image
+          src={ayodhya}
+          alt="Vrindavan Banner"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
+        />
+      </div>
     </div>
   )
 }

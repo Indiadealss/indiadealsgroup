@@ -38,7 +38,8 @@ const page = () => {
                 <span className='font-medium text-[#313036] leading-6 text-justify'>Industry Exposure</span><br />
                 <span className='text-gray-600 leading-6 text-justify'>We maintain a collaborative, ethical, and professional work culture that encourages innovation and teamwork.</span><br /><br />
                 <span className='font-medium text-[#313036] leading-6 text-justify'>Current Opportunities</span><br />
-                <span className='text-gray-600 leading-6 text-justify'>Real Estate Sales Executive</span><br /><br />
+                <span className='text-gray-600 leading-6 text-justify'>Real Estate Sales Executive</span><br /><br /><br />
+        <span className='font-bold text-xl text-[#313036] leading-6 '>Current Openings</span><br />
                 
 
               </p>
@@ -47,7 +48,6 @@ const page = () => {
         </div>
       </section>
       <div className='mx-auto'>
-        <p className='text-center'><span className='font-bold text-xl text-[#313036] leading-6 text-center'>Current Oppenings</span><br /></p>
      </div>
     </div>
   )

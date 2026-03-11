@@ -165,10 +165,13 @@ useEffect(() => {
         </div>
 
         
-          <div className="hidden lg:flex items-center gap-2 bg-[#d2b02d] text-white px-4 py-2 rounded">
+          <a
+              href="tel:+919818763100"
+              
+            ><div className="hidden lg:flex items-center gap-2 bg-[#d2b02d] text-white px-4 py-2 rounded">
             <Phone size={16} />
             <span className="font-semibold cursor-pointer">+91-9818763100</span>
-          </div>
+          </div></a>
 
         {/* Mobile buttons */}
         <div className="lg:hidden flex justify-between  gap-3">

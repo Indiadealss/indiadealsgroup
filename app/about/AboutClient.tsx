@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import aboutTemImage from "@/Images/shridivineabout.jpg";
-import Aboutusbanner from "@/Images/About us.jpg";
+import Aboutusbanner from "@/Images/about_us.jpg";
 import AOS from 'aos'
 import { useEffect } from "react";
 

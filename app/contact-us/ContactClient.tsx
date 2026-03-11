@@ -1,7 +1,7 @@
 'use client'
 
 import Image from "next/image";
-import virndavan from '@/Images/CONTACT_US.jpg.jpeg';
+import virndavan from '@/Images/contactUs.jpg';
 import Customcomponent from "../Customcomponent/Customcomponent";
 
 export default function Home() {
