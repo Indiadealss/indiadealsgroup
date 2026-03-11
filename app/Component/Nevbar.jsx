@@ -80,11 +80,11 @@ useEffect(() => {
     },
     {
       label:'Our team',
-      link:'/our-team'
-    },
-    {
-      label:'Blogs',
-      link:'/blogs'
+      submenu: [
+        {label:'Management Team',link:'/our-team'},
+        {label:'Sales Team',link:'/sales-team'},
+        {label:'IT Team',link:'/it-team'},
+      ]
     },
      {
       label:'Our Policy',
@@ -98,7 +98,7 @@ useEffect(() => {
       link:'/contact-us'
     },
     {
-      label:'Career',
+      label:'Careers',
       link:'/career'
     }
   ];

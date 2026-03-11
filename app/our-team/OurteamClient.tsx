@@ -42,7 +42,7 @@ const page = () => {
             </div>
 
             <div className='mt-10 ms-4'>
-              <h1 className='font-bold text-[#313036] text-xl uppercase'>Managing Director (MD)</h1><br />
+              <h1 className='font-bold text-[#313036] text-xl uppercase'>Chief executive officer (CEO)</h1><br />
               <div className='w-[85vw] md:w-[60vw] ms-4 pe-10'>
                 <p className='text-justify text-gray-600'>
                   <span className='text-justify text-gray-600 leading-6'>
@@ -68,7 +68,7 @@ const page = () => {
             </div>
 
             <div className='mt-10 ms-4'>
-              <h1 className='font-bold text-xl text-[#313036] uppercase'>Director - Sales</h1><br />
+              <h1 className='font-bold text-xl text-[#313036] uppercase'>Managing Director (MD)</h1><br />
               <div className='w-[85vw] lg:w-[60vw] ms-4 pe-10'>
                 <p className='text-justify text-gray-600'>
                   <span className='text-justify text-gray-600 leading-6'>
@@ -90,7 +90,7 @@ const page = () => {
                 <Image src={RichaMam} alt='...' className='w-80  rounded-t-full' />
               </div>
 
-              <h1 className='text-center text-[#313036] uppercase font-black text-xl'>Mrs. Richa Keshri</h1>
+              <h1 className='text-center text-[#313036] uppercase font-black text-xl'>Mrs. Richa Kesari</h1>
             </div>
 
             <div className='mt-10 ms-10'>
@@ -98,11 +98,11 @@ const page = () => {
               <div className='w-[85vw] lg:w-[60vw] ms-2 pe-10'>
                 <p className='text-justify text-gray-600'>
                   <span className='text-justify text-gray-600 leading-6'>
-                   Human Resource & Office Administration Professional
-Richa Keshri is a dedicated professional with 5 years of experience in Human Resource and Office Administration. She plays an important role in managing daily office operations, employee coordination, and administrative efficiency within the organization.
-She holds a Bachelor of Commerce (B.Com) degree and also has a professional qualification in Company Secretary, which adds strong knowledge of corporate compliance, office processes, documentation, and organizational management.
-With her structured working style, professional approach, and strong administrative capabilities, Richa contributes significantly to maintaining smooth internal operations and effective human resource management.
-Her expertise in office coordination, employee support, documentation, and compliance makes her a valuable part of the organization’s growth and professionalism.
+                    Richa Kesari is a Human Resource & Office Administration Professional
+                     and dedicated professional with 5 years of experience in Human Resource and Office Administration. She plays an important role in managing daily office operations, employee coordination, and administrative efficiency within the organization.
+                    She holds a Bachelor of Commerce (B.Com) degree and also has a professional qualification in Company Secretary, which adds strong knowledge of corporate compliance, office processes, documentation, and organizational management.
+                    With her structured working style, professional approach, and strong administrative capabilities, Richa contributes significantly to maintaining smooth internal operations and effective human resource management.
+                    Her expertise in office coordination, employee support, documentation, and compliance makes her a valuable part of the organization’s growth and professionalism.
                   </span>
                 </p>
               </div>
