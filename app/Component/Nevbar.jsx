@@ -200,7 +200,7 @@ useEffect(() => {
   <div key={item.label}>
     {item.link ? (
       <Link href={item.link} onClick={() => setOpen(false)}>
-        <li className="pb-2 cursor-pointer font-bold text-[#f1e6c8] hover:text-[#f1e6c8]">
+        <li className="pb-2 cursor-pointer font-bold text-[#e3ba43] hover:text-[#f1e6c8]">
           {item.label}
         </li>
       </Link>
@@ -214,7 +214,7 @@ useEffect(() => {
             href={sub.link}
             onClick={() => setOpen(false)}
           >
-            <li className="pl-4 pb-2 text-sm  text-[#f1e6c8] hover:text-[#f1e6c8]">
+            <li className="pl-4 pb-2 text-sm  text-[#e3ba43] hover:text-[#f1e6c8]">
               {sub.label}
             </li>
           </Link>
