@@ -185,7 +185,7 @@ const [form, setForm] = useState({
 
       <div className="my-5 mx-5 lg:mx-20">
         {/* projects */}
-        <h1 className="text-[#313036]   font-bold text-lg lg:text-4xl text-center mt-10">Hanumat Vihar Awasiya Yojna (MVDA) <br /></h1>
+        <h1 className="text-[#313036]   font-bold text-lg lg:text-4xl text-center mt-10">Hanumat Vihar Awasiya Yojna (Vrindavan) <br /></h1>
 
 
         {/*  */}
@@ -224,9 +224,9 @@ const [form, setForm] = useState({
             <div className="pt-3 px-2 lg:px-5 text-justify">
               <h1 className="text-[#313036]   text-2xl font-medium">Legal Security and Approvals:</h1>
               <p className="text-gray-600   my-5">
-                One of the aspects of Hanumat Vihar Awasiya Yojna is the safety of investment. The project is approved by MVDA and RERA which means that it is legally documented and compliant with all regulations. This gives buyers peace of mind. Protects their interests.
+                One of the aspects of Hanumat Vihar Awasiya Yojna is the safety of investment. The project is approved by Vrindavan and RERA which means that it is legally documented and compliant with all regulations. This gives buyers peace of mind. Protects their interests.
 
-                <span className="font-bold"> <Link rel="stylesheet" href="https://indiadealsgroup.com/hanumat-vihar-awasiya-yojna" >Hanumat Vihar Awasiya Yojna</Link></span> has all the approvals, including MVDA approval and RERA registration. The project is also legally documented, which means that buyers can be sure that their investment is safe.
+                <span className="font-bold"> <Link rel="stylesheet" href="https://indiadealsgroup.com/hanumat-vihar-awasiya-yojna" >Hanumat Vihar Awasiya Yojna</Link></span> has all the approvals, including Vrindavan approval and RERA registration. The project is also legally documented, which means that buyers can be sure that their investment is safe.
               </p>
             </div>
 

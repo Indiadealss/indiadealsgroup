@@ -147,6 +147,28 @@ export default function Home() {
              </p>
           </div>
         </div>
+
+        <div className="px-0 lg:px-10">
+          <p className="text-[#313036] my-10   text-gray-600 text-justify tracking-tight">
+            Indiadeals Group is a dynamic and rapidly growing real estate company committed to delivering trustworthy, transparent, and high-value property solutions. With a strong vision to transform the real estate experience for investors and home buyers, Indiadeals Group focuses on developing and marketing premium residential and investment projects across strategic locations.
+          </p>
+          <p className="text-[#313036] my-10   text-gray-600 text-justify tracking-tight">
+            Founded with the mission of making real estate investment simple, secure, and profitable, the company has built a reputation for professionalism, reliability, and customer satisfaction. Our team consists of experienced real estate professionals, legal advisors, marketing experts, and channel partners who work together to provide seamless property investment opportunities.
+At Indiadeals Group, we believe that buying property is not just a transaction but a life-changing investment. Therefore, we ensure that every project we offer meets high standards of location advantage, legal transparency, infrastructure development, and long-term appreciation potential.
+          </p>
+          <p className="text-[#313036] my-10   text-gray-600 text-justify tracking-tight">
+            Our portfolio includes carefully planned residential plotting projects that are designed to provide both lifestyle benefits and strong returns on investment. We focus on locations with future growth potential, excellent connectivity, and increasing demand, making our projects ideal for both end users and investors.
+          </p>
+          <p className="text-[#313036] my-10   text-gray-600 text-justify tracking-tight">
+            One of our flagship developments, Hanumat Vihar Awasiya Yojna, located on RAL Road, Vrindavan, Mathura (Uttar Pradesh), reflects our commitment to quality planning and premium living. This project offers well-designed residential plots with modern infrastructure, making it an attractive destination for families and investors seeking a peaceful yet well-connected environment.
+          </p>
+          <p className="text-[#313036] my-10   text-gray-600 text-justify tracking-tight">
+            Indiadeals Group also works closely with channel partners, influencers, and marketing associates, creating a strong distribution network that helps deliver real estate opportunities to a wider audience. Our business model emphasizes collaboration, growth, and long-term partnerships.
+          </p>
+          <p className="text-[#313036] my-10   text-gray-600 text-justify tracking-tight">
+            We take pride in maintaining ethical business practices, clear documentation, and investor-friendly policies, including innovative investment schemes that create confidence and security for our clients.
+          </p>
+        </div>
           
       </section>
 

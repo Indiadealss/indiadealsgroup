@@ -13,6 +13,7 @@ const Navbar = () => {
   const pathname = usePathname();
 const isPrivacyPage = pathname === "/privacy-policy";
 const ischannelpatnerpolicy = pathname === "/channel-patner-policy";
+const career = pathname === "/career";
 
   const [opens, setOpens] = useState(false);
 const [scrolled, setScrolled] = useState(false);
@@ -73,7 +74,7 @@ useEffect(() => {
      {
       label:'Our Projects',
       submenu: [
-        {label:'Hanumat Vihar Awasiya Yojna (MVDA)',link:'/hanumat-vihar-awasiya-yojna'},
+        {label:'Hanumat Vihar Awasiya Yojna (Vrindavan)',link:'/hanumat-vihar-awasiya-yojna'},
         {label:'Upcoming Project(Barsana)',link:'/barsana'},
         {label:'Upcoming Project(Ayodhya)',link:'/ayodhya'},
       ]
@@ -107,11 +108,11 @@ useEffect(() => {
     <header
   className={`w-full  left-0 z-50 transition-all duration-50 
   ${
-    scrolled || isPrivacyPage || ischannelpatnerpolicy
+    scrolled || isPrivacyPage || ischannelpatnerpolicy || career
       ? `${isPrivacyPage || ischannelpatnerpolicy ? 'sticky' : 'fixed'} text-[#f1e6c8] bg-[#313036ab]  shadow-lg`
       : "absolute text-[#f1e6c8] bg-transparent"
   }
-  ${visible || isPrivacyPage || ischannelpatnerpolicy ? "top-0" : "top"}
+  ${visible || isPrivacyPage || ischannelpatnerpolicy || career ? "top-0" : "top"}
   `}
 >
       {/* TOP BAR */}

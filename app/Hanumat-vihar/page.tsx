@@ -51,10 +51,10 @@ export default function page() {
                 <br />
                 Residents can enjoy the evening light shows and spiritual talks at Prem Mandir & ISKCON, which are conveniently located.
                 <h3 className="text-[#313036] my-5   text-xl lg:text-2xl">Connectivity:</h3> Residents of Delhi-NCR find the location to be an ideal second home due to its excellent connections to the Yamuna Expressway and the NH-19 (Delhi-Agra Highway).
-                <h3 className="text-[#313036] my-5   text-xl lg:text-2xl">MVDA New Housing Plan 2026:</h3> A Controlled Development
+                <h3 className="text-[#313036] my-5   text-xl lg:text-2xl">Vrindavan New Housing Plan 2026:</h3> A Controlled Development
                 <br />
-                In order to make sure that the twin cities' growth is planned, the Mathura-Vrindavan Development Authority (MVDA) has taken the initiative. There is a strong push for high-quality infrastructure as part of the MVDA New Housing Scheme 2026.
-                <br /> <br />Hanumat Vihar is a benchmark in quality for investors searching for MVDA-approved plots in Vrindavan or investigating the MVDA new housing scheme in Vrindavan. Private townships such as Hanumat Vihar offer ready-to-move-in plots in Vrindavan for sale with immediate possession and registry, avoiding the lengthy waiting periods typically associated with government lotteries, while the authority opens windows for Vrindavan Awasiyaiya Yojana application online.
+                In order to make sure that the twin cities' growth is planned, the Mathura-Vrindavan Development Authority (Vrindavan) has taken the initiative. There is a strong push for high-quality infrastructure as part of the Vrindavan New Housing Scheme 2026.
+                <br /> <br />Hanumat Vihar is a benchmark in quality for investors searching for Vrindavan-approved plots in Vrindavan or investigating the Vrindavan new housing scheme in Vrindavan. Private townships such as Hanumat Vihar offer ready-to-move-in plots in Vrindavan for sale with immediate possession and registry, avoiding the lengthy waiting periods typically associated with government lotteries, while the authority opens windows for Vrindavan Awasiyaiya Yojana application online.
                 <br />
               </p>
             </div>
