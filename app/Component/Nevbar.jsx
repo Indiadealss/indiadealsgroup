@@ -68,6 +68,10 @@ useEffect(() => {
   const navItems = [
    
     {
+      label:'Home',
+      link:'/'
+    },
+    {
       label:'About us',
       link:'/about'
     },
