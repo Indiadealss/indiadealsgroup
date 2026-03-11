@@ -12,17 +12,13 @@ const Navbar = () => {
 
   const pathname = usePathname();
 const isPrivacyPage = pathname === "/privacy-policy";
+const ischannelpatnerpolicy = pathname === "/channel-patner-policy";
 
   const [opens, setOpens] = useState(false);
 const [scrolled, setScrolled] = useState(false);
 const [visible, setVisible] = useState(true);
 
-  //   const scrollToTop = () => {
-  //   window.scrollTo({
-  //     top: 0,
-  //     behavior: 'smooth'
-  //   });
-  // };
+
 
 
   console.log(window.location.pathname);
@@ -87,8 +83,11 @@ useEffect(() => {
       link:'/blogs'
     },
      {
-      label:'Privacy & Policy',
-      link:'/privacy-policy'
+      label:'Our Policy',
+      submenu: [
+        {label:'Privacy Policy',link:'/privacy-policy'},
+        {label:'Channel Partner Policy',link:'/channel-patner-policy'}
+      ]
     },
     {
       label:'Contact us',
@@ -104,11 +103,11 @@ useEffect(() => {
     <header
   className={`w-full  left-0 z-50 transition-all duration-50 
   ${
-    scrolled || isPrivacyPage
-      ? `${isPrivacyPage ? 'sticky' : 'fixed'} text-[#f1e6c8] bg-[#313036ab]  shadow-lg`
+    scrolled || isPrivacyPage || ischannelpatnerpolicy
+      ? `${isPrivacyPage || ischannelpatnerpolicy ? 'sticky' : 'fixed'} text-[#f1e6c8] bg-[#313036ab]  shadow-lg`
       : "absolute text-[#f1e6c8] bg-transparent"
   }
-  ${visible || isPrivacyPage ? "top-0" : "top"}
+  ${visible || isPrivacyPage || ischannelpatnerpolicy ? "top-0" : "top"}
   `}
 >
       {/* TOP BAR */}
@@ -131,18 +130,40 @@ useEffect(() => {
         {/* Desktop Right */}
         <div className="hidden lg:flex items-center gap-4">
           {/* Desktop Menu */}
-      <nav className="hidden lg:block ">
-        <ul className="container mx-auto flex justify-between gap-10 font-semibold pb-1 text-sm ">
-          {navItems.map((item) => (
-            <Link href={item.link}  key={item.label}> <li
-             
-              className="cursor-pointer hover:text-[#f1e6c8]  transition  uppercase tracking-widest"
-            >
+      <nav className="hidden lg:block">
+  <ul className="container mx-auto flex gap-10 font-semibold pb-1 text-sm">
+    {navItems.map((item) => (
+      <li key={item.label} className="relative group uppercase tracking-widest">
+
+        {item.submenu ? (
+          <>
+            <span className="cursor-pointer hover:text-[#f1e6c8]">
               {item.label}
-            </li></Link>
-          ))}
-        </ul>
-      </nav>
+            </span>
+
+            {/* Dropdown */}
+            <ul className="absolute w-[max-content]  bg-[#313036ab] left-0 top-8  text-black shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 min-w-[180px]">
+              {item.submenu.map((sub) => (
+                <Link href={sub.link} key={sub.label}>
+                  <li className="px-4 py-2 cursor-pointer text-[#f0e5c7]">
+                    {sub.label}
+                  </li>
+                </Link>
+              ))}
+            </ul>
+          </>
+        ) : (
+          <Link href={item.link}>
+            <span className="cursor-pointer hover:text-[#f1e6c8]">
+              {item.label}
+            </span>
+          </Link>
+        )}
+
+      </li>
+    ))}
+  </ul>
+</nav>
         </div>
 
         
@@ -176,7 +197,7 @@ useEffect(() => {
             {navItems.map((item) => (
               <Link href={item.link} key={item.label} onClick={() => setOpen(false)}><li
                 key={item.label}
-                className=" pb-2 cursor-pointer hover:text-[#f1e6c8] text-[#ebb51f] font-bold"
+                className=" pb-2 cursor-pointer  hover:text-[#f1e6c8] font-bold"
                 onClick={() => setOpen(false)}
               >
                 {item.label}
