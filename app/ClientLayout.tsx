@@ -1,34 +1,18 @@
 'use client';
 
 import dynamic from 'next/dynamic';
+import Navbar from './Component/Nevbar.jsx'
+import Footer from './Component/Footer.jsx'
+import Fixedicons from './Component/Fixedicons.jsx'
+import Fixedcalliocns from './Component/Fixedcallicons.jsx'
+import Fixedupicons from './Component/Fixedupicons.jsx';
 
-const Navbar = dynamic(() => import('./Component/Nevbar.jsx'), {
-  ssr: false,
-});
-
-
-
-const Footer = dynamic(() => import('./Component/Footer.jsx'), {
-  ssr: false,
-});
-
-const Fixedicons = dynamic(() => import('./Component/Fixedicons.jsx'), {
-  ssr: false,
-});
-
-const Fixedcalliocns = dynamic(() => import('./Component/Fixedcallicons.jsx'), {
-  ssr: false,
-});
-
-const Fixedupicons = dynamic(() => import('./Component/Fixedupicons.jsx'), {
-  ssr: false,
-});
-
-export default function ClientLayout({
-  children,
-}: {
+type Props = {
   children: React.ReactNode;
-}) {
+};
+
+
+export default function ClientLayout({ children }: Props) {
   return (
     <>
       <Navbar />
