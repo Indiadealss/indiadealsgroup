@@ -3,7 +3,7 @@
 import Image from "next/image";
 import aboutTemImage from "@/Images/shridivineabout.jpg";
 import virndavan from "@/Images/Vrindavan-Banner.jpg";
-import AOS from 'aos'
+import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -16,11 +16,16 @@ import Customcomponent from "../Customcomponent/Customcomponent";
 export default function page() {
 
   useEffect(() => {
-    AOS.init({
-      duration: 800,
-      once: true,
-      easing: 'ease-in-out',
-    });
+    const initAOS = async () => {
+      const AOS = (await import("aos")).default;
+      AOS.init({
+        duration: 800,
+        once: true,
+        easing: "ease-in-out",
+      });
+    };
+
+    initAOS();
   }, []);
   return (
     <div className="min-h-screen">

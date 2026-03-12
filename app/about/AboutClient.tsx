@@ -3,7 +3,7 @@
 import Image from "next/image";
 import aboutTemImage from "@/Images/shridivineabout.jpg";
 import Aboutusbanner from "@/Images/about_us.jpg";
-import AOS from 'aos'
+import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 
@@ -30,12 +30,17 @@ export default function Home() {
 };
 
   useEffect(() => {
+    const initAOS = async () => {
+      const AOS = (await import("aos")).default;
       AOS.init({
         duration: 800,
         once: true,
-        easing: 'ease-in-out',
+        easing: "ease-in-out",
       });
-    }, []);
+    };
+
+    initAOS();
+  }, []);
   return (
     <div className="min-h-screen">
       <div className="">

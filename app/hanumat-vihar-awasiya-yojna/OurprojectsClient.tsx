@@ -192,7 +192,7 @@ const [form, setForm] = useState({
 
 
         {/* ABOUT SECTION */}
-        <section className="py-20 px-0 lg:px-2" data-aos="fade-up">
+        <section className="py-20 px-0 lg:px-2" >
           <div className="lg:flex lg:justify-between flex-cols mx-10 lg:mx-1">
             <Image
               src="https://cdn.brandsdoor.in/indiadealss/indiadealss/1770974282692-Hanumant-Vihar-inner-projects.png"
