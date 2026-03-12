@@ -9,8 +9,8 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import Customcomponent from "./Customcomponent/Customcomponent";
 import Transparency from "@/Images/Transparency@2x.png";
-import Expertise from "@/Images/Expertise@2x.png";
-import Reliablitly from "@/Images/Reliability.png";
+import LongTerm from "@/Images/Long-Term_Investment_Value2x.png";
+import Reliablitly from "@/Images/Strong_Relationship_Building2x.png";
 import HighQuality from '@/Images/High Quality@2x.png';
 import  TailorMadeApproach from '@/Images/Tailored made approach@2x.png';
 import Technology from '@/Images/Tailored made approach copy@2x.png';
@@ -18,6 +18,9 @@ import safety from '@/Images/Safety2x.png';
 import COMMUNITY from '@/Images/Community2x.png';
 import SUSTANABILITY from '@/Images/SUSTANABILITY2x.png';
 import INTEGRITY from '@/Images/Interigity2x.png';
+import costumer from '@/Images/Customer-First_Approach2x.png'
+import ProfessionalE from '@/Images/Professional_Excellence2x.png';
+import Home3 from '@/Images/Home3.jpg'
 
 
 
@@ -54,17 +57,27 @@ export default function Home() {
 
   const ourValues = [
     {
-      label:'100% Transparency',
+      label:'Trust & Transparency',
       photo:Transparency,
       witdth:100
     },
     {
-      label:'Expertise',
-      photo:Expertise,
+      label:'Customer-First Approach',
+      photo:costumer,
       witdth:100
     },
     {
-      label:'Reliability',
+      label:'Professional Excellence',
+      photo:ProfessionalE,
+      witdth:100
+    },
+    {
+      label:'Long-Term Investment Value',
+      photo:LongTerm,
+      witdth:100
+    },
+    {
+      label:'Strong Relationship Building',
       photo:Reliablitly,
       witdth:100
     },
@@ -103,16 +116,7 @@ export default function Home() {
         </div>
       </div>
       
-      {/* gallery */}
-      {/* <section className="py-5 px-20">
-        <Gallery />
-      </section>
 
-       <section className="py-5 px-20">
-        <Ongoingprojectslider />
-      </section> */}
-
-      {/* Title */}
 
 
 
@@ -120,9 +124,9 @@ export default function Home() {
       <section className="pt-10 pb-10 px-2 lg:px-20">
         <div className=" lg:flex  mx-5">
           <Image
-            src="https://cdn.brandsdoor.in/indiadealss/indiadealss/1770972766053-ChatGPT%20Image%20Feb%2012%2C%202026%2C%2004_12_53%20PM.png"
+            src={Home3}
             alt="About indiadealss"
-            width={600}
+            width={2100}
             height={300}
             className="  h-auto rounded border-4 border-[#313036]"
           />
@@ -191,10 +195,10 @@ At Indiadeals Group, we believe that buying property is not just a transaction b
       <h1 className="text-2xl font-bold text-center text-[#313036]">OUR VALUES</h1>
 
       <p className="border-b-2 w-20 mt-3 mx-auto"></p>
-        <div className="flex flex-col lg:flex-row justify-around mt-10 mx-10">
+        <div className="flex flex-col lg:flex-row justify-between mt-10 mx-5">
           {ourValues.map((item,index) => (
             <div key={index} className="my-4">
-              <h4 className="font-bold text-xl text-[#313036b0] text-center">{item.label}</h4>
+              <h4 className="font-semibold text-lg text-[#313036b0] text-center">{item.label}</h4>
               <Image src={item.photo} alt="Aboutusbanner" width={item.witdth} height={100} className=" z-0 mx-auto mt-5" />
             </div>
           ))}

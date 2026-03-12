@@ -1,11 +1,7 @@
 'use client'
 import Image from 'next/image'
-import teambanner from '@/Images/teamsBanner.jpg';
-import soniMam from '@/Images/Soni-mam-.jpg.jpeg';
-import Deepusir from '@/Images/DeepuSir.jpeg';
-import RichaMam from '@/Images/indiadealsgroupHr.jpeg';
-import Kanishk from '@/Images/Kanishk-sir.jpg';
-import Kapil from '@/Images/kapil-sir.jpg'
+import Kanishk from '@/Images/Kanishk-sir.webp';
+import Kapil from '@/Images/kapil-sir.webp'
 
 
 const page = () => {

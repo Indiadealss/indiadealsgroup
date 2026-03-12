@@ -1,18 +1,13 @@
 'use client'
 
 import Image from "next/image";
-import aboutTemImage from "@/Images/shridivineabout.jpg";
-import virndavan from "@/Images/Vrindavan-Banner.jpg";
-import AOS from 'aos'
 import { useEffect } from "react";
 import Link from 'next/link';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import reracertificate from "@/Images/rera.png"
 import { useState } from "react";
 import { message, Modal } from "antd";
 import downloadPdf from "@/Images/pdbDownload.png"
 import { useRouter } from "next/navigation";
+import projectHomepage2 from "@/Images/project3.jpg"
 
 
 export default function Home() {
@@ -161,13 +156,6 @@ const [form, setForm] = useState({
   };
 
 
-  useEffect(() => {
-    AOS.init({
-      duration: 800,
-      once: true,
-      easing: 'ease-in-out',
-    });
-  }, []);
   return (
     <div className="min-h-screen">
       <div className="">
@@ -193,11 +181,11 @@ const [form, setForm] = useState({
 
         {/* ABOUT SECTION */}
         <section className="py-20 px-0 lg:px-2" >
-          <div className="lg:flex lg:justify-between flex-cols mx-10 lg:mx-1">
+          <div className="lg:flex lg:justify-between flex-cols mx-1 lg:mx-1">
             <Image
-              src="https://cdn.brandsdoor.in/indiadealss/indiadealss/1770974282692-Hanumant-Vihar-inner-projects.png"
+              src={projectHomepage2}
               alt="About INDIA DEALS"
-              width={600}
+              width={2000}
               height={600}
               className=" rounded-lg border-4 border-[#313036]"
             />
@@ -212,7 +200,7 @@ const [form, setForm] = useState({
             </div>
           </div>
           <div>
-            <div className="pt-3 px-5 lg:pe-20 lg:pt-10">
+            <div className="pt-3 px-0 lg:px-5 lg:pe-20 lg:pt-10">
               <h1 className="text-[#313036]   font-medium text-4xl"></h1>
               <p className="text-gray-600   my-5 text-justify">
                 Hanumat Vihar Awasiya Yojna is a planned community where people can buy plots of land that are legally clear. The project is designed to be affordable. It does not compromise on planning, accessibility or the potential for the land to increase in value over time.
@@ -221,9 +209,9 @@ const [form, setForm] = useState({
             </div>
 
             {/* Legal Security and Approvals */}
-            <div className="pt-3 px-2 lg:px-5 text-justify">
+            <div className="pt-3 px-2 lg:px-5 ">
               <h1 className="text-[#313036]   text-2xl font-medium">Legal Security and Approvals:</h1>
-              <p className="text-gray-600   my-5">
+              <p className="text-gray-600 text-justify  my-5">
                 One of the aspects of Hanumat Vihar Awasiya Yojna is the safety of investment. The project is approved by Vrindavan and RERA which means that it is legally documented and compliant with all regulations. This gives buyers peace of mind. Protects their interests.
 
                 <span className="font-bold"> <Link rel="stylesheet" href="https://indiadealsgroup.com/hanumat-vihar-awasiya-yojna" >Hanumat Vihar Awasiya Yojna</Link></span> has all the approvals, including Vrindavan approval and RERA registration. The project is also legally documented, which means that buyers can be sure that their investment is safe.
