@@ -4,6 +4,8 @@ import teambanner from '@/Images/teamsBanner.jpg';
 import soniMam from '@/Images/Soni-mam-.jpg.jpeg';
 import Deepusir from '@/Images/DeepuSir.jpeg';
 import RichaMam from '@/Images/indiadealsgroupHr.jpeg';
+import Kanishk from '@/Images/Kanishk-sir.jpg';
+import Kapil from '@/Images/kapil-sir.jpg'
 
 
 const page = () => {
@@ -72,7 +74,48 @@ const page = () => {
             </div>
           </div>
 
+          <div className='shadow-xl md:mx-10 mt-10 py-3    bg-white flex flex-col md:flex-row'>
+            <div>
+              <div className='   overflow-hidden ms-4'>
+                <Image src={Kanishk} alt='...' className='w-80 rounded-t-full' />
+              </div>
 
+              <h1 className='text-center text-[#313036] uppercase font-black text-xl'>Mr. Kanishk Sharma</h1>
+            </div>
+
+            <div className='mt-10 ms-4'>
+              <h1 className='font-bold text-[#313036] text-xl uppercase'></h1><br />
+              <div className='w-[85vw] md:w-[60vw] ms-4 pe-10'>
+                <p className='text-justify text-gray-600'>
+                  <span className='text-justify text-gray-600 leading-6'>
+                    ...
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+<div className='shadow-xl md:mx-10 mt-10 py-3    bg-white flex flex-col md:flex-row'>
+            <div>
+              <div className='   overflow-hidden ms-4'>
+                <Image src={Kapil} alt='...' className='w-80 rounded-t-full' />
+              </div>
+
+              <h1 className='text-center text-[#313036] uppercase font-black text-xl'>Mr. Kapil Walia</h1>
+            </div>
+
+            <div className='mt-10 ms-4'>
+              <h1 className='font-bold text-[#313036] text-xl uppercase'></h1><br />
+              <div className='w-[85vw] md:w-[60vw] ms-4 pe-10'>
+                <p className='text-justify text-gray-600'>
+                  <span className='text-justify text-gray-600 leading-6'>
+                    ...
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
           <div className='shadow-xl md:mx-10 mt-10 py-3 my-10    bg-white flex flex-col md:flex-row'>
             <div>
               <div className='   overflow-hidden ms-4'>

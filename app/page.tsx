@@ -140,7 +140,7 @@ export default function Home() {
           <div className="px-0 lg:px-10">
         <h1 className="text-[#313036]   font-bold text-lg md:text-4xl uppercase">INDIADEALS GROUP</h1>
             {/* <h1 className="text-[#313036]   font-bold text-4xl"><span className="text-2xl font-medium font-normal">Radha Kund – Ral Road, Vrindavan</span> <br /><span className="text-2xl font-medium font-normal">RERA Approved Residential Township</span></h1> */}
-            <p className="text-[#313036] my-10   text-gray-600 text-justify tracking-tight">
+            <p className="text-[#313036] my-3   text-gray-600 text-justify tracking-tight">
              IndiaDeals Group is a name that people trust in the real estate business. We have been working in the Delhi NCR market since 2013. Our goal is to make sure that people can buy and sell properties in an honest way. We want to help people find properties to buy. We started IndiaDeals Group to make it easy for people to buy and sell properties. We wanted to make sure that people can trust us. Over time we have helped many people find properties. We are happy that our clients like us. Come back to us for help.
              <br /><br />
              We know a lot about the Delhi NCR real estate market. We can help people find residential plots, housing projects and other properties that will be worth more money in the future. At IndiaDeals Group we think that buying and selling properties is not about land. It is about making a good life for people. We make sure that every property we sell is good and will be worth money in the future. We are honest. Tell people everything they need to know. We want our clients to feel happy and safe when they work with us.
@@ -148,24 +148,24 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="px-0 lg:px-10">
-          <p className="text-[#313036] my-10   text-gray-600 text-justify tracking-tight">
+        <div className="px-0 lg:px-10 mx-5 lg:mx-0">
+          <p className="text-[#313036] my-3   text-gray-600 text-justify tracking-tight">
             Indiadeals Group is a dynamic and rapidly growing real estate company committed to delivering trustworthy, transparent, and high-value property solutions. With a strong vision to transform the real estate experience for investors and home buyers, Indiadeals Group focuses on developing and marketing premium residential and investment projects across strategic locations.
           </p>
-          <p className="text-[#313036] my-10   text-gray-600 text-justify tracking-tight">
+          <p className="text-[#313036] my-3   text-gray-600 text-justify tracking-tight">
             Founded with the mission of making real estate investment simple, secure, and profitable, the company has built a reputation for professionalism, reliability, and customer satisfaction. Our team consists of experienced real estate professionals, legal advisors, marketing experts, and channel partners who work together to provide seamless property investment opportunities.
 At Indiadeals Group, we believe that buying property is not just a transaction but a life-changing investment. Therefore, we ensure that every project we offer meets high standards of location advantage, legal transparency, infrastructure development, and long-term appreciation potential.
           </p>
-          <p className="text-[#313036] my-10   text-gray-600 text-justify tracking-tight">
+          <p className="text-[#313036] my-3   text-gray-600 text-justify tracking-tight">
             Our portfolio includes carefully planned residential plotting projects that are designed to provide both lifestyle benefits and strong returns on investment. We focus on locations with future growth potential, excellent connectivity, and increasing demand, making our projects ideal for both end users and investors.
           </p>
-          <p className="text-[#313036] my-10   text-gray-600 text-justify tracking-tight">
+          <p className="text-[#313036] my-3   text-gray-600 text-justify tracking-tight">
             One of our flagship developments, Hanumat Vihar Awasiya Yojna, located on RAL Road, Vrindavan, Mathura (Uttar Pradesh), reflects our commitment to quality planning and premium living. This project offers well-designed residential plots with modern infrastructure, making it an attractive destination for families and investors seeking a peaceful yet well-connected environment.
           </p>
-          <p className="text-[#313036] my-10   text-gray-600 text-justify tracking-tight">
+          <p className="text-[#313036] my-3   text-gray-600 text-justify tracking-tight">
             Indiadeals Group also works closely with channel partners, influencers, and marketing associates, creating a strong distribution network that helps deliver real estate opportunities to a wider audience. Our business model emphasizes collaboration, growth, and long-term partnerships.
           </p>
-          <p className="text-[#313036] my-10   text-gray-600 text-justify tracking-tight">
+          <p className="text-[#313036] my-3   text-gray-600 text-justify tracking-tight">
             We take pride in maintaining ethical business practices, clear documentation, and investor-friendly policies, including innovative investment schemes that create confidence and security for our clients.
           </p>
         </div>

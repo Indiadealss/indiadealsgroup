@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import ayodhya from '@/Images/comming_soon.jpg';
+import ayodhya from '@/Images/barsana.jpg'
 
 const page = () => {
   return (
@@ -16,6 +16,8 @@ const page = () => {
           className="object-cover"
         />
       </div>
+
+      
     </div>
   )
 }
