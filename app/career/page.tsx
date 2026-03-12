@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import carers from '@/Images/carrer.webp';
+import carrer from '@/Images/carrers.jpg'
 
 const page = () => {
   return (
@@ -11,7 +12,16 @@ const page = () => {
                 fill
                 priority
                 sizes="100vw"
-                className="object-cover absolute"
+                className="object-cover hidden lg:block"
+              />
+
+              <Image
+                src={carrer}
+                alt="Vrindavan Banner"
+                fill
+                priority
+                sizes="100vw"
+                className="object-cover absolute lg:hidden"
               />
             </div>
             {/* ABOUT SECTION */}

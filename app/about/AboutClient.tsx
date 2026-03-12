@@ -3,6 +3,7 @@
 import Image from "next/image";
 import aboutTemImage from "@/Images/shridivineabout.jpg";
 import Aboutusbanner from "@/Images/about_us.webp";
+import AboutusbannerMobile from "@/Images/aboutUs.jpg";
 
 
 
@@ -31,8 +32,8 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <div className="">
-      <Image src={Aboutusbanner} alt="Aboutusbanner" className=" z-0 w-full " />
-     
+      <Image src={Aboutusbanner} alt="Aboutusbanner" className="hidden lg:block z-0 w-full " />
+      <Image src={AboutusbannerMobile} alt="Aboutusbanner" className="block lg:hidden z-0 w-full " />
       </div>
 
 

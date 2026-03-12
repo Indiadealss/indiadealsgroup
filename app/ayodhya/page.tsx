@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import ayodhya from '@/Images/ayodha.webp'
+import ayodhyaHome from '@/Images/commingSoonAodhya.jpg'
 
 const page = () => {
   return (
@@ -13,7 +14,15 @@ const page = () => {
           fill
           priority
           sizes="100vw"
-          className="object-cover"
+          className="object-cover hidden lg:block"
+        />
+         <Image
+          src={ayodhyaHome}
+          alt="Vrindavan Banner"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover block lg:hidden"
         />
       </div>
 

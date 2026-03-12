@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import barsana from '@/Images/barsana.webp';
+import barsanaHome from '@/Images/commingSoonBarsana.jpg';
 
 const page = () => {
   return (
@@ -8,12 +9,21 @@ const page = () => {
       {/* HERO */}
       <div className="relative w-full h-[30vw] min-h-[60vh]">
         <Image
+          src={barsanaHome}
+          alt="Vrindavan Banner"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover block lg:hidden"
+        />
+
+        <Image
           src={barsana}
           alt="Vrindavan Banner"
           fill
           priority
           sizes="100vw"
-          className="object-cover"
+          className="object-cover hidden lg:block"
         />
       </div>
 
