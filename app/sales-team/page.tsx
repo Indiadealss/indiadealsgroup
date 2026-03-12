@@ -108,40 +108,44 @@ const page = () => {
                                 <p className='text-justify text-gray-600'>
                                     <span className='text-justify text-gray-600 leading-6'>
                                         Kanishk V Sharma is a highly experienced real estate professional with 14 years of experience in the real estate industry, specializing in Channel Sales Management and Strategic Property Consulting. <br />
-                                         He has successfully built and managed strong networks of channel partners, brokers, and real estate associates to drive consistent project sales and market expansion. <br />
-                                         He holds a Bachelor of Technology (B.Tech) degree and an MBA in Real Estate, which equips him with a strong understanding of real estate development, investment planning, and modern property marketing strategies. <br />
-                                         Kanishk has extensive experience in channel partner acquisition, relationship management, sales strategy planning, and project promotion. <br />
-                                         His ability to develop strong partnerships and create effective sales networks has helped deliver successful real estate project sales. <br />
-                                         With his market insight, leadership skills, and strategic approach, Kanishk V Sharma plays a key role in expanding channel sales networks and maximizing project sales opportunities.
+                                        He has successfully built and managed strong networks of channel partners, brokers, and real estate associates to drive consistent project sales and market expansion. <br />
+                                        He holds a Bachelor of Technology (B.Tech) degree and an MBA in Real Estate, which equips him with a strong understanding of real estate development, investment planning, and modern property marketing strategies. <br />
+                                        Kanishk has extensive experience in channel partner acquisition, relationship management, sales strategy planning, and project promotion. <br />
+                                        His ability to develop strong partnerships and create effective sales networks has helped deliver successful real estate project sales. <br />
+                                        With his market insight, leadership skills, and strategic approach, Kanishk V Sharma plays a key role in expanding channel sales networks and maximizing project sales opportunities.
                                     </span>
                                 </p>
                             </div>
                         </div>
                     </div>
                     <section className="p-0 m-0 md:py-20 md:px-20">
-                        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 ">
+                        <div className="flex flex-wrap justify-center gap-6">
 
                             {teamData.map((member) => (
 
-                                <div key={member.id} className="bg-white rounded-xl shadow p-4 relative">
+                                <div
+                                    key={member.id}
+                                    className="bg-white rounded-xl shadow p-4 relative w-[45%] md:w-[23%]"
+                                >
 
                                     <Image
                                         src={member.image}
                                         alt={member.name}
                                         width={400}
                                         height={400}
-                                        className="rounded-lg w-full h-[300px] md:h-[320px] object-cover"
+                                        className="rounded-lg w-full h-[300px] md:h-[320px] object-contain"
                                     />
 
                                     <div className="bg-gray-500/30 backdrop-blur-md shadow rounded-lg px-4 py-3 flex justify-between items-center absolute bottom-6 left-6 right-6">
 
                                         <div>
-                                            <h3 className="font-semibold text-white text-sm">{member.name}</h3>
-                                            <p className="text-xs text-white">{member.role}</p>
+                                            <h3 className="font-semibold text-white text-sm">
+                                                {member.name}
+                                            </h3>
+                                            <p className="text-xs text-white">
+                                                {member.role}
+                                            </p>
                                         </div>
-
-                                        <a href={member.linkedin}>
-                                        </a>
 
                                     </div>
 
