@@ -162,7 +162,7 @@ At Indiadeals Group, we believe that buying property is not just a transaction b
       </section>
 
         {/* our values */}
-             <div className=" py-10 mx-10" data-aos="fade-right">
+             <div className=" py-10 mx-10" >
       
             <h1 className="text-2xl font-bold text-center text-[#313036] uppercase">certifications</h1>
       
