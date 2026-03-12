@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import aboutTemImage from "@/Images/shridivineabout.jpg";
-import Aboutusbanner from "@/Images/about_us.jpg";
+import Aboutusbanner from "@/Images/about_us.webp";
 
 
 

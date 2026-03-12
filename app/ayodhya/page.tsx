@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import ayodhya from '@/Images/barsana.jpg'
+import ayodhya from '@/Images/ayodha.webp'
 
 const page = () => {
   return (

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import barsana from '@/Images/comming_soon.jpg';
+import barsana from '@/Images/barsana.webp';
 
 const page = () => {
   return (

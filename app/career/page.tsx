@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import carers from '@/Images/carrer.jpg';
+import carers from '@/Images/carrer.webp';
 
 const page = () => {
   return (

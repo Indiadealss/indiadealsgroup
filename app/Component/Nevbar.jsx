@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { Menu, X, Phone } from 'lucide-react';
-import logo from '../../Images/india_deals_logo10x.png'
+import logo from '../../Images/india_deals_logo9x.png'
 import Image from 'next/image';
 import Link from 'next/link';
 
