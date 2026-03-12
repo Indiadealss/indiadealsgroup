@@ -3,7 +3,6 @@
 import Image from "next/image";
 import aboutTemImage from "@/Images/shridivineabout.jpg";
 import virndavan from "@/Images/Vrindavan-Banner.jpg";
-import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -15,18 +14,7 @@ import Customcomponent from "../Customcomponent/Customcomponent";
 
 export default function page() {
 
-  useEffect(() => {
-    const initAOS = async () => {
-      const AOS = (await import("aos")).default;
-      AOS.init({
-        duration: 800,
-        once: true,
-        easing: "ease-in-out",
-      });
-    };
 
-    initAOS();
-  }, []);
   return (
     <div className="min-h-screen">
       <div className="">
@@ -41,7 +29,7 @@ export default function page() {
 
 
         {/* ABOUT SECTION */}
-        <section className="py-20 px-0 lg:px-2" data-aos="fade-up">
+        <section className="py-20 px-0 lg:px-2">
           <div className="lg:flex flex-cols mx-2 lg:mx-1">
             <div className="px-0 lg:ps-10 ">
               <h1 className="text-[#313036]   text-4xl lg:text-6xl">Hanumat Vihar</h1>

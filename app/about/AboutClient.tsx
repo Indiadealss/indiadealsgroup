@@ -3,12 +3,11 @@
 import Image from "next/image";
 import aboutTemImage from "@/Images/shridivineabout.jpg";
 import Aboutusbanner from "@/Images/about_us.jpg";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
 
 
 
 export default function Home() {
+
 
   const aboutData = {
   title: "IndiaDeals Group",
@@ -29,18 +28,6 @@ export default function Home() {
   goal: "Our goal is to be a leading real estate company that people trust and like. We want to keep growing and helping people find properties. We will always try to be the best and make our clients happy."
 };
 
-  useEffect(() => {
-    const initAOS = async () => {
-      const AOS = (await import("aos")).default;
-      AOS.init({
-        duration: 800,
-        once: true,
-        easing: "ease-in-out",
-      });
-    };
-
-    initAOS();
-  }, []);
   return (
     <div className="min-h-screen">
       <div className="">
@@ -50,7 +37,7 @@ export default function Home() {
 
 
       {/* ABOUT SECTION */}
-      <section className="mt-20 px-0 lg:px-20" data-aos="fade-up">
+      <section className="mt-20 px-0 lg:px-20" >
   <div className="lg:flex mx-10">
     <div className="px-0 lg:px-10 ps-0">
 

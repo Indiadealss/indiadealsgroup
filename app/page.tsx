@@ -2,8 +2,6 @@
 import Image from "next/image";
 import virndavan from "@/Images/abhinandan-lodha-vrindavan-plots-v0-pu57jype7rfe1.webp";
 import aboutTemImage from "@/Images/shridivineabout.jpg";
-import AOS  from 'aos';
-import { useEffect } from "react";
 import Gallery from "./Gallery";
 import Ongoingprojectslider from "./Ongoingprojectslider";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -25,15 +23,6 @@ import INTEGRITY from '@/Images/Interigity2x.png';
 
 export default function Home() {
 
-
-
-  useEffect(() => {
-    AOS.init({
-      duration: 800,
-      once: true,
-      easing: 'ease-in-out',
-    });
-  }, []);
 
 
    const certifications = [
@@ -128,7 +117,7 @@ export default function Home() {
 
 
       {/* ABOUT SECTION */}
-      <section className="pt-10 pb-10 px-2 lg:px-20" data-aos="fade-up">
+      <section className="pt-10 pb-10 px-2 lg:px-20">
         <div className=" lg:flex  mx-5">
           <Image
             src="https://cdn.brandsdoor.in/indiadealss/indiadealss/1770972766053-ChatGPT%20Image%20Feb%2012%2C%202026%2C%2004_12_53%20PM.png"
