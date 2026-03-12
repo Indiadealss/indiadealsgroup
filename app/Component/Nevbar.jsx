@@ -10,9 +10,6 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   const pathname = usePathname();
-const isPrivacyPage = pathname === "/privacy-policy";
-const ischannelpatnerpolicy = pathname === "/channel-patner-policy";
-const career = pathname === "/career";
 
   const [opens, setOpens] = useState(false);
 const [scrolled, setScrolled] = useState(false);
@@ -20,8 +17,6 @@ const [visible, setVisible] = useState(true);
 
 
 
-
-  console.log(window.location.pathname);
   
 
   useEffect(() => {
