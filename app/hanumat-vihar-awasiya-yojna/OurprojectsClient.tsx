@@ -184,7 +184,7 @@ const [form, setForm] = useState({
           <div className="lg:flex lg:justify-between flex-cols mx-1 lg:mx-1">
             <Image
               src={projectHomepage2}
-              alt="About INDIA DEALS"
+              alt="Hanumat Vihar Awasiya Yojna (Vrindavan)"
               width={2000}
               height={600}
               className=" rounded-lg border-4 border-[#313036]"
@@ -329,7 +329,7 @@ const [form, setForm] = useState({
         {/* rera,logo */}
         <section className="">
           <div className="flex flex-col md:flex-row justify-around">
-            <Image src={downloadPdf} alt="..." className="text-white cursor-pointer mx-auto my-10 md:my-0 lg:mx-0 rounded w-[80vw] md:w-[25vw] font-bold " onClick={() => setOpen(true)} />
+            <Image src={downloadPdf} alt="Plots in Vrindavan" className="text-white cursor-pointer mx-auto my-10 md:my-0 lg:mx-0 rounded w-[80vw] md:w-[25vw] font-bold " onClick={() => setOpen(true)} />
 
 
             {/* <div className="">
@@ -411,6 +411,8 @@ const [form, setForm] = useState({
           >
             <option value="">Select Project</option>
             <option value="Hanumat Vihar">Hanumat Vihar</option>
+            <option value="Upcoming Project(Barsana)">Upcoming Project(Barsana)</option>
+            <option value="Upcoming Project(Ayodhya)">Upcoming Project(Ayodhya)</option>
           </select>
 
           <textarea
