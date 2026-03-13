@@ -128,12 +128,12 @@ const page = () => {
                                     className="bg-white rounded-xl shadow-md mx-auto my-4  relative w-[80%] md:w-[23%]"
                                 >
 
-                                    <div className="relative w-full h-110 md:h-90 2xl:h-200">
+                                    <div className="relative w-full h-[440px] md:h-[360px] 2xl:h-[500px]">
                                         <Image
                                             src={member.image}
                                             alt={member.name}
                                             fill
-                                            className="object-cover rounded-xl"
+                                            className="object-contain rounded-xl"
                                         />
                                     </div>
 
