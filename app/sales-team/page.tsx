@@ -49,7 +49,7 @@ const page = () => {
         },
         {
             id: 6,
-            name: "Mehak Shukla",
+            name: "Mahak Shukla",
             role: "Sales coordinator",
             image: Mehak,
             linkedin: "#"
