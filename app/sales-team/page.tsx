@@ -119,22 +119,23 @@ const page = () => {
                         </div>
                     </div>
                     <section className="p-0 m-0 md:py-20 md:px-20">
-                        <div className="flex flex-wrap justify-center gap-6">
+                        <div className="md:flex md:flex-wrap justify-center gap-6">
 
                             {teamData.map((member) => (
 
                                 <div
                                     key={member.id}
-                                    className="bg-white rounded-xl shadow p-4 relative w-[45%] md:w-[23%]"
+                                    className="bg-white rounded-xl shadow-md mx-auto my-4  relative w-[80%] md:w-[23%]"
                                 >
 
-                                    <Image
-                                        src={member.image}
-                                        alt={member.name}
-                                        width={400}
-                                        height={400}
-                                        className="rounded-lg w-full h-[300px] md:h-[320px] object-contain"
-                                    />
+                                    <div className="relative w-full h-100 2xl:h-200">
+                                        <Image
+                                            src={member.image}
+                                            alt={member.name}
+                                            fill
+                                            className="object-cover rounded-xl"
+                                        />
+                                    </div>
 
                                     <div className="bg-gray-500/30 backdrop-blur-md shadow rounded-lg px-4 py-3 flex justify-between items-center absolute bottom-6 left-6 right-6">
 
