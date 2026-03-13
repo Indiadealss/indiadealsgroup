@@ -411,8 +411,6 @@ const [form, setForm] = useState({
           >
             <option value="">Select Project</option>
             <option value="Hanumat Vihar">Hanumat Vihar</option>
-            <option value="Upcoming Project(Barsana)">Upcoming Project(Barsana)</option>
-            <option value="Upcoming Project(Ayodhya)">Upcoming Project(Ayodhya)</option>
           </select>
 
           <textarea
