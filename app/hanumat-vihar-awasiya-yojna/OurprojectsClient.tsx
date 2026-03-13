@@ -191,7 +191,7 @@ const [form, setForm] = useState({
             />
             <div className="px-0 lg:ps-10 ">
               <div className="px-0 lg:px-10">
-                <h1 className="text-[#313036]   font-bold text-4xl"><span className="text-2xl font-medium font-normal">Radha Kund – Ral Road, Vrindavan</span> <br /><span className="text-2xl font-medium font-normal">RERA Approved Residential Township</span></h1>
+                <h2 className="text-[#313036]   font-bold text-4xl"><span className="text-2xl font-medium font-normal">Radha Kund – Ral Road, Vrindavan</span> <br /><span className="text-2xl font-medium font-normal">RERA Approved Residential Township</span></h2>
                 <p className="text-[#313036] my-10   text-gray-600 text-justify">
                   Hanumat Vihar Awasiya Yojna is an approved residential plotted township that offers people a chance to own land safely in Vrindavan. This is a place for families, investors, retirees and people who want a second home. The project is designed to bring the spiritual surroundings of Vrindavan and the modern infrastructure that people need.
                   <br /><br />The township is located on Radha Kund – Ral Road, which's a rapidly developing area. This means that Hanumat Vihar Awasiya Yojna is an opportunity for people to own property in a place where the value of land is increasing. The area is perfect for people who want to invest in land build a house or just own a piece of land in Vrindavan.
@@ -201,16 +201,16 @@ const [form, setForm] = useState({
           </div>
           <div>
             <div className="pt-3 px-0 lg:px-5 lg:pe-20 lg:pt-10">
-              <h1 className="text-[#313036]   font-medium text-4xl"></h1>
+              <h2 className="text-[#313036]   font-medium text-4xl"></h2>
               <p className="text-gray-600   my-5 text-justify">
                 Hanumat Vihar Awasiya Yojna is a planned community where people can buy plots of land that are legally clear. The project is designed to be affordable. It does not compromise on planning, accessibility or the potential for the land to increase in value over time.
-                The project is suitable for people who want to build their house invest in land for the long term retire in Vrindavan or own a holiday home. It is also an option for people who want to create a family asset or rent out their property to tourists.
+                The project is suitable for people who want to build their house invest in land for the long term retire in Vrindavan or own a holiday home. It is also an option for people who want to create a family asset or rent out their property to tourists. <span className="font-bold">Plots in Vrindavan || Govt Approved Plots in Vrindavan || MVDA Approved Plots in Vrindavan || Plots For Sale in Vrindavan || Residential Land in Vrindavan || Residential Plots in Mathura</span>
               </p>
             </div>
 
             {/* Legal Security and Approvals */}
             <div className="pt-3 px-2 lg:px-5 ">
-              <h1 className="text-[#313036]   text-2xl font-medium">Legal Security and Approvals:</h1>
+              <h2 className="text-[#313036]   text-2xl font-medium">Legal Security and Approvals:</h2>
               <p className="text-gray-600 text-justify  my-5">
                 One of the aspects of Hanumat Vihar Awasiya Yojna is the safety of investment. The project is approved by Vrindavan and RERA which means that it is legally documented and compliant with all regulations. This gives buyers peace of mind. Protects their interests.
 
@@ -220,7 +220,7 @@ const [form, setForm] = useState({
 
             {/* Strategic Location Advantage */}
             <div className="pt-3 px-2 lg:px-5 ">
-              <h1 className="text-[#313036]   text-2xl font-medium">Strategic Location Advantage:</h1>
+              <h2 className="text-[#313036]   text-2xl font-medium">Strategic Location Advantage:</h2>
               <p className="text-gray-600   my-5 text-justify">
                 The location of Hanumat Vihar Awasiya Yojna is one of its strengths. Radha Kund – Ral Road is becoming a residential area in Vrindavan driven by spiritual tourism, retirement and infrastructure development. The project is close to Radha Kund zone and it has easy access to central Vrindavan and Mathura routes.
               </p>
@@ -228,7 +228,7 @@ const [form, setForm] = useState({
 
             {/* Some of the location highlights include: */}
             <div className="pt-3 px-2 lg:px-5">
-              <h1 className="text-[#313036]   text-2xl font-medium">Some of the location highlights include:</h1>
+              <h2 className="text-[#313036]   text-2xl font-medium">Some of the location highlights include:</h2>
               <p className="text-gray-600   my-5 text-justify">
                 <ul className="list-disc ps-10 space-y-3 leading-7 pl-5">
                   <li>Proximity to Radha Kund spiritual zone</li>
@@ -246,7 +246,7 @@ const [form, setForm] = useState({
             {/* Township Infrastructure and Planning */}
 
             <div className="pt-3 px-2 lg:px-5">
-              <h1 className="text-[#313036]   text-2xl font-medium">Township Infrastructure and Planning</h1>
+              <h2 className="text-[#313036]   text-2xl font-medium">Township Infrastructure and Planning</h2>
               <p className="text-gray-600   my-5 text-justify">
                 Hanumat Vihar Awasiya Yojna is planned with infrastructure that supports convenience, safety and long-term growth. The project has internal roads clearly demarcated plots and a colony-style structured layout. It also has open surroundings, drainage and access planning and a construction-friendly design.
               </p>
@@ -255,7 +255,7 @@ const [form, setForm] = useState({
             {/*  */}
 
             <div className="pt-3 px-2 lg:px-5">
-              <h1 className="text-[#313036]   text-2xl font-medium">Some of the features of the project include:</h1>
+              <h2 className="text-[#313036]   text-2xl font-medium">Some of the features of the project include:</h2>
               <p className="text-gray-600   my-5">
                 <ul className="list-disc ps-10 space-y-2 leading-7 pl-5">
                   <li>Wide internal roads</li>
@@ -273,7 +273,7 @@ const [form, setForm] = useState({
 
             {/* Investment Potential */}
             <div className="pt-3 px-2 lg:px-5">
-              <h1 className="text-[#313036]   text-2xl font-medium">Hanumat Vihar Vrindavan: Investment Potential</h1>
+              <h2 className="text-[#313036]   text-2xl font-medium">Hanumat Vihar Vrindavan: Investment Potential</h2>
               <p className="text-gray-600   my-5 text-justify">
                 The real estate market in Vrindavan is experiencing growth due to increasing demand from spiritual tourists, retirees, holiday home investors and long-term land investors. Hanumat Vihar Awasiya Yojna offers a range of benefits including early-stage pricing advantage, high appreciation potential and tangible plotted asset.
 
@@ -282,7 +282,7 @@ const [form, setForm] = useState({
             </div>
 
             <div className="pt-3 px-2 lg:px-5">
-              <h1 className="text-[#313036]   text-2xl font-medium">Ideal for Families and End Users</h1>
+              <h2 className="text-[#313036]   text-2xl font-medium">Ideal for Families and End Users</h2>
               <p className="text-gray-600   my-5 text-justify">
                 Hanumat Vihar Awasiya Yojna is perfect for families and people who want to own a piece of land in Vrindavan. The project offers calm surroundings freedom to design your own home and an organized residential colony. It is also a way to enter the Vrindavan market and create a long-term family asset.
 
@@ -293,7 +293,7 @@ const [form, setForm] = useState({
             {/* Some of the benefits of the project include: */}
 
             <div className="pt-3 px-2 lg:px-5">
-              <h1 className="text-[#313036]   text-2xl font-medium">Some of the benefits of the project include:</h1>
+              <h2 className="text-[#313036]   text-2xl font-medium">Some of the benefits of the project include:</h2>
               <p className="text-gray-600   my-5">
                 <ul className="list-disc ps-10 space-y-3 leading-7 pl-5">
                   <li>Spiritual and calm surroundings</li>
@@ -311,7 +311,7 @@ const [form, setForm] = useState({
             {/* Transparent Buying Experience */}
 
             <div className="pt-3 px-2 lg:px-5">
-              <h1 className="text-[#313036]   text-2xl font-medium">Transparent Buying Experience</h1>
+              <h2 className="text-[#313036]   text-2xl font-medium">Transparent Buying Experience</h2>
               <p className="text-gray-600   my-5 text-justify">
                 The project emphasizes dealing and structured buyer support. Buyers receive plot allocation, professional documentation assistance, guided purchase process, transparent communication and long-term relationship support.
 
