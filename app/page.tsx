@@ -10,7 +10,8 @@ import Link from "next/link";
 import Customcomponent from "./Customcomponent/Customcomponent";
 import Transparency from "@/Images/Transparency@2x.png";
 import LongTerm from "@/Images/Long-Term_Investment_Value2x.png";
-import Reliablitly from "@/Images/Strong_Relationship_Building2x.png";
+import Reliablitly from "@/Images/Reliability.png";
+import StrongRelationship from "@/Images/Strong_Relationship_Building2x.png";
 import HighQuality from '@/Images/High Quality@2x.png';
 import  TailorMadeApproach from '@/Images/Tailored made approach@2x.png';
 import Technology from '@/Images/Tailored made approach copy@2x.png';
@@ -33,7 +34,7 @@ export default function Home() {
       label:'SAFETY',
       photo:safety,
       disc:'There is nothing more important than safety. Safety always comes first. It is our first priority.',
-      witdth:100
+      witdth:80
     },
     {
       label:'COMMUNITY',
@@ -45,7 +46,7 @@ export default function Home() {
       label:'SUSTANABILITY',
       photo:SUSTANABILITY,
       disc:"Our passion for green building and sustainability is imbedded in our roots.",
-      witdth:100
+      witdth:80
     },
     {
       label:'INTEGRITY',
@@ -57,29 +58,39 @@ export default function Home() {
 
   const ourValues = [
     {
+      label:'100% Transparency',
+      photo:Transparency,
+      witdth:80
+    },
+    {
+      label:'Reliablitly',
+      photo:Reliablitly,
+      witdth:80
+    },
+    {
       label:'Trust & Transparency',
       photo:Transparency,
-      witdth:100
+      witdth:80
     },
     {
       label:'Customer-First Approach',
       photo:costumer,
-      witdth:100
+      witdth:80
     },
     {
       label:'Professional Excellence',
       photo:ProfessionalE,
-      witdth:100
+      witdth:80
     },
     {
       label:'Long-Term Investment Value',
       photo:LongTerm,
-      witdth:100
+      witdth:80
     },
     {
       label:'Strong Relationship Building',
-      photo:Reliablitly,
-      witdth:100
+      photo:StrongRelationship,
+      witdth:80
     },
   ]
   return (
@@ -195,10 +206,10 @@ At Indiadeals Group, we believe that buying property is not just a transaction b
       <h1 className="text-2xl font-bold text-center text-[#313036]">OUR VALUES</h1>
 
       <p className="border-b-2 w-20 mt-3 mx-auto"></p>
-        <div className="flex flex-col lg:flex-row justify-between mt-10 mx-5">
+        <div className="flex flex-col lg:flex-row lg:flex-wrap justify-around mt-10 px-20 mx-auto">
           {ourValues.map((item,index) => (
-            <div key={index} className="my-4">
-              <h4 className="font-semibold text-lg text-[#313036b0] text-center">{item.label}</h4>
+            <div key={index} className="my-4 ">
+              <h4 className="font-bold text-xs text-[#313036] text-center">{item.label}</h4>
               <Image src={item.photo} alt="Aboutusbanner" width={item.witdth} height={100} className=" z-0 mx-auto mt-5" />
             </div>
           ))}

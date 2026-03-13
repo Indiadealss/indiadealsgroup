@@ -15,6 +15,8 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [visible, setVisible] = useState(true);
 
+  const [activeMenu, setActiveMenu] = useState(null);
+
 
 
 
@@ -186,48 +188,67 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {open && (
-        <div className="lg:hidden  bg-white fixed top-0 left-0 right-0">
-          <p className='mx-5' onClick={() => setOpen(false)}><span className='text-2xl float-right text-red-600'>x</span></p>
-          <ul className="flex flex-col px-4 py-3 gap-3 text-sm font-medium">
-            {navItems.map((item) => (
-              <div key={item.label}>
-                {item.link ? (
-                  <Link href={item.link} onClick={() => setOpen(false)}>
-                    <li className="pb-2 cursor-pointer font-bold text-[#e3ba43] hover:text-[#f1e6c8]">
-                      {item.label}
-                    </li>
-                  </Link>
-                ) : (
-                  <>
-                    <li className="pb-2 text-[#e3ba43] font-bold">{item.label}</li>
+  <div className="lg:hidden bg-white fixed top-0 left-0 right-0">
+    <p className="mx-5" onClick={() => setOpen(false)}>
+      <span className="text-2xl float-right text-red-600">x</span>
+    </p>
 
-                    {item.submenu?.map((sub) => (
-                      <Link
-                        key={sub.label}
-                        href={sub.link}
-                        onClick={() => setOpen(false)}
-                      >
-                        <li className="pl-4 pb-2 text-sm  text-[#e3ba43] hover:text-[#f1e6c8]">
-                          {sub.label}
-                        </li>
-                      </Link>
-                    ))}
-                  </>
-                )}
-              </div>
-            ))}
-          </ul>
+    <ul className="flex flex-col px-4 py-3 gap-3 text-sm font-medium">
+      {navItems.map((item) => (
+        <div key={item.label}>
+          
+          {item.link ? (
+            <Link href={item.link} onClick={() => setOpen(false)}>
+              <li className="pb-2 cursor-pointer font-bold text-[#e3ba43] hover:text-[#f1e6c8]">
+                {item.label}
+              </li>
+            </Link>
+          ) : (
+            <>
+              {/* Parent Menu */}
+              <li
+                className="pb-2 text-[#e3ba43] font-bold cursor-pointer flex justify-between"
+                onClick={() =>
+                  setActiveMenu(activeMenu === item.label ? null : item.label)
+                }
+              >
+                {item.label}
+                <span>{activeMenu === item.label ? "-" : "+"}</span>
+              </li>
 
-          <div className="px-4 py-3 text-sm">
-            <a
-              href="tel:+919818763100"
-              className="block text-center bg-[#d2b02d] text-white py-2 rounded"
-            >
-              Call +91-9818763100
-            </a>
-          </div>
+              {/* Submenu */}
+              {activeMenu === item.label && (
+                <ul>
+                  {item.submenu?.map((sub) => (
+                    <Link
+                      key={sub.label}
+                      href={sub.link}
+                      onClick={() => setOpen(false)}
+                    >
+                      <li className="pl-4 pb-2 text-sm text-[#e3ba43] hover:text-[#f1e6c8]">
+                        {sub.label}
+                      </li>
+                    </Link>
+                  ))}
+                </ul>
+              )}
+            </>
+          )}
+
         </div>
-      )}
+      ))}
+    </ul>
+
+    <div className="px-4 py-3 text-sm">
+      <a
+        href="tel:+919818763100"
+        className="block text-center bg-[#d2b02d] text-white py-2 rounded"
+      >
+        Call +91-9818763100
+      </a>
+    </div>
+  </div>
+)}
     </header>
   );
 };
