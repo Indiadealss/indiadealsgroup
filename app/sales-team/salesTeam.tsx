@@ -52,7 +52,7 @@ const page = () => {
         {
             id:6,
             name:"Saurabh Kumar",
-            role: "Assistance Manager-Sales",
+            role: "Assistant Manager-Sales",
             image:saurabh,
 
         },
