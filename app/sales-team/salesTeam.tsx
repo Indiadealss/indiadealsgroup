@@ -7,7 +7,8 @@ import Ravie from '@/Images/RAVIE-SIR.jpg';
 import Shubham from '@/Images/SHUBHAM.jpg';
 import Ajit from '@/Images/AJIT-SIR.jpg'
 import Santosh from '@/Images/SANTOSH-JI.jpg'
-import Mehak from '@/Images/MehakShukla.jpg'
+import Mehak from '@/Images/MehakShukla.jpg';
+import saurabh from '@/Images/saurabh-freelincer.jpg'
 
 const page = () => {
 
@@ -53,6 +54,13 @@ const page = () => {
             role: "Sales coordinator",
             image: Mehak,
             linkedin: "#"
+        },
+        {
+            id:7,
+            name:"Saurabh Kumar",
+            role: "Assistance Manager-Sales",
+            image:saurabh,
+
         }
     ];
     return (
