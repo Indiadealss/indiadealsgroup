@@ -22,46 +22,47 @@ const page = () => {
         },
         {
             id: 2,
-            name: "Rohit Sharma",
-            role: "Assistant Manager-sales",
-            image: rohitBhia,
-            linkedin: "#"
-        },
-        {
-            id: 3,
             name: "Shubham Kumar",
             role: "Manager Sales",
             image: Shubham,
             linkedin: "#"
         },
         {
-            id: 4,
+            id: 3,
             name: "Ajit Kulshrestha",
             role: "Manager Sales",
             image: Ajit,
             linkedin: "#"
         },
         {
-            id: 5,
+            id: 4,
             name: "Santosh Kumar",
             role: "Manager Sales",
             image: Santosh,
             linkedin: "#"
         },
         {
-            id: 6,
+            id: 5,
+            name: "Rohit Sharma",
+            role: "Assistant Manager-sales",
+            image: rohitBhia,
+            linkedin: "#"
+        },
+        
+        {
+            id:6,
+            name:"Saurabh Kumar",
+            role: "Assistance Manager-Sales",
+            image:saurabh,
+
+        },
+        {
+            id: 7,
             name: "Mahak Shukla",
             role: "Sales coordinator",
             image: Mehak,
             linkedin: "#"
         },
-        {
-            id:7,
-            name:"Saurabh Kumar",
-            role: "Assistance Manager-Sales",
-            image:saurabh,
-
-        }
     ];
     return (
         <div>
