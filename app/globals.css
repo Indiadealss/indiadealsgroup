@@ -15,6 +15,25 @@
   scrollbar-width: none;
 }
 
+.custom-modal .ant-modal-content {
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+.custom-modal .ant-modal-header {
+  background: transparent !important;
+  border-bottom: none !important;
+}
+
+.custom-modal .ant-modal-body {
+  padding: 0 !important;
+}
+
+.ant-modal-container{
+  background-color: none !important;
+}
+
 .ourMangement{
   background-image: url('@/Images/background.jpeg') !important;
 }
