@@ -200,7 +200,7 @@ const page = () => {
                 className="bg-white rounded-2xl shadow-lg p-5 hover:shadow-2xl transition duration-300"
               >
                 <div className="block md:flex md:justify-between items-center">
-                  <h3 className="text-xl font-semibold">
+                  <h3 className="text-xl font-semibold text-[#313036]">
                     {job.icon} {job.title}
                   </h3>
                   <span className="text-sm bg-blue-100 text-blue-600 px-3 py-1 rounded-full">
