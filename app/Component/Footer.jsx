@@ -105,7 +105,7 @@ const Footer = () => {
         </p>
 
         <p className="text-[#f1e6c8] text-xs">
-          <FontAwesomeIcon icon={faCopyright} /> Copyright © IndiaDeals Group. All rights reserved. All content, trademarks, logos, text, graphics, images, design elements, source code, and materials displayed on this website are the exclusive intellectual property of IndiaDeals Group and are protected under applicable copyright, trademark, and intellectual property laws. Unauthorized copying, reproduction, modification, distribution, republication, display, or transmission of any material from this website, in whole or in part, is strictly prohibited without prior written consent from IndiaDeals Group. Website design, development, and maintenance are owned and controlled by IndiaDeals Group. Any violation may result in legal action under applicable laws.
+          <FontAwesomeIcon icon={faCopyright} /> Copyright © INDIADEALS Group. All rights reserved. All content, trademarks, logos, text, graphics, images, design elements, source code, and materials displayed on this website are the exclusive intellectual property of IndiaDeals Group and are protected under applicable copyright, trademark, and intellectual property laws. Unauthorized copying, reproduction, modification, distribution, republication, display, or transmission of any material from this website, in whole or in part, is strictly prohibited without prior written consent from INDIADEALS Group. Website design, development, and maintenance are owned and controlled by IndiaDeals Group. Any violation may result in legal action under applicable laws.
         </p>
 
         
