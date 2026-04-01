@@ -76,7 +76,7 @@ const Navbar = () => {
       submenu: [
         { label: 'Hanumat Vihar Awasiya Yojna (Vrindavan)', link: '/hanumat-vihar-awasiya-yojna' },
         { label: 'Upcoming Project(Barsana)', link: '/barsana' },
-        { label: 'Upcoming Project(Ayodhya)', link: '/ayodhya' },
+        { label: 'Upcoming Project(Yamuna Expressway)', link: '/residentials-plots-in-yamuna-expressway' },
       ]
     },
     {

@@ -1,4 +1,4 @@
-import AyodhyaProject from "./ayodhyaProject";
+import YamunaExpressway from "./yamunaExpressway";
 
 export const metadata = {
   title: " Upcoming Premium Plots in Ram Mandir Ayodhya",
@@ -11,5 +11,5 @@ export const metadata = {
 };
 
 export default function AboutPage() {
-  return <AyodhyaProject />
+  return <YamunaExpressway />
 }
