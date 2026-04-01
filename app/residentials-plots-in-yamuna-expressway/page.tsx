@@ -1,8 +1,8 @@
 import YamunaExpressway from "./yamunaExpressway";
 
 export const metadata = {
-  title: " Upcoming Premium Plots in Yamuna Expressway",
-  description: "Upcoming premium plotting project in Yamuna Expressway.",
+  title: "Residential Plots in Yamuna Expressway, Greater Noida",
+  description: "Upcoming residential plots in Yamuna Expressway, well connected to Jewar Airport, Noida, Delhi, Greater Noida, Agra, Mathura and Faridabad.",
 
   alternates: {
     canonical: "https://www.indiadealsgroup.com/residentials-plots-in-yamuna-expressway",
