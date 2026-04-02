@@ -1,8 +1,8 @@
 import YamunaExpressway from "./yamunaExpressway";
 
 export const metadata = {
-  title: "Residential Plots in Yamuna Expressway, Greater Noida",
-  description: "Upcoming residential plots in Yamuna Expressway, well connected to Jewar Airport, Noida, Delhi, Greater Noida, Agra, Mathura and Faridabad.",
+  title: "Yamuna Green City | Residential Plots Yamuna Expressway",
+  description: "Yamuna Green City is a residential plotting project with all modern amenities, which located at Yamuna Expressway, Greater Noida well connected to Jewar Airport, Noida, Delhi, Agra and Mathura.",
 
   alternates: {
     canonical: "https://www.indiadealsgroup.com/yamuna-green-city",
