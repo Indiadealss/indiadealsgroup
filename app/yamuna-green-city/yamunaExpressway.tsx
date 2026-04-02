@@ -49,8 +49,8 @@ const yamunaExpressway = () => {
       </div>
 
         <div className="px-4 lg:px-[10vw] text-gray-700 leading-5">
-           <h1 className="text-xl lg:text-2xl font-bold mt-10 mb-2">
-            Residential Plots in YAMUNA GREEN CITY 
+           <h1 className="text-xl lg:text-2xl font-bold mt-15  my-10">
+             YAMUNA GREEN CITY, Residential Plots Yamuna Expressway
             </h1>
 
             {/* <p className='text-justify text-gray-600 mb-4'>
@@ -79,9 +79,7 @@ const yamunaExpressway = () => {
               The Yamuna Expressway Industrial Development Authority is in charge of planning this area. They have a plan that includes:
               </p>
 
-              <h2 className="text-xl font-semibold mt-4 mb-1">
-    Key Highlights
-  </h2>
+              
 
   <ul className="list-disc ml-6 space-y-2 mb-6">
     <li>Areas with homes for all budgets</li>
@@ -143,7 +141,7 @@ const yamunaExpressway = () => {
   </ul>
 
   <div className="w-full px-4 py-10 mx-auto">
-      <h2 className="text-2xl md:text-3xl font-bold  mb-6">
+      <h2 className="text-xl md:text-3xl font-medium  mb-6">
         Plot Size & Price Details
       </h2>
 
@@ -188,7 +186,7 @@ const yamunaExpressway = () => {
     </p>
 
 
-     <ul className="list-disc ml-6 space-y-2 mb-6">
+     <ul className="list-disc ml-6 space-y-2">
     <li>Real Estate Investors</li>
     <li>Families planning future homes</li>
     <li>NRIs seeking spiritual property investment</li>
