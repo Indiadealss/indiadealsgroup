@@ -7,6 +7,9 @@ export const metadata = {
   alternates: {
     canonical: "https://www.indiadealsgroup.com/yamuna-green-city",
   },
+  keywords:[
+    " yamuna green city, yamuna green city plots Yamuna expressway, residential plots on Yamuna expressway"
+  ]
 
 };
 
