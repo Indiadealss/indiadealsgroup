@@ -70,9 +70,9 @@ const yamunaExpressway = () => {
         </p>
 
 
-    <h1 className="text-xl lg:text-xl font-semibold mt-10 mb-2">
+    <h3 className="text-xl lg:text-xl font-semibold mt-10 mb-2">
             Project Highlights
-            </h1>
+            </h3>
 
 
             <p className='text-justify text-gray-600 mb-4'>
