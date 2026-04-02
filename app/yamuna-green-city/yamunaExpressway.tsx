@@ -196,26 +196,7 @@ const yamunaExpressway = () => {
     <li>Buyers looking for secure land investment</li>
   </ul>
 
-  <p className='text-justify text-gray-600 mb-4'>
-    With flexible plot sizes and planned infrastructure, buyers can design their homes according to their own preferences and needs.
-    </p>
-
-
-    <h2 className="text-xl font-semibold mt-4 mb-1">
-    A Vision for Modern Living in a Sacred City
-  </h2>
-
-  <p className='text-justify text-gray-600 mb-4'>
-    Our vision is to develop a premium plotted township along the Yamuna Expressway that blends modern infrastructure with future-ready urban planning. Every aspect of the project is planned to ensure convenience, security, and long-term value for buyers.
-    </p>
-
-    <p className='text-justify text-gray-600 mb-4'>
-        As the Yamuna Expressway transforms into a high-growth corridor, owning land here is not just a property investment—it is a legacy asset for generations to come.
-    </p>
-
-     <p className='text-justify text-gray-600 mb-4'>
-       Book your plot early and become part of Ayodhya’s historic growth story.
-     </p>
+  
 
 
         </div>
