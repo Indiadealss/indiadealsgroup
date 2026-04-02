@@ -4,6 +4,28 @@ import YamunaExpressway from '@/Images/yamunaExpressway.jpg'
 import YamunaExpresswayHome from '@/Images/mobileYamunaExpressway.png'
 
 const yamunaExpressway = () => {
+
+  const plotData = [
+    
+  {
+    sizeYard: "90 Sq. Yards",
+    sizeFt: "800 Sq. Ft.",
+    startPrice: "₹ 36,00,000",
+    range: "₹24–30 Lakhs",
+  },
+  {
+    sizeYard: "100 Sq. Yards",
+    sizeFt: "900 Sq. Ft.",
+    startPrice: "₹40,00,000",
+    range: "₹40–45 Lakhs",
+  },
+  {
+    sizeYard: "150 Sq. Yards",
+    sizeFt: "1350 Sq. Ft.",
+    startPrice: "₹60,00,000",
+    range: "₹18–22 Lakhs",
+  }
+];
   return (
     <div>
       {/* HERO */}
@@ -28,7 +50,7 @@ const yamunaExpressway = () => {
 
         <div className="px-4 lg:px-[10vw] text-gray-700 leading-5">
            <h1 className="text-xl lg:text-2xl font-bold mt-10 mb-2">
-            Upcoming Residential Plots in Yamuna Expressway
+            Residential Plots in YAMUNA GREEN CITY 
             </h1>
 
             {/* <p className='text-justify text-gray-600 mb-4'>
@@ -36,7 +58,7 @@ const yamunaExpressway = () => {
             </p> */}
 
             <p className="text-justify text-justify mb-3">
-      Welcome to our Upcoming Premium Plotting Project in Yamuna Expressway, a thoughtfully planned residential development designed to offer a perfect for modern infrastructure, and high-value investment potential. Positioned in one of the most promising growth corridors of NCR, this premium project on Yamuna Expressway offers a rare chance to own land in a region set to redefine modern urban living with world-class infrastructure and connectivity.
+      Welcome to our <span className='font-bold'>YAMUNA GREEN CITY </span>Premium Plotting Project in Sector-21, (film city) Rabupura Yamuna Expressway, a thoughtfully planned residential development designed to offer a perfect for modern infrastructure, and high-value investment potential. Positioned in one of the most promising growth corridors of NCR, this premium project on Yamuna Expressway offers a rare chance to own land in a region set to redefine modern urban living with world-class infrastructure and connectivity.
     </p>
 
     <p className="text-justify text-justify mb-3">
@@ -119,6 +141,41 @@ const yamunaExpressway = () => {
     <li>Development Opportunity</li>
     <li>Long-Term Wealth Creation</li>
   </ul>
+
+  <div className="w-full px-4 py-10 mx-auto">
+      <h2 className="text-2xl md:text-3xl font-bold  mb-6">
+        Plot Size & Price Details
+      </h2>
+
+      <div className="overflow-x-auto ">
+        <table className="min-w-100 border border-gray-200 rounded-lg overflow-hidden mx-auto">
+          <thead className="bg-gray-100">
+            <tr>
+              <th className="px-4 py-3 text-left text-sm font-semibold">
+                Plot Size (Sq. Yards)
+              </th>
+              <th className="px-4 py-3 text-left text-sm font-semibold">
+                Price
+              </th>
+            </tr>
+          </thead>
+
+          <tbody>
+            {plotData.map((plot, index) => (
+              <tr
+                key={index}
+                className="border-t hover:bg-gray-50 transition"
+              >
+                <td className="px-4 py-3">{plot.sizeYard}</td>
+                <td className="px-4 py-3 text-green-600 font-medium">
+                  {plot.startPrice}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      </div>
 
 
   <p className='text-justify text-gray-600 mb-4'>
