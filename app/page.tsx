@@ -113,7 +113,7 @@ export default function Home() {
     playsInline
     className="absolute inset-0 w-full h-full object-cover"
     preload="metaadd"
-    poster="https://cdn.brandsdoor.in/indiadealss/banner-thumb.jpg"
+    poster="https://d3eoh63gynpjzh.cloudfront.net/brandsdoor/banner-thumb.jpg"
   >
     <source src="https://d3eoh63gynpjzh.cloudfront.net/brandsdoor/1771136869498-indiadeals-group-home-banners.mp4" type="video/mp4" />
   </video>
