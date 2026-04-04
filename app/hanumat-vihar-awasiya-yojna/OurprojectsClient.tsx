@@ -166,7 +166,7 @@ const [form, setForm] = useState({
           playsInline
           className=" inset-0 w-full h-[30vw] object-cover"
         >
-          <source src="https://cdn.brandsdoor.in/indiadealss/indiadealss/1771137358731-ourproject.mp4" type="video/mp4" />
+          <source src="https://d3eoh63gynpjzh.cloudfront.net/brandsdoor/1771137358731-ourproject.mp4" type="video/mp4" />
         </video>
 
       </div>
