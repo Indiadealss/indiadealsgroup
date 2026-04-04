@@ -115,7 +115,7 @@ export default function Home() {
     preload="metaadd"
     poster="https://cdn.brandsdoor.in/indiadealss/banner-thumb.jpg"
   >
-    <source src="https://cdn.brandsdoor.in/indiadealss/indiadealss/1771136869498-indiadeals-group-home-banners.mp4" type="video/mp4" />
+    <source src="https://d3eoh63gynpjzh.cloudfront.net/brandsdoor/1771136869498-indiadeals-group-home-banners.mp4" type="video/mp4" />
   </video>
 
         {/* Overlay (optional but recommended) */}
