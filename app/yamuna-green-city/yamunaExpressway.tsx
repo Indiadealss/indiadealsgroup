@@ -1,10 +1,16 @@
+'use client'
+
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 import YamunaExpressway from '@/Images/yamunaExpressway.jpg'
 import YamunaExpresswayHome from '@/Images/mobileYamunaExpressway.png'
+import downloadPdf from "@/Images/pdbDownload.png";
+import Broucher from '../broucher/broucher';
+
 
 const yamunaExpressway = () => {
 
+      const [open, setOpen] = useState(false);
   const plotData = [
     
   {
@@ -195,9 +201,20 @@ const yamunaExpressway = () => {
   </ul>
 
   
-
+            <section className="">
+                      <div className="flex flex-col md:flex-row justify-around">
+                        <img src='https://d3eoh63gynpjzh.cloudfront.net/brandsdoor/Group%20287.png' alt="Plots in Vrindavan" className="text-white cursor-pointer mx-auto my-10 md:my-0 lg:mx-0 rounded w-[80vw] md:w-[25vw] font-bold " onClick={() => setOpen(true)} />
+            
+            
+                        {/* <div className="">
+                          <Image src={reracertificate} alt="..." className="mx-auto" />
+                        </div> */}
+                      </div>
+                    </section>
 
         </div>
+
+      <Broucher open={open} setOpen={setOpen} downloadPdf='https://d3eoh63gynpjzh.cloudfront.net/brandsdoor/Yamuna+Green+city.pdf' />
       
     </div>
   )
