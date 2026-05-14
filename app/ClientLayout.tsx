@@ -8,6 +8,8 @@ import Footer from './Component/Footer.jsx';
 import Fixedicons from './Component/Fixedicons.jsx';
 import Fixedcalliocns from './Component/Fixedcallicons.jsx';
 import Fixedupicons from './Component/Fixedupicons.jsx';
+import Adfixedicons from './Component/Adfixedicons.jsx';
+import Adfixedcallicons from './Component/Adfixedcallicons.jsx';
 
 type Props = {
   children: React.ReactNode;
@@ -26,12 +28,19 @@ export default function ClientLayout({ children }: Props) {
 
       {children}
       
-          <Fixedicons />
-          <Fixedcalliocns />
-          <Fixedupicons />
+        {hideLayout && (
+          <>
+          <Adfixedicons />
+          <Adfixedcallicons />
+                    <Fixedupicons />
+          </>
+        )}
 
       {!hideLayout && (
         <>
+          <Fixedicons />
+          <Fixedcalliocns />
+          <Fixedupicons />
           <Footer />
         </>
       )}

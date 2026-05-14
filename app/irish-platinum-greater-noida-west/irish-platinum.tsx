@@ -311,6 +311,15 @@ const Irishplatinum: React.FC = () => {
             <p className="text-lg md:text-2xl font-bold">
               Starting Price – ₹ 2.60 Cr*
             </p>
+            <p className="text-xs md:text-sm font-medium opacity-90 mt-2 flex flex-wrap justify-center gap-x-4">
+            <span>Best Luxury Flats</span>
+            <span>|</span>
+            <span>Mivan Construction</span>
+            <span>|</span>
+            <span>Premium Lifestyle</span>
+            <span>|</span>
+            <span>High ROI Investment</span>
+          </p>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
