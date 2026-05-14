@@ -299,7 +299,7 @@ const Irishplatinum: React.FC = () => {
             </h2>
 
             <p className="text-sm md:text-lg font-semibold">
-              4TH TOWER | GREATER NOIDA WEST
+              Sector 10 | GREATER NOIDA WEST
             </p>
 
             <p className="text-sm md:text-lg font-semibold">
