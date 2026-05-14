@@ -3,11 +3,11 @@ import Irishplatinum from "./irish-platinum";
 
 
 export const metadata = {
-  title: "Career at Indiadeals Group, Join Our Real estate Team in Greater Noida West",
-  description: " Indiadeals Group is hiring real estate Sales Executive and Senior Executive roles in Greater Noida West. Candidates with strong communication, sales experience, Attractive incentives, growth opportunities.",
+  title: "Irish Platinum Sector 10 Greater Noida West",
+  description: "Irish Platinum offers 3bhk and 4bhk premium apartments located at  Sector 10 Greater Noida West.",
 
   alternates: {
-    canonical: "https://www.indiadealsgroup.com/career",
+    canonical: "https://www.indiadealsgroup.com/irish-platinum-Greater-Noida-West",
   },
 
 };
