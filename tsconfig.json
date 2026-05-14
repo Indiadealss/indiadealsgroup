@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-  ],
+, "app/irish-platinum-/irish-platinum.jsx", "app/Component/ProjectStats.jsx", "app/irish-platinum-/irish-platinum.jsx"  ],
   "exclude": ["node_modules"]
 }

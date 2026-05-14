@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -9,17 +9,23 @@ const Fixedupicons = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth'
+      behavior: 'smooth',
     });
   };
-  
-  return (
-     <div className='w-15 h-15 rounded-full sticky top-0 bottom-10 right-10 left-full bg-[#313036] cursor-pointer me-3' onClick={scrollToTop}>
-        <div className="ps-4 mx-auto pt-5 ">
-      <FontAwesomeIcon icon={faArrowDown} className=' rotate-180 text-2xl text-[#f3e6c6]' />
-      </div>
-    </div>
-  )
-}
 
-export default Fixedupicons
+  return (
+    <div
+      className="fixed bottom-8 right-5 z-50"
+      onClick={scrollToTop}
+    >
+      <button className="w-14 h-14 rounded-full bg-[#313036] flex items-center justify-center shadow-lg">
+        <FontAwesomeIcon
+          icon={faArrowDown}
+          className="rotate-180 text-2xl text-[#f3e6c6]"
+        />
+      </button>
+    </div>
+  );
+};
+
+export default Fixedupicons;

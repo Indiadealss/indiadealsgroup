@@ -1,9 +1,9 @@
 import nodemailer from "nodemailer";
 import { NextResponse } from "next/server";
-import { sendOtpSms } from "./otphalper";
 
 export async function POST(req: Request) {
   try {
+
     const { name, email, message, phone, city,project } = await req.json();
 
     const transporter = nodemailer.createTransport({
