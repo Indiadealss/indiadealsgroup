@@ -18,7 +18,7 @@ export default function ClientLayout({ children }: Props) {
 
   // Pages where layout should be hidden
   const hideLayout =
-    pathname === '/irish-platinum-Greater-Noida-West';
+    pathname === '/irish-platinum-greater-noida-west';
 
   return (
     <>
