@@ -267,7 +267,7 @@ const Irishplatinum: React.FC = () => {
         <div className="absolute top-8 left-8 z-10 hidden md:block">
           <div className="w-22 h-12 bg-white rounded-full p-2 flex items-center justify-center mb-1 relative">
             <Image
-              src='/images/IrishLogoLeft.png'
+              src='/Images/IrishLogoLeft.png'
               alt="Irish Logo"
               fill
               className="object-contain"
