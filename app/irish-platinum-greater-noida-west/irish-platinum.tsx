@@ -309,7 +309,7 @@ const Irishplatinum: React.FC = () => {
 
           <div className="py-2">
             <p className="text-lg md:text-2xl font-bold">
-              Starting Price – ₹ 1.70 Cr*
+              Starting Price – ₹ 1.66 Cr*
             </p>
             <p className="text-xs md:text-sm font-medium opacity-90 mt-2 flex flex-wrap justify-center gap-x-4">
             <span>Best Luxury Flats</span>
@@ -500,7 +500,7 @@ const Irishplatinum: React.FC = () => {
                 </div>
                 <hr className="border-gray-300" />
                 <div className="space-y-2 pt-2">
-                    <p className="text-[#333] text-lg font-bold">Starting Price: <span className="text-[#b08d57]">₹1.70 Cr*</span></p>
+                    <p className="text-[#333] text-lg font-bold">Starting Price: <span className="text-[#b08d57]">₹1.66 Cr*</span></p>
                   <p className="text-[#333] text-lg font-bold">Booking Amount: <span className="font-normal text-gray-600 text-base">10% of the total value</span></p>
                 </div>
               </div>
@@ -514,19 +514,19 @@ const Irishplatinum: React.FC = () => {
                 <hr className="border-gray-300" />
                 <div className="space-y-3 pt-2">
                     <p className="text-[#333] font-bold">3 BHK + 2 Toilets: 
-                    <span className="font-normal text-gray-600 block sm:inline ml-0 sm:ml-2">1390 sq ft</span>
+                    <span className="font-normal text-gray-600 block sm:inline ml-0 sm:ml-2">1390 sq ft </span><span className="text-[#b08d57]">- ₹1.66 Cr*</span>
                   </p>
                     <p className="text-[#333] font-bold">3 BHK + 3 Toilets: 
-                    <span className="font-normal text-gray-600 block sm:inline ml-0 sm:ml-2">1690 sq ft</span>
+                    <span className="font-normal text-gray-600 block sm:inline ml-0 sm:ml-2">1690 sq ft</span><span className="text-[#b08d57]">- ₹1.93 Cr*</span>
                   </p>
                   <p className="text-[#333] font-bold">3 BHK + 4 Toilets + Servent: 
-                    <span className="font-normal text-gray-600 block sm:inline ml-0 sm:ml-2">1925 sq ft</span>
+                    <span className="font-normal text-gray-600 block sm:inline ml-0 sm:ml-2">1925 sq ft</span><span className="text-[#b08d57]">- ₹2.20 Cr*</span>
                   </p>
                   <p className="text-[#333] font-bold">4 BHK  + 4 Toilets: 
-                    <span className="font-normal text-gray-600 block sm:inline ml-0 sm:ml-2">2150 sq ft</span>
+                    <span className="font-normal text-gray-600 block sm:inline ml-0 sm:ml-2">2150 sq ft</span><span className="text-[#b08d57]">- ₹2.46 Cr*</span>
                   </p>
                   <p className="text-[#333] font-bold">4 BHK  + 5 Toilets + Servent: 
-                    <span className="font-normal text-gray-600 block sm:inline ml-0 sm:ml-2">2550 sq ft</span>
+                    <span className="font-normal text-gray-600 block sm:inline ml-0 sm:ml-2">2550 sq ft</span><span className="text-[#b08d57]">- ₹2.92 Cr*</span>
                   </p>
                   
                 </div>
