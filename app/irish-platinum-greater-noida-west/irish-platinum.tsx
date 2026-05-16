@@ -54,6 +54,14 @@ interface PropertyCardFloorplanProps {
   setCustomEnquiry: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
+const galleryImages = [
+  "/Images/I1Irishplatinm.webp",
+  "/Images/I2IrishPlatinum.webp",
+  "/Images/I3IrishPlatinum.webp",
+  "/Images/I4IrishPlatinum.webp",
+];
+
+
 const PropertyCardFloorplan: React.FC<PropertyCardFloorplanProps> = ({
   title,
   size,
@@ -647,9 +655,87 @@ const Irishplatinum: React.FC = () => {
           />
         ))}
       </div>
+
+      {/* Is this a Gallery Part */}
+        <div className="">
+
+             <section className="bg-[#0f172a] py-20 px-5 md:px-10 overflow-hidden">
+      
+      {/* Heading */}
+      <div className="text-center mb-14">
+        
+
+        <h2 className="text-4xl md:text-5xl font-bold text-white">
+           Gallery
+        </h2>
+
+        <div className="w-24 h-1 bg-blue-500 mx-auto mt-5 rounded-full"></div>
+      </div>
+
+      {/* Gallery Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-7">
+        {galleryImages.map((image, index) => (
+          <div
+            key={index}
+            className="group relative overflow-hidden rounded-3xl shadow-2xl"
+          >
+            {/* Image */}
+            <img
+              src={image}
+              alt="gallery"
+              className="h-[320px] w-full object-cover transition-all duration-700 group-hover:scale-110"
+            />
+
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
+
+            {/* Content */}
+            
+          </div>
+        ))}
+      </div>
+      <section className="bg-[#0f172a] py-20 px-5 md:px-10">
+      
+      {/* Heading */}
+      <div className="text-center mb-14">
+        <p className="text-blue-400 uppercase tracking-[4px] text-sm mb-3">
+          Project Location
+        </p>
+
+        <h2 className="text-4xl md:text-5xl font-bold text-white">
+          Explore The Neighborhood
+        </h2>
+
+        <div className="w-24 h-1 bg-blue-500 mx-auto mt-5 rounded-full"></div>
+      </div>
+
+      {/* Map Container */}
+      <div className="max-w-5xl mx-auto overflow-hidden rounded-3xl shadow-[0_10px_50px_rgba(0,0,0,0.45)] border border-white/10">
+        
+        <iframe
+          title="Sector 10 Noida Map"
+          src="https://www.google.com/maps?q=Irish Platinum, Gh-04A, near Arihant Abode, Sector 10, Vaidpura, Greater Noida, Uttar Pradesh 203207&output=embed"
+          width="100%"
+          height="550"
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          className="w-full"
+        ></iframe>
+      </div>
+    </section>
+
+    </section>
+
+        </div>
     </div>
       
-      <ContactSection projectName='IRISH PLATINUM' projectLocation=' Gh-04A, Sector 10, Greater Noida West, <br />(Noida Extension), Uttar Pradesh'/>
+      <ContactSection projectName='IRISH PLATINUM'  projectLocation={
+    <>
+      Gh-04A, Sector 10, Greater Noida West, <br />
+      (Noida Extension), Uttar Pradesh
+    </>
+  }/>
     {customEnquiry && (
             <div>
               <Customenquiryform setCustomEnquiry={setCustomEnquiry} propertys={propertys} />
