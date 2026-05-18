@@ -1,5 +1,4 @@
 import React from 'react'
-import hcbar from '@/Images/HARI-BHAI.jpg';
 import JwalaPrasadDubey from '@/Images/JwalaPrasadDubey.jpg';
 import Keshav from '@/Images/keshav-bhaiu.jpg'
 import Aanand from '@/Images/Ananad.jpg'
@@ -12,13 +11,6 @@ const itTeam = () => {
             name: "Jwala Prasad Dubey",
             role: "IT Head",
             image: JwalaPrasadDubey,
-            linkedin: "#"
-        },
-        {
-            id: 2,
-            name: "H.C. Bairwa",
-            role: "Digital Marketing Manager",
-            image: hcbar,
             linkedin: "#"
         },
         {
