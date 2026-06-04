@@ -16,7 +16,7 @@ const itTeam = () => {
         {
             id: 3,
             name: "Aanand Singh",
-            role: "Graphics Deginer",
+            role: "Graphics Designer",
             image: Aanand,
             linkedin: "#"
         },

@@ -186,6 +186,8 @@ const Customcomponent = () => {
           >
             <option value="">Select Project</option>
             <option value="Hanumat Vihar">Hanumat Vihar</option>
+            <option value="Yamuna Green City">Yamuna Green City</option>
+            <option value="Barsana">Barsana</option>
           </select>
 
           <textarea
